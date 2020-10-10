@@ -1,0 +1,13 @@
+C:\20483C\Tareas\mod1-4\letras\bin\Debug\netcoreapp3.1\letras.exe
+C:\20483C\Tareas\mod1-4\letras\bin\Debug\netcoreapp3.1\letras.deps.json
+C:\20483C\Tareas\mod1-4\letras\bin\Debug\netcoreapp3.1\letras.runtimeconfig.json
+C:\20483C\Tareas\mod1-4\letras\bin\Debug\netcoreapp3.1\letras.runtimeconfig.dev.json
+C:\20483C\Tareas\mod1-4\letras\bin\Debug\netcoreapp3.1\letras.dll
+C:\20483C\Tareas\mod1-4\letras\bin\Debug\netcoreapp3.1\letras.pdb
+C:\20483C\Tareas\mod1-4\letras\obj\Debug\netcoreapp3.1\letras.csprojAssemblyReference.cache
+C:\20483C\Tareas\mod1-4\letras\obj\Debug\netcoreapp3.1\letras.AssemblyInfoInputs.cache
+C:\20483C\Tareas\mod1-4\letras\obj\Debug\netcoreapp3.1\letras.AssemblyInfo.cs
+C:\20483C\Tareas\mod1-4\letras\obj\Debug\netcoreapp3.1\letras.csproj.CoreCompileInputs.cache
+C:\20483C\Tareas\mod1-4\letras\obj\Debug\netcoreapp3.1\letras.dll
+C:\20483C\Tareas\mod1-4\letras\obj\Debug\netcoreapp3.1\letras.pdb
+C:\20483C\Tareas\mod1-4\letras\obj\Debug\netcoreapp3.1\letras.genruntimeconfig.cache
