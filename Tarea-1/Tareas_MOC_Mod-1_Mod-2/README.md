@@ -1,6 +1,6 @@
 ## MOC Módulo 2 - Creación de métodos, manejo de excepciones y aplicaciones de vigilancia
 
-Fichero de Instrucciones: Instructions\20483C_MOD01_LAK.md
+Fichero de Instrucciones: Instructions\20483C_MOD02_DEMO.md
 
 Entregar el url de GitHub con la solución y un readme con las siguiente información:
 
