@@ -1,0 +1,7 @@
+C:\20483C\CSharp-Programming\Tarea-1\Tareas_MOC_Mod-1_Mod-2\FourthCoffee.MethodTestHarness\FourthCoffee.MethodTestHarness\bin\Debug\FourthCoffee.MethodTestHarness.exe.config
+C:\20483C\CSharp-Programming\Tarea-1\Tareas_MOC_Mod-1_Mod-2\FourthCoffee.MethodTestHarness\FourthCoffee.MethodTestHarness\bin\Debug\FourthCoffee.MethodTestHarness.exe
+C:\20483C\CSharp-Programming\Tarea-1\Tareas_MOC_Mod-1_Mod-2\FourthCoffee.MethodTestHarness\FourthCoffee.MethodTestHarness\bin\Debug\FourthCoffee.MethodTestHarness.pdb
+C:\20483C\CSharp-Programming\Tarea-1\Tareas_MOC_Mod-1_Mod-2\FourthCoffee.MethodTestHarness\FourthCoffee.MethodTestHarness\obj\Debug\FourthCoffee.MethodTestHarness.csprojAssemblyReference.cache
+C:\20483C\CSharp-Programming\Tarea-1\Tareas_MOC_Mod-1_Mod-2\FourthCoffee.MethodTestHarness\FourthCoffee.MethodTestHarness\obj\Debug\FourthCoffee.MethodTestHarness.csproj.CoreCompileInputs.cache
+C:\20483C\CSharp-Programming\Tarea-1\Tareas_MOC_Mod-1_Mod-2\FourthCoffee.MethodTestHarness\FourthCoffee.MethodTestHarness\obj\Debug\FourthCoffee.MethodTestHarness.exe
+C:\20483C\CSharp-Programming\Tarea-1\Tareas_MOC_Mod-1_Mod-2\FourthCoffee.MethodTestHarness\FourthCoffee.MethodTestHarness\obj\Debug\FourthCoffee.MethodTestHarness.pdb
