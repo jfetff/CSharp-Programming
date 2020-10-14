@@ -6,10 +6,11 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 14 de Octubre 2020.
-3. **Resumen del Modulo 1:** Este módulo consta de tres ejercicios:
+3. **Resumen del Modulo 1:** Este módulo consta de cuatro ejercicios:
     -  En el primer ejercio hacemos uso de la herramienta para la depuración para editar los detalles del estudiante haciendo uso de la inspección (Watch).
     - En el ejercicio 2 agregamos un nuevo estudiante a una clase. Para ellos modificamos el código correspondiente para que el botón "insert" sea escuchado por la aplicación.
-    - En el ejercicio 3
+    - En el ejercicio 3 hacemos posible para que los usuarios podrán eliminar a los estudiantes de las clases.
+    - En el ejercicio 4
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Talvez es el uso del Visual Studio en castellano ya que las instrucciones están en inglés y al hacer los ejercicios por primera vez a veces cuesta encontrar las ventanas o herramientes en cuestión. Por ejemplo; el watch en castellano es "inspección" y es dificil al inicio poder encontrar la opción si uno no sabe.
 
@@ -319,9 +320,32 @@ El resultado visual se muestra en la siguiente imagen:
 3. Verifique que la aplicación se inicia y muestra la lista inicial de estudiantes.
 4. Haga clic en el menú desplegable que contiene el texto **Esther Valle: Clase 3C**.
 5. Haga clic en el elemento de la lista que contiene el texto **David Waite : Clase 4B**.
+
+El resultado visual se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig3-1-David.jpg  "Mostrando David Waite: Class 4B!!")
+
+
 6. Haz clic en la fila que contiene el nombre **Jon Orton**.
+
+El resultado visual se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig3-2-JonOrton.jpg  "Mostrando a Jon Orton de la Class 4B!!")
+
 7. Presione Borrar y verifique que aparezca el mensaje de confirmación.
+
+El resultado visual se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig3-3-MsgConfirmation.jpg  "Mostrando David Waite: Class 4B!!")
+
+
 8. En el cuadro de diálogo **Confirmar**, pulsa **Sí**, verifica que Jon Orton se ha eliminado de la lista de estudiantes y luego verifica que el botón **Guardar cambios** está activado.
+
+El resultado visual se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig3-4JonOrtonDeleted.jpg  "Mostrando qeu Jon Orton ha sido borrado de la lista!!")
+
+
 9. Cierre la aplicación.
 10. En el menú **File**, haga clic en **Cerrar solución**.
 

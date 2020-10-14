@@ -61,8 +61,7 @@ namespace School
             switch (e.Key)
             {
                 // If the user pressed Enter, edit the details for the currently selected student
-                case Key.Enter:
-                    Student student = this.studentsList.SelectedItem as Student;
+                case Key.Enter: Student student = this.studentsList.SelectedItem as Student;
 
                     // Use the StudentsForm to display and edit the details of the student
                     StudentForm sf = new StudentForm();
@@ -114,21 +113,21 @@ namespace School
                     }
                     break;
 
-                // TODO: Exercise 3: Task 1a: If the user pressed Delete, remove the currently selected student
-                case Key.Delete:
-                    student = this.studentsList.SelectedItem as Student;
-                    // TODO: Exercise 3: Task 2a: Prompt the user to confirm that the student should be removed
+                // If the user pressed Delete, remove the currently selected student
+                case Key.Delete: student = this.studentsList.SelectedItem as Student;
+
+                    // Prompt the user to confirm that the student should be removed
                     MessageBoxResult response = MessageBox.Show(
-                    string.Format("Remove {0}", student.FirstName + " " + student.LastName),
-                    "Confirm",
-                    MessageBoxButton.YesNo,
-                    MessageBoxImage.Question,
-                    MessageBoxResult.No);
-                    // TODO: Exercise 3: Task 3a: If the user clicked Yes, remove the student from the database
+                        String.Format("Remove {0}", student.FirstName + " " + student.LastName),
+                        "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question,
+                        MessageBoxResult.No);
+
+                    // If the user clicked Yes, remove the student from the database
                     if (response == MessageBoxResult.Yes)
                     {
                         this.schoolContext.Students.DeleteObject(student);
-                        // TODO: Exercise 3: Task 3b: Enable saving (changes are not made permanent until they are written back to the database)
+
+                        // Enable saving (changes are not made permanent until they are written back to the database)
                         saveChanges.IsEnabled = true;
                     }
                     break;
@@ -157,6 +156,13 @@ namespace School
         public object Convert(object value, Type targetType, object parameter,
                               System.Globalization.CultureInfo culture)
         {
+            // Convert the date of birth provided in the value parameter and convert to the age of the student in years
+            // TODO: Exercise 4: Task 2a: Check that the value provided is not null. If it is, return an empty string
+            // TODO: Exercise 4: Task 2b: Convert the value provided into a DateTime value
+            // TODO: Exercise 4: Task 2c: Work out the difference between the current date and the value provided
+            // TODO: Exercise 4: Task 2d: Convert this result into a number of years
+            // TODO: Exercise 4: Task 2e: Convert the number of years into a string and return it
+
             return "";
         }
 
