@@ -10,7 +10,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
     -  En el primer ejercio hacemos uso de la herramienta para la depuración para editar los detalles del estudiante haciendo uso de la inspección (Watch).
     - En el ejercicio 2 agregamos un nuevo estudiante a una clase. Para ellos modificamos el código correspondiente para que el botón "insert" sea escuchado por la aplicación.
     - En el ejercicio 3 hacemos posible para que los usuarios podrán eliminar a los estudiantes de las clases.
-    - En el ejercicio 4
+    - En el ejercicio 4 agregamos un nuevo estudiante y además se programa la aplicación para que muestre la edad del estudiante.
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Talvez es el uso del Visual Studio en castellano ya que las instrucciones están en inglés y al hacer los ejercicios por primera vez a veces cuesta encontrar las ventanas o herramientes en cuestión. Por ejemplo; el watch en castellano es "inspección" y es dificil al inicio poder encontrar la opción si uno no sabe.
 
@@ -417,6 +417,14 @@ El resultado visual se muestra en la siguiente imagen:
 5. Presiona **Insertar**.
 6. En la ventana de Nuevo Estudiante para la clase 3C, introduzca su nombre en el cuadro de texto **Name**, su apellido en el cuadro de texto **Apellido** y su fecha de nacimiento en el cuadro de texto **Fecha de nacimiento** (formato de fecha - **mm/dd/aaaa**).
 7. Haga clic en **OK** y verifique que su nombre y edad aparecen correctamente en la lista de estudiantes.
+
+El resultado visual se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig3-5NewStudent.jpg  "Mostrando qeu Jon Orton ha sido borrado de la lista!!")
+
+
+
+
 8. Cierre la aplicación.
 9. En el menú **File**, haga clic en **Cerrar solución**.
 
