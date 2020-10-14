@@ -61,8 +61,7 @@ namespace School
             switch (e.Key)
             {
                 // If the user pressed Enter, edit the details for the currently selected student
-                case Key.Enter:
-                    Student student = this.studentsList.SelectedItem as Student;
+                case Key.Enter: Student student = this.studentsList.SelectedItem as Student;
 
                     // Use the StudentsForm to display and edit the details of the student
                     StudentForm sf = new StudentForm();
@@ -85,28 +84,39 @@ namespace School
                     }
                     break;
 
-                // TODO: Exercise 2: Task 1a: If the user pressed Insert, add a new student
+                // If the user pressed Insert, add a new student
                 case Key.Insert:
-                    // TODO: Exercise 2: Task 2a: Use the StudentsForm to get the details of the student from the user
+
+                    // Use the StudentsForm to get the details of the student from the user
                     sf = new StudentForm();
-                    // TODO: Exercise 2: Task 2b: Set the title of the form to indicate which class the student will be added to (the class for the currently selected teacher)
+
+                    // Set the title of the form to indicate which class the student will be added to (the class for the currently selected teacher)
                     sf.Title = "New Student for Class " + teacher.Class;
-                    // TODO: Exercise 2: Task 3a: Display the form and get the details of the new student
+
+                    // Display the form and get the details of the new student
                     if (sf.ShowDialog().Value)
                     {
-                        // TODO: Exercise 2: Task 3b: When the user closes the form, retrieve the details of the student from the form and use them to create a new Student object
+                        // When the user closes the form, retrieve the details of the student from the form
+                        // and use them to create a new Student object
                         Student newStudent = new Student();
                         newStudent.FirstName = sf.firstName.Text;
                         newStudent.LastName = sf.lastName.Text;
-                        newStudent.DateOfBirth = DateTime.ParseExact(sf.dateOfBirth.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture);
-                        // TODO: Exercise 2: Task 4a: Assign the new student to the current teacher
+                        newStudent.DateOfBirth = DateTime.Parse(sf.dateOfBirth.Text, CultureInfo.InvariantCulture);
+                        // Assign the new student to the current teacher
                         this.teacher.Students.Add(newStudent);
-                        // TODO: Exercise 2: Task 4b: Add the student to the list displayed on the form
+
+                        // Add the student to the list displayed on the form
                         this.studentsInfo.Add(newStudent);
-                        // TODO: Exercise 2: Task 4c: Enable saving (changes are not made permanent until they are written back to the database)
+
+                        // Enable saving (changes are not made permanent until they are written back to the database)
                         saveChanges.IsEnabled = true;
                     }
                     break;
+
+                    // TODO: Exercise 3: Task 1a: If the user pressed Delete, remove the currently selected student
+                    // TODO: Exercise 3: Task 2a: Prompt the user to confirm that the student should be removed
+                    // TODO: Exercise 3: Task 3a: If the user clicked Yes, remove the student from the database
+                    // TODO: Exercise 3: Task 3b: Enable saving (changes are not made permanent until they are written back to the database)
             }
         }
 

@@ -8,7 +8,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 2. **Fecha:** 14 de Octubre 2020.
 3. **Resumen del Modulo 1:** Este módulo consta de tres ejercicios:
     -  En el primer ejercio hacemos uso de la herramienta para la depuración para editar los detalles del estudiante haciendo uso de la inspección (Watch).
-    - En el ejercicio 2
+    - En el ejercicio 2 agregamos un nuevo estudiante a una clase. Para ellos modificamos el código correspondiente para que el botón "insert" sea escuchado por la aplicación.
     - En el ejercicio 3
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Talvez es el uso del Visual Studio en castellano ya que las instrucciones están en inglés y al hacer los ejercicios por primera vez a veces cuesta encontrar las ventanas o herramientes en cuestión. Por ejemplo; el watch en castellano es "inspección" y es dificil al inicio poder encontrar la opción si uno no sabe.
@@ -243,9 +243,25 @@ Fig-3-Dominik
 6. En el cuadro de texto **Name**, escribe **Darren**.
 7. En el cuadro de texto de **Apellido**, escriba **Parker**.
 8. En el cuadro de texto **Fecha de nacimiento**, escriba **02/03/2006**, y luego haga clic en **OK**.
+
+El resultado visual se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig2-1-Darren.jpg  "Agregando un nuevo Student en el Details form")
+
+
+
 9. Verifica que Darren Parker ha sido añadido a la lista de estudiantes, y que el botón **Guardar cambios** está ahora habilitado. El ID de un nuevo estudiante será 0 hasta que sea guardado en la base de datos del siguiente laboratorio.
+
+El resultado visual se muestra en la siguiente imagen:
+
+
+  ![alt text](./Images/Fig2-2-DarrenAgregado.jpg  "Estudiante agregado!!")
+
 10. Cierre la aplicación.
 11. En el menú **File**, haga clic en **Cerrar solución**.
+
+ 
+
 
 >**Resultado:** Después de completar este ejercicio, los usuarios podrán agregar nuevos estudiantes a una clase.
 
