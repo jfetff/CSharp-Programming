@@ -418,7 +418,7 @@ El resultado visual del punto anterior se muestra en la siguiente imagen:
 
 El resultado visual del punto anterior se muestra en la siguiente imagen:
 
-  ![alt text](./Images/Fig-13-NacMas5Anios.jpg  "Verificación el error que al agregar un estudiante sin apellido da error!!")
+  ![alt text](./Images/Fig-13-NacMas5Anios.jpg  "Verificación el error que al agregar un estudiante con edad menos de 5 años da error!!")
 
 15. En el cuadro de mensaje de **Error**, haga clic en **OK**.
 16. En la ventana **new student**, en el cuadro de texto **Date Of Birth**, borre la fecha existente, escriba **10/06/2006**, y luego haga clic en **OK**.
@@ -426,7 +426,7 @@ El resultado visual del punto anterior se muestra en la siguiente imagen:
 
 El resultado visual del punto anterior se muestra en la siguiente imagen:
 
-  ![alt text](./Images/Fig-14-EstAgregado.jpg  "Verificación el error que al agregar un estudiante sin apellido da error!!")
+  ![alt text](./Images/Fig-14-EstAgregado.jpg  "Verificación el error que al agregar un estudiante ya no da error!!")
 
 18. Cierre la aplicación.
 19. En el menú **Archivo**, haga clic en **Cerrar solución**.
@@ -447,13 +447,28 @@ El resultado visual del punto anterior se muestra en la siguiente imagen:
 6. Presione Enter y verifique que aparezca la ventana **Editar detalles del estudiante** mostrando los detalles correctos.
 7. En el cuadro de texto **Last Name**, borre el contenido existente, escriba **Cook**, y luego haga clic en **OK**.
 8. Verifique que **Liu** ha cambiado a **Cook** en la lista de estudiantes, y que el botón **Guardar cambios** está ahora habilitado.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-15-SaveButtonActivado.jpg  "Verificación que el botón para salvar está activado!!")
+
 9. Haga clic en la fila que contiene el estudiante **George Li**, y luego presione Borrar.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-16-RemoveButton.jpg  "Verificación el error que el botón para borrar un estudiante esta activado!!")
+
 10. Verifique que aparezca el mensaje de confirmación, y luego presione **Sí**.
 11. Verifique que **George Li** sea removido de la lista de estudiantes.
 12. Cierre la aplicación.
 13. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
 14. Verifique que la aplicación muestra la lista original de estudiantes.
 15. Verifique que **Kevin Liu** aparece en la lista en lugar de **Kevin Cook** y **George Li** está de nuevo en la lista de estudiantes.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-17-BaseDatosNOModificada.jpg  "Verificación que la base de datos NO se ha modificado despues de borrar a un estudiante!!")
+
 16. Cierre la aplicación.
 
 ### Tarea 2: Añadir el código para guardar los cambios de nuevo en la base de datos
@@ -525,15 +540,35 @@ El resultado visual del punto anterior se muestra en la siguiente imagen:
 2. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
 3. Haga clic en la fila que contiene el estudiante **Kevin Liu**.
 4. Presione Enter, en el cuadro de texto **Last Name** borre el contenido existente, escriba **Cook**, y luego haga clic en **OK**.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-18-StudentChanged.jpg  "Salvando los cambios hechos a un estudiante!!")
+
 5. Verifique que **Liu** ha cambiado a **Cook** en la lista de estudiantes, y que el botón **Guardar cambios** está ahora habilitado.
 6. Haga clic en **Guardar cambios** y verifique que el botón **Guardar cambios** está ahora desactivado.
 7. Haga clic en la fila que contiene el estudiante **George Li** y presione Borrar.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-18-BorrandoStudent.jpg  "Borrando a un estudiante!!")
+
 8. Verifique que aparezca el mensaje de confirmación y luego haga clic en **Sí**.
 9. Verifique que el botón **Guardar cambios** esté ahora habilitado.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-19-BorradoStudent.jpg  "Borrando a un estudiante!!")
+
 10. Haga clic en **Guardar cambios** y compruebe que el botón está ahora desactivado.
 11. Cierre la aplicación.
 12. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
 13. Verifique que los cambios que hizo a los datos de los estudiantes se han guardado en la base de datos y se reflejan en la lista de estudiantes.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-20-BaseDatosModificada.jpg  "Verificación que la base de datos se ha modificado despues de borrar a un estudiante!!")
+
 14. Cierre la aplicación.
 15. En el menú **Archivo**, haga clic en **Cerrar solución**.
 
