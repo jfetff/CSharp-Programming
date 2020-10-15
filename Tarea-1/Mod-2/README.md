@@ -13,10 +13,10 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 14 de Octubre 2020.
 3. **Resumen del Modulo 2:** Este módulo consta de tres ejercicios:
-    -  En el primer ejercio nos ayuda a actualizar la aplicación para refactorizar el código duplicado en métodos reutilizables..
-    - En el ejercicio 2 agregamos un nuevo estudiante a una clase. Para ellos modificamos el código correspondiente para que el botón "insert" sea escuchado por la aplicación.
-    - En el ejercicio 3 hacemos posible para que los usuarios podrán eliminar a los estudiantes de las clases.
-    - En el ejercicio 4 agregamos un nuevo estudiante y además se programa la aplicación para que muestre la edad del estudiante.
+    -  En el primer ejercio nos ayuda a actualizar la aplicación para refactorizar el código duplicado en métodos reutilizables.
+    - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
+    - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
+
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
 
@@ -32,11 +32,6 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
    - Haz doble clic en **SetupSchoolDB.cmd**.
       >**Nota:** Si aparece un diálogo de Windows protegido de tu PC, haz clic en **Más información** y luego en **Ejecutar de todos modos**.
    - Cierra **Explorador de Files**.
-
-
-El resultado visual se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-1-AddStudent.jpg  "Mostrando como agregar un estudiante!!")
 
 
 ## Ejercicio 1: Refactorización del Código de Inscripción
@@ -330,7 +325,17 @@ El resultado visual del punto anterior se muestra en la siguiente imagen:
 5. Haga clic en la fila que contiene el nombre **Kevin Liu**, y luego presione Insertar.
 6. Deje los cuadros de texto **First Name** y **Last Name** vacíos.
 7. En el cuadro de texto **Date Of Birth**, escriba **10/06/3012**, y luego haga clic en **OK**.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-8-AddBlankStudent.jpg  "Agregando un estudiante vacio!!")
+
 8. Verifique que se haya agregado una nueva fila a la lista de estudiantes, que contenga un nombre y apellido en blanco y una edad negativa.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-9-EdadNegativa.jpg  "Agregando un estudiante vacio!!")
+
 9. Cierre la aplicación.
 
 ### Tarea 2: Añadir código para validar los campos de nombre y apellido
@@ -386,18 +391,43 @@ El resultado visual del punto anterior se muestra en la siguiente imagen:
 3. Haga clic en la fila que contiene el nombre **Kevin Liu**, y luego presione Insertar.
 4. Deje los cuadros de texto **First Name**, **Last Name**, y **Date Of Birth** vacíos y haga clic en **OK**.
 5. Verificar que aparezca un mensaje de error con el texto **The student must have a first name**.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-10-MostrarErrorVacio.jpg  "Verificación que al agregar un estudiante sin valores da error!!")
+
 6. En el cuadro de mensaje **Error**, haga clic en **OK**.
 7. En la ventana **new student**, en el cuadro de texto **First Name**, escriba **Darren**, y luego haga clic en **OK**.
 8. Verifique que aparezca un mensaje de error con el texto **The student must have a last name**.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-11-ApellidoErrorVacio.jpg  "Verificación el error que al agregar un estudiante sin apellido da error!!")
+
 9. En el cuadro de mensaje **Error**, haga clic en **OK**.
 10. En la ventana **new student**, en el cuadro de texto **Last Name**, escriba **Parker**, y luego haga clic en **OK**.
 11. Verifique que aparezca un mensaje de error que diga **La fecha de nacimiento debe ser una fecha válida**.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-12-NacErrorVacio.jpg  "Verificación el error que al agregar un estudiante sin apellido da error!!")
+
 12. En el cuadro de mensaje **Error**, haz clic en **OK**.
 13. En la ventana **new student**, en el cuadro de texto **Date Of Birth**, escriba **10/06/3012**, y luego haga clic en **OK**.
 14. Verifica que aparezca un mensaje de error que diga **El estudiante debe tener al menos 5 años**.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-13-NacMas5Anios.jpg  "Verificación el error que al agregar un estudiante sin apellido da error!!")
+
 15. En el cuadro de mensaje de **Error**, haga clic en **OK**.
 16. En la ventana **new student**, en el cuadro de texto **Date Of Birth**, borre la fecha existente, escriba **10/06/2006**, y luego haga clic en **OK**.
 17. Verifique que **Darren Parker** se agregue a la lista de estudiantes con una edad apropiada a la fecha actual.
+
+El resultado visual del punto anterior se muestra en la siguiente imagen:
+
+  ![alt text](./Images/Fig-14-EstAgregado.jpg  "Verificación el error que al agregar un estudiante sin apellido da error!!")
+
 18. Cierre la aplicación.
 19. En el menú **Archivo**, haga clic en **Cerrar solución**.
 
