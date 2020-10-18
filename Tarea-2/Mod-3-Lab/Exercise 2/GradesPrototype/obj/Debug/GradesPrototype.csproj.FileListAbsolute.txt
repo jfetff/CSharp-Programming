@@ -1,0 +1,12 @@
+C:\20483C\CSharp-Programming\Tarea-2\Mod-3-Lab\Exercise 2\GradesPrototype\obj\Debug\GradesPrototype.csprojAssemblyReference.cache
+C:\20483C\CSharp-Programming\Tarea-2\Mod-3-Lab\Exercise 2\GradesPrototype\obj\Debug\Views\LogonPage.baml
+C:\20483C\CSharp-Programming\Tarea-2\Mod-3-Lab\Exercise 2\GradesPrototype\obj\Debug\Views\StudentProfile.baml
+C:\20483C\CSharp-Programming\Tarea-2\Mod-3-Lab\Exercise 2\GradesPrototype\obj\Debug\Views\StudentsPage.baml
+C:\20483C\CSharp-Programming\Tarea-2\Mod-3-Lab\Exercise 2\GradesPrototype\obj\Debug\MainWindow.g.cs
+C:\20483C\CSharp-Programming\Tarea-2\Mod-3-Lab\Exercise 2\GradesPrototype\obj\Debug\Views\LogonPage.g.cs
+C:\20483C\CSharp-Programming\Tarea-2\Mod-3-Lab\Exercise 2\GradesPrototype\obj\Debug\Views\StudentProfile.g.cs
+C:\20483C\CSharp-Programming\Tarea-2\Mod-3-Lab\Exercise 2\GradesPrototype\obj\Debug\Views\StudentsPage.g.cs
+C:\20483C\CSharp-Programming\Tarea-2\Mod-3-Lab\Exercise 2\GradesPrototype\obj\Debug\App.g.cs
+C:\20483C\CSharp-Programming\Tarea-2\Mod-3-Lab\Exercise 2\GradesPrototype\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\20483C\CSharp-Programming\Tarea-2\Mod-3-Lab\Exercise 2\GradesPrototype\obj\Debug\GradesPrototype_MarkupCompile.cache
+C:\20483C\CSharp-Programming\Tarea-2\Mod-3-Lab\Exercise 2\GradesPrototype\obj\Debug\GradesPrototype_MarkupCompile.lref

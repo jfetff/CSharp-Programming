@@ -12,7 +12,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 2. **Fecha:** 15 de octubre de 2020
 3. **Resumen del Modulo 2:** Este módulo consta de tres ejercicios:
     -  En el primer ejercio nos ayuda a actualizar la aplicación **Prototipo de Grades** para responder a los eventos del usuario y moverse entre las vistas de la aplicación de forma adecuada.
-    - En el ejercicio 2 hacemos que la aplicación contenga las instrucciones para el profesor, el estudiante y los tipos de grado.
+    - En el ejercicio 2 hacemos que la aplicación contenga las instrucciones para el profesor, el estudiante y los tipos de grado. 
     - En el ejercicio 3 hacemos que sólo los usuarios válidos pueda iniciar sesión en la aplicación y sólo verán los datos adecuados a su función..
 
 
@@ -543,12 +543,36 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 2. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
 3. Cuando la aplicación se cargue, en el cuadro de texto **Nombre de usuario**, escriba **parkerd**, en el cuadro de texto **Password**, escriba **password**, y luego haga clic en **Entrar en**.
 4. Verifique que aparezca el cuadro de diálogo **Logon Failed**, y luego haga clic en **OK**.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+    ![alt text](./Images/logOnFailed.jpg "The Student failed log on !!")
+
+
 5. En el cuadro de texto **Nombre de usuario**, borre el contenido existente, escriba **vallee**, y luego haga clic en **Entrar en**.
-6. Verifique que aparezca la página **Student**, mostrando una lista de estudiantes.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+    ![alt text](./Images/vallee.jpg "Student log on as Valle !!")
+
+6. Verifique que aparezca la página **Students**, mostrando una lista de estudiantes.
 7. Haga clic en el estudiante **Kevin Liu** y verifique que aparece la página **Students Profile**.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+    ![alt text](./Images/kevin2.jpg "Kevin Student log on !!")
+
 8. Haga clic en **Log off**.
 9. En el cuadro de texto **Nombre de usuario**, borre el contenido existente, escriba **grubere**, y luego haga clic en **Log on**.
+
 10. Verifique que se muestre la página **Students Profile** para **Eric Gruber**.
+
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+    ![alt text](./Images/grubere2.jpg "Eric Grubere Student log on !!")
+
+    
 11. Cierre la aplicación.
 12. En el menú **Archivo**, haga clic en **Cerrar solución**.
 
