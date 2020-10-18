@@ -1,19 +1,18 @@
-# Laboratorio Módulo 2 - Creación de métodos, manejo de excepciones y aplicaciones de monitoreo
+# Módulo 4: Creación de clases e implementación de colecciones de tipo seguro
+
+# Laboratorio: Adición de validación de datos y seguridad de tipos a la aplicación
 
 
-## Lab: Extendiendo la funcionalidad de la aplicación de inscripción de clases
+Tiempo estimado:** 75 minutos **
 
-
-Tiempo estimado: **90 minutos**
-
-Fichero de Instrucciones: Instructions\20483C_MOD02_LAK.md
+## Pasos de preparación
 
 Entregar el url de GitHub con la solución y un readme con las siguiente información:
 
 1. **Nombres y apellidos:** José René Fuentes Cortez
-2. **Fecha:** 14 de Octubre 2020.
-3. **Resumen del Modulo 2:** Este módulo consta de tres ejercicios:
-    -  En el primer ejercio nos ayuda a actualizar la aplicación para refactorizar el código duplicado en métodos reutilizables.
+2. **Fecha:** 15 de Octubre 2020.
+3. **Resumen del Modulo 4:** Este módulo consta de tres ejercicios:
+    -  En el primer ejercio nos ayuda a completar las estructuras **Teacher**. **Student** y **Grade** se implementarán como clases y estas llamarán al método **VerifyPassword** cuando el usuario inicia sesión.
     - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
     - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
 
@@ -23,553 +22,745 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 **NOTA**: Si no hay descripcion de problemas o dificultades, y al yo descargar el código para realizar la comprobacion y el código no funcionar, el resultado de la califaciación del laboratorio será afectado.
 
 ---
+---
 
-### Configuración del Lab
-
-1. Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segmentos de código para los laboratorios y demostraciones de este curso. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**
-2. Prepare su base de datos:
-   - Abre el **Explorador de Files** y navega a **[Repository Root]\Allfiles\Mod01\Labfiles\Databases**.
-   - Haz doble clic en **SetupSchoolDB.cmd**.
-      >**Nota:** Si aparece un diálogo de Windows protegido de tu PC, haz clic en **Más información** y luego en **Ejecutar de todos modos**.
-   - Cierra **Explorador de Files**.
+## Configuración del Lab
 
 
-## Ejercicio 1: Refactorización del Código de Inscripción
+Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segmentos de código para los laboratorios y demostraciones de este curso. (**https: //github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
 
-### Tarea 1: Copiar el código para editar un estudiante en el manejador de eventos StudentsList_MouseDoubleClick
+## Ejercicio 1: Implementación de las estructuras de profesor, alumno y grado como clases
 
-1. Abrir **Visual Studio 2019**.
-2. En **Visual Studio**, en el menú **Archivo**, apunta a **Abrir**, y luego haz clic en **Proyecto/Solución**.
-3. En el cuadro de diálogo **Abrir Proyecto**, apunta a **[Repository root]\Allfiles\Mod02\Labfiles\Starter\Exercise 1**, apunta a **School.sln**, y luego haz clic en **Abrir**.
-   >**Nota :** Si aparece cualquier cuadro de diálogo de advertencia de seguridad, desmarca la casilla **Ask me for each project in this solution** y luego haz clic en **OK**.
-4. En el menú **Ver**, haga clic en **Lista de tareas**.
-5. Haga doble clic en el **// TODO: Ejercicio 1: Tarea 1a: Copie el código para editar los detalles de esa tarea del estudiante**, debajo del comentario localice el código, y luego copie el siguiente código al portapapeles:
+### Tarea 1: Convertir la estructura Grades en una clase
+
+1. Haga clic en **Visual Studio 2019**.
+2. En **Visual Studio**. en el menú **Archivo**. seleccione **Abrir** y luego haga clic en **Proyecto/Solución**.
+3. En el cuadro de diálogo **Abrir proyecto**. busque **[Repository Root]\Allfiles\Mod04\Labfiles\Starter\Exercise 1**. haga clic en **GradesPrototype.sln** y luego haga clic en **Abrir**.
+    > **Nota:** Si aparece algún cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Preguntarme por cada proyecto en esta solución** y luego haga clic en **Aceptar**.
+4. En el menú **Ver**. haga clic en **Lista de tareas**.
+5. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Ejercicio 1: Tarea 1a: Convertir calificación en una clase y definir constructores**.
+6. En el editor de código, debajo del comentario, modifique la declaración **public struct Grade**. reemplazando **struct** con **class**.
     ```cs
-    Student student = this.studentsList.SelectedItem as Student;
+    public class Grade
+    ```
+7. Haga clic al final del código **public string Comments { get; set; }**. presione Entrar dos veces y luego escriba el siguiente código:
 
-    // TODO: Exercise 1: Task 3a: Refactor as the editStudent method
-
-    // Use the StudentForm to display and edit the details of the student
-    StudentForm sf = new StudentForm();
-
-    // Set the title of the form and populate the fields on the form with the details of the student
-    sf.Title = "Edit Student Details";
-    sf.firstName.Text = student.FirstName;
-    sf.lastName.Text = student.LastName;
-    sf.dateOfBirth.Text = student.DateOfBirth.ToString("d");
-
-    // Format the date to omit the time element
-
-    // Display the form
-    if (sf.ShowDialog().Value)
+    ```cs
+    // Constructor to initialize the properties of a new Grade
+    public Grade(int studentID, string assessmentDate, string subject, string
+    assessment, string comments)
     {
-        // When the user closes the form, copy the details back to the student
-        student.FirstName = sf.firstName.Text;
-        student.LastName = sf.lastName.Text;
-        student.DateOfBirth = DateTime.Parse(sf.dateOfBirth.Text);
-
-        // Enable saving (changes are not made permanent until they are written back to the database)
-        saveChanges.IsEnabled = true;
+        StudentID = studentID;
+        AssessmentDate = assessmentDate;
+        SubjectName = subject;
+        Assessment = assessment;
+        Comments = comments;
     }
-    ```
-6. Haga doble clic en el **TODO: Exercise 1: Task 1b: If the user double-clicks a student, edit the details for the student**
-7. Pegue el código del portapapeles en el método **studentsList_MouseDoubleClick**.
 
-### Tarea 2: Ejecutar la aplicación y verificar que el usuario puede ahora hacer doble clic en un estudiante para editar sus detalles
-
-1. En el menú **Construir**, haga clic en **Construir solución**.
-2. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
-3. Haga clic en la fila que contiene el nombre **Kevin Liu** y luego presione Enter.
-4. Verifique que aparezca la ventana **Editar detalles del estudiante**, mostrando los detalles correctos.
-5. En el cuadro de texto **Last Name**, borre el contenido existente, escriba **Cook** y luego presione **OK**.
-6. Verifique que **Liu** ha cambiado a **Cook** en la lista de estudiantes, y que el botón **Guardar cambios** está ahora habilitado.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-0-EditingStudent.jpg  "Verificación como editar los datos de un estudiante!!")
-
-7. Haga doble clic en la fila que contiene el nombre **George Li**.
-8. Verifique que la ventana **Editar detalles del estudiante** aparece, mostrando los detalles correctos.
-9. En el cuadro de texto **firstName**, borre el contenido existente, y luego escriba **Darren**.
-10. En el cuadro de texto **Last Name**, borre el contenido existente, escriba **Parker**, y luego haga clic en **OK**.
-11. Verifica que **George Li** ha cambiado a **Darren Parker**.
-12. Cierre la aplicación.
-
-
-
-### Tarea 3: Refactorizar la lógica que añade y elimina un estudiante en los métodos AddNewStudent y DeleteStudent y EditStudent
-
-1. En la ventana **Task List**, haga doble clic en la tarea **TODO: Ejercicio 1: Tarea 3a: Refactor como el método AddNewStudent**.
-2. En el editor de códigos, localice el bloque **case Key.Insert:**, y luego resalte el siguiente código:
-    ```cs
-    // TODO: Exercise 1: Task 3a: Refactor as the addNewStudent method
-
-    // Use the StudentsForm to get the details of the student from the user
-    sf = new StudentForm();
-
-    // Set the title of the form to indicate which class the student will be added to (the class for the currently selected teacher)
-    sf.Title = "New Student for Class " + teacher.Class;
-
-    // Display the form and get the details of the new student
-    if (sf.ShowDialog().Value)
+    // Default constructor
+    public Grade()
     {
-        // When the user closes the form, retrieve the details of the student from the form
-
-        // and use them to create a new Student object
-        Student newStudent = new Student();
-        newStudent.FirstName = sf.firstName.Text;
-        newStudent.LastName = sf.lastName.Text;
-        newStudent.DateOfBirth = DateTime.Parse(sf.dateOfBirth.Text);
-
-        // Assign the new student to the current teacher
-        this.teacher.Students.Add(newStudent);
-
-        // Add the student to the list displayed on the form
-        this.studentsInfo.Add(newStudent);
-
-        // Enable saving (changes are not made permanent until they are written back to the database)
-        saveChanges.IsEnabled = true;
-    }
-    ```
-3. En el menú **Editar**, apunte a **Refactor**, y luego haga clic en **Método de extracción**.
-4. En el editor de código renombre el "NewMethod" a "AddNewStudent" y luego haga clic en **Aplicar**.
-5. Localiza el método **AddNewStudent** y en el método, modifica el código **sf = new StudentForm();** para que se vea como el siguiente código:
-    ```cs
-    StudentForm sf = new StudentForm();
-    ```
-6. En la ventana **Task List**, haga doble clic en el **TODO: Ejercicio 1: Tarea 3b: Refactor como la tarea del método removeStudent**.
-7. En el editor de códigos, localice el bloque **case Key.Delete** y corte el siguiente código en el portapapeles:
-    ```cs
-    // TODO: Exercise 1: Task 3b: Refactor as the removeStudent method
-
-    // Prompt the user to confirm that the student should be removed
-    MessageBoxResult response = MessageBox.Show(
-    String.Format("Remove {0}", student.FirstName + " " + student.LastName),
-    "Confirm",
-    MessageBoxButton.YesNo,
-    MessageBoxImage.Question,
-    MessageBoxResult.No);
-
-    // If the user clicked Yes, remove the student from the database
-    if (response == MessageBoxResult.Yes)
-    {
-        this.schoolContext.Students.DeleteObject(student);
-
-        // Enable saving (changes are not made permanent until they are written back to the database)
-        saveChanges.IsEnabled = true;
-    }
-    ```
-8. En el editor de códigos, en el bloque **case Key.Delete:**, haga clic al final de la línea de código **student = this.studentsList.SelectedItem as Student;** , presione Enter, y luego escriba el siguiente código:
-    ```cs
-    RemoveStudent(student);
-    ```
-9. Haga clic con el botón derecho del ratón en el método **RemoverStudent(student)**, apunte a **Acción rápida y refactorización...**, y luego haga clic en **Generar método 'MainWindow.RemoveStudent'**.
-10. Localice el método **RemoveStudent** debajo del método **studentsList_KeyDown**, elimine todo el código generado en este método, y luego pegue el código del portapapeles.
-11. Haga doble clic en la tarea **// TODO: Exercise 1: Task 3c: create Edit student method** debajo del comentario, añada el siguiente código:
-    ```cs
-    private void EditStudent(Student student)
-    {
-
-    }
-    ```
-12. Haga doble clic en el **// TODO: Exercise 1: Task 3d: Refactor as the EditStudent method**, debajo del comentario localizar el código, y cortar el siguiente código al portapapeles:
-    >**Nota :** Asegúrate de que el cursor está en el método StudentList_KeyDown.
-    ```cs
-    // TODO: Exercise 1: Task 3d: Refactor as the EditStudent method
-
-    // Use the StudentsForm to display and edit the details of the student
-    StudentForm sf = new StudentForm();
-
-    // Set the title of the form and populate the fields on the form with the details of the student
-    sf.Title = "Edit Student Details";
-    sf.firstName.Text = student.FirstName;
-    sf.lastName.Text = student.LastName;
-    sf.dateOfBirth.Text = student.DateOfBirth.ToString("d"); // Format the date to omit the time element
-
-    // Display the form
-    if (sf.ShowDialog().Value)
-    {
-        // When the user closes the form, copy the details back to the student
-        student.FirstName = sf.firstName.Text;
-        student.LastName = sf.lastName.Text;
-        student.DateOfBirth = DateTime.Parse(sf.dateOfBirth.Text);
-
-        // Enable saving (changes are not made permanent until they are written back to the database)
-        saveChanges.IsEnabled = true;
-    }
-    ```
-13. Reemplaza el código por el siguiente código:
-    ```cs
-    EditStudent(student);
-    ```
-14. Pega el código que cortaste de la tarea anterior al método **EditStudent**.
-15. Localiza el método **studentsList_MouseDoubleClick** y sustituye el código dentro del método por el siguiente código:
-    ```cs
-    Student student = this.studentsList.SelectedItem as Student;
-    EditStudent(student);
-    ```
-
-### Tarea 4: Verificar que los estudiantes aún pueden ser añadidos y eliminados de la aplicación
-
-1. En el menú **Construir**, haga clic en **Construir solución**.
-2. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
-3. Haga clic en la fila que contiene el nombre **Kevin Liu**, y luego presione Insertar.
-4. Verifique que aparezca la ventana **Nuevo estudiante para la clase 3C**.
-5. En el cuadro de texto **firstName**, escriba **Dominik**.
-6. En el cuadro de texto de **Last Name**, escriba **Dubicki**.
-7. En el cuadro de texto **Date Of Birth**, escriba **02/03/2006** y luego haga clic en **OK**.
-8. Verifica que **Dominik Dubicki** ha sido añadido a la lista de estudiantes.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-1-AddStudent.jpg  "Mostrando como agregar un estudiante!!")
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-2-AddStudentVerificacion.jpg  "Verificación como agregar un estudiante!!")
-
-9. Haga clic en la fila que contiene el nombre **Run Liu**, y luego presione Borrar.
-10. Verifique que aparezca el mensaje de confirmación.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-3-BorrarStudentVerificacion.jpg  "Verificación como borrar un estudiante!!")
-
-11. Haga clic en **Sí**, y luego verifique que **Corre Liu** sea eliminado de la lista de estudiantes.
-12. Cierre la aplicación.
-
-
-
-### Tarea 5: Depurar la aplicación y entrar en el nuevo método llama
-
-1. En el editor de códigos, localiza el método **studentsList_KeyDown**, haz clic con el botón derecho del ratón en la frase **switch (e.key)**, apunta a **Breakpoint**, y luego haz clic en **Insert Breakpoint**.
-2. En el menú **Debug**, haga clic en **Iniciar depuración**.
-3. Haga clic en la fila que contiene el nombre **Kevin Liu** y pulse Intro.
-4. En **Visual Studio**, haz clic en la pestaña **Call Stack**.
-5. Tenga en cuenta que el nombre del método actual se muestra en la ventana **Call Stack**.
-6. En **Visual Studio**, haga clic en la pestaña **Locals**.
-7. Observe que las variables locales, **esto**, **remitente** y **e**, se muestran en la ventana **Locals**.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-4-LocalWindow-CallStack.jpg  "Ventanas Call Stack y Ventana Locals!!")
-
-
-8. En el menú **Debug**, haga clic en **Step Over**.
-9. Repita el paso 8.
-10. Mira la ventana de **Locals**, y observa que después de pasar por encima del código **Estudiante estudiante = this.studentsList.SelectedItem as Student;**, el valor de la variable **student** ha cambiado de **null** a **School.Data.Student**.
-11. En la ventana **Locals**, expande **student** y anota los valores de **_FirstName** y **_LastName**.
-12. En el menú **Debug**, haga clic en **Paso a**.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-5-LocalWindow-Debug.jpg  "Ventanas Call Stack y Ventana Locals en Modo Debug!!")
-
-13. Observe que la ejecución pasa al método **EditStudent**, y el nombre de este método se ha añadido a la pila de llamadas.
-14. En la ventana **Locals**, observe que las variables locales han sido cambiadas a **esto**, **student**, y **sf**.
-15. En el menú **Debug**, haga clic en **Step Over**.
-16. Repita el paso 15, cinco veces.
-17. En la ventana de **Locals**, expande **student** y anota los valores para **dateOfBirth**, **firstName** y **Last Name**.
-18. En el menú **Debug**, haga clic en **Step Out** para ejecutar el código restante en el método **editStudent** y salga de nuevo al método de llamada.
-19. En la ventana **Editar detalles del estudiante**, haga clic en **Cancelar**.
-20. Observe que la ejecución vuelve al método **studentsList_KeyDown**.
-21. En el menú **Debug**, haga clic en **Step Over**.
-22. En el menú **Debug**, haga clic en **Continuar**.
-23. Haga clic en la fila que contiene el nombre **Kevin Liu** y pulse Insertar.
-24. En el menú **Debug**, haga clic en **Step Over**.
-25. En el menú **Debug**, haga clic en **Paso hacia adentro**.
-26. Observe que la ejecución pasa al método **AddNewStudent**.
-27. En el menú **Debug**, haga clic en **Step Out** para ejecutar el código restante en el método **AddNewStudent** y salga de nuevo al método de llamada.
-28. En la ventana **Nuevo estudiante para la clase 3C**, haga clic en **Cancelar**.
-29. Note que la ejecución regresa al método **studentsList_KeyDown**.
-30. En el menú **Debug**, haga clic en **Step Over**.
-31. En el menú **Debug**, haga clic en **Continuar**.
-32. Haga clic en la fila que contiene el nombre **George Li** y presione Borrar.
-33. En el menú **Debug**, haga clic en **Step Over**.
-34. Repita el paso 33.
-35. En el menú **Debug**, haga clic en **Paso hacia adentro**.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-6-StepIntoKeyDelete.jpg  "Depuración Step Into Key Delete Método!!")
-
-36. Observe que la ejecución pasa al método **RemoverStudent**.
-37. En el menú **Debug**, haga clic en **Step Out** para ejecutar el código restante en el método **RemoveStudent** y salga de nuevo al método de llamada.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-7-DeleteStudent.jpg  "Depuración Step Out y ejecuntando el Método RemoveStudent!!")
-
-
-38. En el cuadro de mensaje **Confirmar**, haga clic en **No**.
-39. Observe que la ejecución vuelve al método **studentList_KeyDown**.
-40. En el menú **Debug**, haga clic en **Step Over**.
-41. En el menú **Debug**, haga clic en **Continuar**.
-42. Cierre la aplicación
-43. En **Visual Studio**, en el menú **Debug**, haga clic en **Borrar todos los puntos de ruptura**.
-44. En el cuadro de mensajes de **Microsoft Visual Studio**, haz clic en **Sí**.
-45. En el menú **Archivo**, haz clic en **Cerrar solución**.
-
-   >**Resultados:** Después de completar este ejercicio, deberías haber actualizado la aplicación para refactorizar el código duplicado en métodos reutilizables.
-
-
-## Ejercicio 2: Validar la información del estudiante
-
-### Tarea 1: Ejecutar la aplicación y observar que los detalles del estudiante que no son válidos pueden ser introducidos
-
-1. En **Visual Studio**, en el menú **Archivo**, apunte a **Abrir**, y luego haga clic en **Proyecto/Solución**.
-2. En el cuadro de diálogo **Abrir Proyecto**, apunta a **[Repository root]\Allfiles\Mod02\Labfiles\Starter\Exercise 2**, apunta a **School.sln**, y luego haz clic en **Abrir**.
-   >**Nota :** Si aparece cualquier cuadro de diálogo de advertencia de seguridad, desmarca la casilla **Ask me for each project in this solution** y luego haz clic en **OK**.
-3. En el menú **Construir**, haga clic en **Construir solución**.
-4. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
-5. Haga clic en la fila que contiene el nombre **Kevin Liu**, y luego presione Insertar.
-6. Deje los cuadros de texto **First Name** y **Last Name** vacíos.
-7. En el cuadro de texto **Date Of Birth**, escriba **10/06/3012**, y luego haga clic en **OK**.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-8-AddBlankStudent.jpg  "Agregando un estudiante vacio!!")
-
-8. Verifique que se haya agregado una nueva fila a la lista de estudiantes, que contenga un nombre y apellido en blanco y una edad negativa.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-9-EdadNegativa.jpg  "Agregando un estudiante vacio!!")
-
-9. Cierre la aplicación.
-
-### Tarea 2: Añadir código para validar los campos de nombre y apellido
-
-1. En la ventana **Task List**, haga doble clic en el **TODO: Exercise 2: Task 2a: Check that the user has provided a first name** de tarea.
-2. En el editor de códigos, haga clic al final de la línea de comentarios, presione Enter, y luego escriba el siguiente código:
-    ```cs
-    if (String.IsNullOrEmpty(this.firstName.Text))
-    {
-        MessageBox.Show("The student must have a first name", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-        return;
-    }
-    ```
-3. En la ventana **Task List**, haga doble clic en el **TODO: Exercise 2: Task 2b: Check that the user has provided a last name** tarea.
-4. En el editor de códigos, haga clic al final de la línea de comentarios, presione Enter, y luego escriba el siguiente código:
-    ```cs
-    if (String.IsNullOrEmpty(this.lastName.Text))
-    {
-        MessageBox.Show("The student must have a last name", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-        return;
+        StudentID = 0;
+        AssessmentDate = DateTime.Now.ToString("d");
+        SubjectName = "Math";
+        Assessment = "A";
+        Comments = String.Empty;
     }
     ```
 
-### Tarea 3: Añadir código para validar la fecha de nacimiento
+### Tarea 2: Convertir las estructuras de Estudiantes y Profesores en clases
 
-1. En la ventana **Task List**, haga doble clic en la tarea **TODO: Exercise 2: Task 3a: Check that the user has entered a valid date for the date of birth** de la tarea.
-2. En el editor de códigos, haga clic al final de la línea de comentarios, presione Enter, y luego escriba el siguiente código:  
+1. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 1: Task 2a: Convert Student into a class, make the password property write-only, add the VerifyPassword method, and define constructors*.
+2. En el editor de código, debajo del comentario, modifique la declaración **public struct Student**. reemplazando **struct** con **class**.
     ```cs
-    DateTime result;
+    public class Student
+    ```
+3. Elimine la siguiente línea de código de la clase **Student**.
+    ```cs
+    public string Password {get; set;}
+    ```
+4. Presione Entrar y luego escriba el siguiente código:
+    ```cs
+    private string _password = Guid.NewGuid().ToString(); // Generate a random password by default
 
-    if (!DateTime.TryParse(this.dateOfBirth.Text, out result))
+    public string Password
     {
-        MessageBox.Show("The date of birth must be a valid date", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-        return;
+        set
+        {
+            _password = value;
+        }
+    }
+
+    public bool VerifyPassword(string pass)
+    {
+        return (String.Compare(pass, _password) == 0);
     }
     ```
-3. En la ventana **Task List**, haga doble clic en el **TODO: Exercise 2: Task 3b: Verify that the student is at least 5 years old** tarea.
-4. En el editor de códigos, haga clic al final de la línea de comentarios, presione Enter, y luego escriba el siguiente código:
+    > **Nota **Una aplicación no debería poder leer contraseñas; solo configúrelos y verifique que la contraseña sea correcta.
+5. Haga clic al final del código **public string LastName { get; set; }**. presione Entrar dos veces y luego escriba el siguiente código:
     ```cs
-    TimeSpan age = DateTime.Now.Subtract(result);
-
-    if (age.Days / 365.25 < 5)
+    // Constructor to initialize the properties of a new Student
+    public Student(int studentID, string userName, string password, string   firstName,   string lastName, int teacherID)
     {
-        MessageBox.Show("The student must be at least 5 years old", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-        return;
+       StudentID = studentID;
+       UserName = userName;
+       Password = password;
+       FirstName = firstName;
+       LastName = lastName;
+       TeacherID = teacherID;
+    }
+
+    // Default constructor
+    public Student()
+    {
+       StudentID = 0;
+       UserName = String.Empty;
+       Password = String.Empty;
+       FirstName = String.Empty;
+       LastName = String.Empty;
+       TeacherID = 0;
+    }
+    ```
+6. En la ventana **Lista de tareas**. haga doble clic en tarea **TODO: Exercise 1: Task 2b: Convert Teacher into a class, make the password property write-only, add the VerifyPassword method, and define constructors**.
+7. En el editor de código, debajo del comentario, modifique la declaración **public struct Teacher**. reemplazando **struct**con **class**.
+    ```cs
+    public class Teacher
+    ```
+8. Elimine la siguiente línea de código:
+   ```cs
+    public string Password {get; set;},
+    ```
+9. Presione Entrar y luego escriba el siguiente código:
+    ```cs
+    private string _password = Guid.NewGuid().ToString(); // Generate a random password by default
+
+    public string Password
+    {
+        set
+        {
+            _password = value;
+        }
+    }
+
+    public bool VerifyPassword(string pass)
+    {
+        return (String.Compare(pass, _password) == 0);
+    }
+    ```
+10. Haga clic al final del código **public string Class {get; set;}**. presione Entrar dos veces y luego escriba el siguiente código:
+    ```cs
+    // Constructor to initialize the properties of a new Teacher
+    public Teacher(int teacherID, string userName, string password, string firstName, string lastName, string className)
+    {
+        TeacherID = teacherID;
+        UserName = userName;
+        Password = password;
+        FirstName = firstName;
+        LastName = lastName;
+        Class = className;
+    }
+
+    // Default constructor
+    public Teacher()
+    {
+        TeacherID = 0;
+        UserName = String.Empty;
+        Password = String.Empty;
+        FirstName = String.Empty;
+        LastName = String.Empty;
+        Class = String.Empty;
     }
     ```
 
-### Tarea 4: Ejecutar la aplicación y verificar que la información de los estudiantes está ahora validada correctamente
+### Tarea 3: Utilice el método VerifyPassword para verificar la contraseña cuando un usuario inicia sesión
 
-1. En el menú **Construir**, haga clic en **Construir solución**.
-2. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
-3. Haga clic en la fila que contiene el nombre **Kevin Liu**, y luego presione Insertar.
-4. Deje los cuadros de texto **First Name**, **Last Name**, y **Date Of Birth** vacíos y haga clic en **OK**.
-5. Verificar que aparezca un mensaje de error con el texto **The student must have a first name**.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-10-MostrarErrorVacio.jpg  "Verificación que al agregar un estudiante sin valores da error!!")
-
-6. En el cuadro de mensaje **Error**, haga clic en **OK**.
-7. En la ventana **new student**, en el cuadro de texto **First Name**, escriba **Darren**, y luego haga clic en **OK**.
-8. Verifique que aparezca un mensaje de error con el texto **The student must have a last name**.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-11-ApellidoErrorVacio.jpg  "Verificación el error que al agregar un estudiante sin apellido da error!!")
-
-9. En el cuadro de mensaje **Error**, haga clic en **OK**.
-10. En la ventana **new student**, en el cuadro de texto **Last Name**, escriba **Parker**, y luego haga clic en **OK**.
-11. Verifique que aparezca un mensaje de error que diga **La fecha de nacimiento debe ser una fecha válida**.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-12-NacErrorVacio.jpg  "Verificación el error que al agregar un estudiante sin apellido da error!!")
-
-12. En el cuadro de mensaje **Error**, haz clic en **OK**.
-13. En la ventana **new student**, en el cuadro de texto **Date Of Birth**, escriba **10/06/3012**, y luego haga clic en **OK**.
-14. Verifica que aparezca un mensaje de error que diga **El estudiante debe tener al menos 5 años**.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-13-NacMas5Anios.jpg  "Verificación el error que al agregar un estudiante con edad menos de 5 años da error!!")
-
-15. En el cuadro de mensaje de **Error**, haga clic en **OK**.
-16. En la ventana **new student**, en el cuadro de texto **Date Of Birth**, borre la fecha existente, escriba **10/06/2006**, y luego haga clic en **OK**.
-17. Verifique que **Darren Parker** se agregue a la lista de estudiantes con una edad apropiada a la fecha actual.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-14-EstAgregado.jpg  "Verificación el error que al agregar un estudiante ya no da error!!")
-
-18. Cierre la aplicación.
-19. En el menú **Archivo**, haga clic en **Cerrar solución**.
-
-   >**Resultados:** Después de completar este ejercicio, los datos del estudiante serán validados antes de ser guardados.
- 
- 
-## Ejercicio 3: Guardar los cambios en la lista de clases
-
-### Tarea 1: Verificar que los cambios en los datos no persisten en la base de datos
-
-1. En **Visual Studio**, en el menú **Archivo**, apunte a **Abrir**, y luego haga clic en **Proyecto/Solución**.
-2. En el cuadro de diálogo **Abrir Proyecto**, apunta a **[Repository root]\Allfiles\Mod02\Labfiles\Starter\Exercise 3**, apunta a **School.sln**, y luego haz clic en **Abrir**.
-   >**Nota :** Si aparece cualquier cuadro de diálogo de advertencia de seguridad, desmarca la casilla **Ask me for each project in this solution** y luego haz clic en **OK**.
-3. En el menú **Construir**, haga clic en **Construir solución**.
-4. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
-5. Haga clic en la fila que contiene el nombre **Kevin Liu**.
-6. Presione Enter y verifique que aparezca la ventana **Editar detalles del estudiante** mostrando los detalles correctos.
-7. En el cuadro de texto **Last Name**, borre el contenido existente, escriba **Cook**, y luego haga clic en **OK**.
-8. Verifique que **Liu** ha cambiado a **Cook** en la lista de estudiantes, y que el botón **Guardar cambios** está ahora habilitado.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-15-SaveButtonActivado.jpg  "Verificación que el botón para salvar está activado!!")
-
-9. Haga clic en la fila que contiene el estudiante **George Li**, y luego presione Borrar.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-16-RemoveButton.jpg  "Verificación el error que el botón para borrar un estudiante esta activado!!")
-
-10. Verifique que aparezca el mensaje de confirmación, y luego presione **Sí**.
-11. Verifique que **George Li** sea removido de la lista de estudiantes.
-12. Cierre la aplicación.
-13. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
-14. Verifique que la aplicación muestra la lista original de estudiantes.
-15. Verifique que **Kevin Liu** aparece en la lista en lugar de **Kevin Cook** y **George Li** está de nuevo en la lista de estudiantes.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-17-BaseDatosNOModificada.jpg  "Verificación que la base de datos NO se ha modificado despues de borrar a un estudiante!!")
-
-16. Cierre la aplicación.
-
-### Tarea 2: Añadir el código para guardar los cambios de nuevo en la base de datos
-
-1. En **Visual Studio**, en la ventana **Lista de tareas**, haga doble clic en la tarea **TODO: Exercise 3: Task 2a: Bring the System.Data and System.Data.Objects namespace into scope**.
-2. En el editor de códigos, haga clic en la línea en blanco encima del comentario, y luego escriba el siguiente código:
+1. En la ventana **Lista de tareas**. haga doble clic en tarea **TODO: Exercise 1: Task 3a: Use the VerifyPassword method of the Teacher class to verify the teacher’s password**.
+2. En el editor de código, debajo del comentario, en el código de la variable del profesor, modifique el código **String.Compare (t.Password, password.Password) == 0** para que se vea como el siguiente código:
     ```cs
-    using System.Data;
-    using System.Data.Objects;
+    t.VerifyPassword(password.Password)
     ```
-3. En **Visual Studio**, en la ventana **Lista de tareas**, haga doble clic en la tarea **TODO: Exercise 3: Task 2b: Save the changes by calling the SaveChanges method of the schoolContext object**.
-4. En el editor de códigos, haga clic al final de la línea de comentarios, presione Enter, y luego escriba el siguiente código:
+3. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 1: Task 3b: Check whether teacher is null before examining the UserName property**.
+4. En el editor de código, en la línea debajo del comentario, modifique la condición de declaración **if** de **!String.IsNullOrEmpty(teacher.UserName)** para que se parezca al siguiente código:
     ```cs
-    // Save the changes
-    this.schoolContext.SaveChanges();
-
-    // Disable the Save button (it will be enabled if the user makes more changes)
-    saveChanges.IsEnabled = false;  
+    teacher != null && !String.IsNullOrEmpty(teacher.UserName)
+    ```
+5. En la ventana **Lista de tareas**. haga doble clic en **TODO: Exercise 1: Task 3c: Use the VerifyPassword method of the Student class to verify the student’s password**.
+6. En el editor de código, debajo del comentario, en el código de la variable de estudiante, modifique el código **String.Compare (s.Password, password.Password) == 0** para que se vea como el siguiente código:
+    ```cs
+    s.VerifyPassword(password.Password)
+    ```
+7. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 1: Task 3d: Check whether student is null before examining the UserName property**.
+8. En el editor de código, en la línea debajo del comentario, modifique la condición de declaración **if** de **! String.IsNullOrEmpty (student.UserName)** para que se parezca al siguiente código:
+    ```cs
+    student != null && !String.IsNullOrEmpty(student.UserName)
     ```
 
-### Tarea 3: Añadir el manejo de excepciones al código para capturar la concurrencia, la actualización y las excepciones generales
+### Tarea 4: compila y ejecuta la aplicación y verifica que un profesor o un alumno aún pueda iniciar sesión
 
-1. En el editor de códigos, encierra el código que escribiste en la tarea anterior en un bloque de **try**. Tu código debería ser como el siguiente:
+1. En el menú **Crear**. haga clic en **Crear solución**.
+2. En el menú **Depurar**. haga clic en **Iniciar sin depurar**.
+3. En el cuadro de texto **Nombre de usuario**. escriba **vallee**.
+
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-1-StudentPage.jpg "The Students page")
+
+4. En el cuadro de texto **Password**. escriba **password** y luego haga clic en **Iniciar sesión**.
+5. Verifique que aparezca la pantalla de bienvenida, mostrando la lista de estudiantes.
+6. Haga clic en **Cerrar sesión**.
+7. En el cuadro de texto **Nombre de usuario**. elimine el contenido existente, escriba **grubere** y luego haga clic en **Iniciar sesión**.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-2-grubere.jpg "Eric Grubere Students page")
+
+8. Verifique que aparezca la pantalla de bienvenida, mostrando la lista de materias y calificaciones.
+9. Haga clic en **Cerrar sesión**.
+10. Cierre la aplicación.
+11. En el menú **Archivo**. haga clic en **Cerrar solución**.
+
+ > **Resultados:** Después de completar este ejercicio, las estructuras **Teacher**. **Student** y **Grade **se implementarán como clases y se llamará al método **VerifyPassword **cuando se el usuario inicia sesión.
+
+## Ejercicio 2: Agregar validación de datos a la clase de calificación
+
+### Tarea 1: Crea una lista de nombres de materias válidos
+
+1. En **Visual Studio**. en el menú **Archivo**. seleccione **Abrir** y luego haga clic en **Proyecto/Solución**.
+2. En el cuadro de diálogo **Abrir proyecto**. busque **[Repository Root]\Allfiles\Mod04\Labfiles\Starter\Exercise 2**. haga clic en **GradesPrototype.sln** y luego haga clic en **Abrir**.
+    > **Nota:** Si aparece algún cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Preguntarme por cada proyecto en esta solución** y luego haga clic en **Aceptar**.
+3. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 2: Task 1a: Define a List collection for holding the names of valid subjects**.
+    En el editor de código, en la línea en blanco debajo del comentario, escriba el siguiente código:
+    ```cs
+    public static List<string> Subjects;
+    ```
+4. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 2: Task 1b: Populate the list of valid subjects with sample data**.
+5. En el editor de código, en la línea en blanco debajo del comentario, escriba el siguiente código:
+    ```cs
+    Subjects = new List<string>() { "Math", "English", "History", "Geography",  "Science" };
+    ```
+
+### Tarea 2: Agregar lógica de validación a la clase de grado para verificar los datos ingresados ​​por el usuario
+
+1. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 2: Task 2a: Add validation to the AssessmentDate property**.
+2. En el editor de código debajo del comentario, elimine el **public string AssessmentDate { get; set; }** código y, a continuación, escriba el siguiente código:
+    ```cs
+    private string _assessmentDate;
+
+    public string AssessmentDate
+    {
+        get
+        {
+            return _assessmentDate;
+        }
+
+        set
+        {
+            DateTime assessmentDate;
+
+            // Verify that the user has provided a valid date
+            if (DateTime.TryParse(value, out assessmentDate))
+            {
+                // Check that the date is no later than the current date
+                if (assessmentDate > DateTime.Now)
+                {
+                    // Throw an ArgumentOutOfRangeException if the date is after the current date
+                    throw new ArgumentOutOfRangeException("AssessmentDate", "Assessment date must be on or before the current date");
+                }
+
+                // If the date is valid, then save it in the appropriate format
+                _assessmentDate = assessmentDate.ToString("d");
+            }
+            else
+            {
+                // If the date is not in a valid format then throw an ArgumentException
+                throw new ArgumentException("AssessmentDate", "Assessment date is not recognized");
+            }
+        }
+    }
+    ```
+3. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 2: Task 2b: Add validation to the SubjectName property**.
+4. En el editor de código, debajo del comentario, elimine el código **public string SubjectName { get; set; }**  y, a continuación, escriba el siguiente código:
+    ```cs
+    private string _subjectName;
+
+    public string SubjectName
+    {
+        get
+        {
+            return _subjectName;
+        }
+
+        set
+        {
+            // Check that the specified subject is valid
+            if (DataSource.Subjects.Contains(value))
+            {
+                // If the subject is valid store the subject name
+                _subjectName = value;
+            }
+            else
+            {
+                // If the subject is not valid then throw an ArgumentException
+                throw new ArgumentException("SubjectName", "Subject is not recognized");
+            }
+        }
+    }
+    ```
+5. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 2: Task 2c: Add validation to the Assessment property**.
+6. En el editor de código, elimine el código **public string Assessment { get; set; }** y, a continuación, escriba el siguiente código:
+    ```cs
+    private string _assessment;
+
+    public string Assessment
+    {
+        get
+        {
+            return _assessment;
+        }
+
+        set
+        {
+            // Verify that the grade is in the range A+ to E-
+            // Use a regular expression: a single character in the range A-E at the start of the string followed by an optional + or – at the end of the string
+            Match matchGrade = Regex.Match(value, @"[A-E][+-]?$");
+
+            if (matchGrade.Success)
+            {
+                _assessment = value;
+            }
+            else
+            {
+                // If the grade is not valid then throw an ArgumentOutOfRangeException
+                throw new ArgumentOutOfRangeException("Assessment", "Assessment grade must be in the range of A+ to E-");
+            }
+        }
+    }
+    ```
+
+### Tarea 3: Agregar una prueba unitaria para verificar que las validaciones definidas para la clase de grado funcionan como se esperaba
+
+1. En el menú **Archivo**. seleccione **Agregar** y luego haga clic en **Nuevo proyecto**.
+2. En el cuadro de diálogo **Agregar nuevo proyecto**. en la lista de plantillas **Instaladas**. expanda **Visual C\#**. haga clic en **Prueba** y luego en **Plantillas **lista, haga clic en **Unit Test Project (.NET Framework)**.
+   > **Nota:** En la ventana **Agregar nuevo proyecto**. asegúrese de que**.NET Framework 4.7 **esté seleccionado en la barra superior.
+3. En el cuadro de texto **Nombre**. escriba **GradesTest** y luego haga clic en **Aceptar**.
+4. En **Explorador de soluciones**. haga clic con el botón derecho en **GradesTest**. haga clic en **Agregar** y luego haga clic en **Referencia**.
+5. En el cuadro de diálogo **Reference Manager – GradesTest**. expanda **Proyectos** y luego haga clic en **Solución**.
+6. Seleccione la casilla de verificación **GradesPrototype** y luego haga clic en **Aceptar**.
+7. En el editor de código, en la clase **UnitTest1**. elimine todo el código existente y luego escriba el siguiente código:
+    ```cs
+    [TestInitialize]
+    public void Init()
+    {
+    // Create the data source (needed to populate the Subjects collection)
+    GradesPrototype.Data.DataSource.CreateData();
+    }
+
+    [TestMethod]
+    public void TestValidGrade()
+    {
+        GradesPrototype.Data.Grade grade = new GradesPrototype.Data.Grade(1, "01/01/2012", "Math", "A-", "Very good");
+        Assert.AreEqual(grade.AssessmentDate, "01/01/2012");
+        Assert.AreEqual(grade.SubjectName, "Math");
+        Assert.AreEqual(grade.Assessment, "A-");
+    }
+
+    [TestMethod]
+    [ExpectedException(typeof(ArgumentOutOfRangeException))]
+    public void TestBadDate()
+    {
+        // Attempt to create a grade with a date in the future
+        GradesPrototype.Data.Grade grade = new GradesPrototype.Data.Grade(1, "1/1/2023", "Math", "A-", "Very good");
+    }
+
+    [TestMethod]
+    [ExpectedException(typeof(ArgumentException))]
+    public void TestDateNotRecognized ()
+    {
+        // Attempt to create a grade with an unrecognized date
+        GradesPrototype.Data.Grade grade = new GradesPrototype.Data.Grade(1, "13/13/2012", "Math", "A-", "Very good");
+    }
+
+    [TestMethod]
+    [ExpectedException(typeof(ArgumentOutOfRangeException))]
+    public void TestBadAssessment()
+    {
+        // Attempt to create a grade with an assessment outside the range A+ to E-
+        GradesPrototype.Data.Grade grade = new GradesPrototype.Data.Grade(1, "1/1/2012", "Math", "F-", "Terrible");
+    }
+
+    [TestMethod]
+    [ExpectedException(typeof(ArgumentException))]
+    public void TestBadSubject()
+    {
+        // Attempt to create a grade with an unrecognized subject
+        GradesPrototype.Data.Grade grade = new GradesPrototype.Data.Grade(1, "1/1/2012", "French", "B-", "OK");
+    }
+    ```
+8. En el menú **Crear**. haga clic en **Crear solución**.
+9. En el menú **Prueba**. seleccione **Ejecutar** y luego haga clic en **Todas las pruebas**.
+10. En la ventana **Explorador de pruebas**. verifique que se hayan aprobado todas las pruebas.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-3-Pruebas.jpg "Ejecutando las pruebas unitarias de los métodos !!")
+
+11. Cierre **Explorador de pruebas**.
+12. En el menú **Archivo**. haga clic en **Cerrar solución**.
+
+> **Resultados:** Después de completar este ejercicio, la clase de **Calificación **contendrá la lógica de validación.
+
+## Ejercicio 3: Visualización de estudiantes en orden de nombre
+
+### Tarea 1: Ejecuta la aplicación y verifica que los estudiantes no se muestren en ningún orden específico cuando inician sesión como profesor
+
+1. En **Visual Studio**. en el menú **Archivo**. seleccione **Abrir** y luego haga clic en **Proyecto/Solución**.
+2. En el cuadro de diálogo **Abrir proyecto**. busque **[Repository Root]\Allfiles\Mod04\Labfiles\Starter\Exercise 3**. haga clic en **GradesPrototype.sln**. y luego haga clic en **Open**.
+    > **Nota:** Si aparece algún cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Preguntarme por cada proyecto en esta solución** y luego haga clic en **Aceptar**.
+3. En el menú **Crear**. haga clic en **Crear solución**.
+4. En el menú **Depurar**. haga clic en **Iniciar sin depurar**.
+5. En el cuadro de texto **Nombre de usuario**. escriba **vallee**.
+6. En el cuadro de texto **Contraseña**. escriba **contraseña** y luego haga clic en **Iniciar sesión**.
+7. Verifique que los estudiantes no se muestren en ningún orden específico.
+8. Cierre la aplicación.
+
+## Tarea 2: Implementar la interfaz IComparable\<Student \> para permitir la comparación de estudiantes
+
+1. En la ventana **Lista de tareas**. haga doble clic en **TODO: Exercise 3: Task 2a: Specify that the Student class implements the IComparable\<Student\> interface**.
+2. En el editor de código, haga clic en al final de la declaración **public class Student** y, a continuación, escriba el siguiente código:
+    ```cs
+    : IComparable<Student>
+    ```
+3. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 3: Task 2b: Compare Student objects based on their LastName and FirstName properties**.
+4. En el editor de código, en la línea en blanco debajo del comentario, escriba el siguiente código:
+    ```cs
+    // Compare Student objects based on their LastName and FirstName properties
+    public int CompareTo(Student other)
+    {
+        // Concatenate the LastName and FirstName of this student
+        string thisStudentsFullName = LastName + FirstName;
+
+        // Concatenate the LastName and FirstName of the "other" student
+        string otherStudentsFullName = other.LastName + other.FirstName;
+
+        // Use String.Compare to compare the concatenated names and return the result
+        return(String.Compare(thisStudentsFullName, otherStudentsFullName));
+    }
+    ```
+
+## Tarea 3: Cambiar la colección ArrayList de Estudiantes a una colección List\<Student \>
+
+1. En la ventana **Lista de tareas**. haga doble clic en **TODO: Exercise 3: Task 3a: Change the Students collection into a List\<Student\>**.
+2. En el editor de código, debajo del comentario, modifique el código **Public static ArrayList Students;** para que se vea como el siguiente código:
+    ```cs
+    public static List<Student> Students;
+    ```
+3. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 3: Task 3b: Populate the List\<Student\> collection**.
+4. En el editor de código, debajo del comentario, modifique el código **Students = new ArrayList ()** para que se parezca al siguiente código:
+    ```cs
+    Students = new List<Student>()
+    ```
+
+## Tarea 4: Ordenar los datos en la colección de Estudiantes
+
+1. En la ventana **Lista de tareas**. haga doble clic en **TODO: Exercise 3: Task 4a: Sort the data in the Students collection**.
+2. En el editor de código, haga clic al final de la línea de comentarios, presione Entrar y luego escriba el siguiente código:
+    ```cs
+    DataSource.Students.Sort();
+    ```
+
+## Tarea 5: Verificar que se obtienen los Estudiantes y se muestren en el orden de su nombre y apellido
+
+1. En el menú **Crear**. haga clic en **Crear solución**.
+2. En el menú **Depurar**. haga clic en **Iniciar sin depurar**.
+3. En el cuadro de texto **Nombre de usuario**. escriba **vallee**.
+4. En el cuadro de texto **Contraseña**. escriba **contraseña** y luego haga clic en **Iniciar sesión**.
+5. Verifique que los estudiantes se muestren en orden alfabético, según sus apellidos.
+6. Cierre la sesión y luego cierre la aplicación.
+7. En el menú **Archivo**. haga clic en **Cerrar solución**.
+
+> **Resultados:** Después de completar este ejercicio, la aplicación mostrará a los estudiantes en orden alfabético, según los apellidos y luego los nombres.
+
+# Ejercicio 4: Permitir que los profesores modifiquen los datos de clases y calificaciones
+
+## Tarea 1: Cambiar las colecciones de profesores y calificaciones para que sean colecciones de listas genéricas
+
+1. En **Visual Studio**. en el menú **Archivo**. seleccione **Abrir** y luego haga clic en **Proyecto/Solución**.
+2. En el cuadro de diálogo **Abrir proyecto**. vaya a **[Repository Root]\Allfiles\Mod04\Labfiles\Starter\Exercise 4**. haga clic en **GradesPrototype.sln** y luego haga clic en **Abrir**.
+    > **Nota:** Si aparece algún cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Preguntarme por cada proyecto en esta solución** y luego haga clic en **Aceptar**.
+3. En la ventana **Lista de tareas**. haga doble clic en **TODO: Exercise 4: Task 1a: Change the Teachers collection into a generic List**.
+4. En el editor de código, debajo del comentario, modifique el código **public static ArrayList Teachers;** para que se vea como el siguiente código:
+    ```cs
+    public static List<Grade> Grades;
+    ```
+5. En la ventana **Lista de tareas**. haga doble clic en **TODO: Exercise 4: Task 1b: Change the Grades collection into a generic List**.
+6. En el editor de código, debajo del comentario, modifique el código **public static ArrayList Grades;** para que se parezca al siguiente código:
+    ```cs
+    public static List<Grade> Grades;
+    ```
+7. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 4: Task 1c: Populate the Teachers collection**.
+8. En el editor de código, debajo del comentario, modifique el código **Teachers = new ArrayList ()** para que se parezca al siguiente código:
+    ```cs
+    Teachers = new List<Teacher>()
+    ```
+9. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 4: Task 1d: Populate the Grades collection**.
+10. En el editor de código, debajo del comentario, modifique el código **Grades = new ArrayList ()** para que se parezca al siguiente código:
+    ```cs
+    Grades = new List<Grade>()
+    ```
+
+## Tarea 2: Agregar los métodos EnrollInClass y RemoveFromClass para la clase del profesor
+
+1. En la ventana **Lista de tareas**. haga doble clic en **TODO: Exercise 4: Task 2a: Enroll a student in the class for this teacher**.
+2. En el editor de código, haga clic en la línea en blanco debajo del comentario y luego escriba el siguiente código:
+    ```cs
+    public void EnrollInClass(Student student)
+    {
+        // Verify that the student is not already enrolled in another class
+        if (student.TeacherID == 0)
+        {
+            // Set the TeacherID property of the student
+            student.TeacherID = TeacherID;
+         }
+         else
+         {
+            // If the student is already assigned to a class, throw an  ArgumentException
+            throw new ArgumentException("Student", "Student is already assigned to a class");
+         }
+    }
+    ```
+3. En la ventana **Lista de tareas**. haga doble clic en **TODO: Exercise 4: Task 2b: Remove a student from the class for this teacher**.
+4. En el editor de código, haga clic en al final de la línea de comentarios, presione Entrar y luego escriba el siguiente código:
+    ```cs
+    // Remove a student from the class for this teacher
+    public void RemoveFromClass(Student student)
+    {
+       // Verify that the student is actually assigned to the class for this teacher
+       if (student.TeacherID == TeacherID)
+       {
+           // Reset the TeacherID property of the student
+           student.TeacherID = 0;
+       }
+       else
+       {
+           // If the student is not assigned to the class for this teacher, throw an ArgumentException
+           throw new ArgumentException("Student", "Student is not assigned to this class");
+       }
+    }
+    ```
+5. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 4: Task 2c: Add a grade to a student (the grade is already populated)**.
+6. En el editor de código, haga clic en al final de la línea de comentarios, presione Entrar y luego escriba el siguiente código:
+    ```cs
+    // Add a grade to a student (the grade is already populated)
+    public void AddGrade(Grade grade)
+    {
+       // Verify that the grade does not belong to another student – the StudentID  should be zero
+       if (grade.StudentID == 0)
+       {
+          // Add the grade to the student’s record
+          grade.StudentID = StudentID;
+        }
+        else
+        {
+            // If the grade belongs to a different student, throw an ArgumentException
+            throw new ArgumentException("Grade", "Grade belongs to a different  student");
+        }
+    }
+    ```
+
+## Tarea 3: agregar código para inscribir a un alumno en la clase de un profesor
+
+1. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 4: Task 3a: Enroll a student in the teacher’s class**.
+2. En el editor de código, debajo del comentario, haga clic en la línea en blanco del método **Student_Click** y luego escriba el siguiente código:
     ```cs
     try
     {
-        // Save the changes
-        this.schoolContext.SaveChanges();
+        // Determine which student the user clicked
+        // the StudentID is held in the Tag property of the Button that the user    clicked
+        Button studentClicked = sender as Button;
+        int studentID = (int)studentClicked.Tag;
 
-        // Disable the Save button (it will be enabled if the user makes more changes)
-        saveChanges.IsEnabled = false;
-    }
-    ```
-2. En la ventana **Task List**, haga doble clic en la tarea **TODO: Exercise 3: Task 3a: If an OptimisticConcurrencyException occurs then another user has changed the same students earlier then overwrite their changes with the new data (see the lab instructions for details)**.
-3. En el editor de códigos, haga clic al final de la línea de comentarios, presione Enter, y luego escriba el siguiente código:
-    ```cs
-    catch (OptimisticConcurrencyException)
-    {  
-        // If the user has changed the same students earlier, then overwrite their changes with the new data
-        this.schoolContext.Refresh(RefreshMode.StoreWins, schoolContext.Students);
-        this.schoolContext.SaveChanges();
-    }
-    ```
-4. En la ventana **Task List**, haga doble clic en la tarea **TODO: Exercise 3: Task 3b: If an UpdateException occurs then report the error to the user and rollback (see the lab instructions for details)**.
-5. En el editor de códigos, haga clic al final de la línea de comentarios, presione Enter y luego escriba el siguiente código:
-    ```cs
-    catch (UpdateException uEx)
-    {
-        // If some sort of database exception has occurred, then display the reason for the exception and rollback
+        // Find this student in the Students collection
+        Student student = (from s in DataSource.Students
+                           where s.StudentID == studentID
+                           select s).First();
 
-        MessageBox.Show(uEx.InnerException.Message, "Error saving changes");
-        this.schoolContext.Refresh(RefreshMode.StoreWins, schoolContext.Students);
+        // Prompt the user to confirm that they wish to add this student to their class
+        string message = String.Format("Add {0} {1} to your class?", student.FirstName,  student.LastName);
+        MessageBoxResult reply = MessageBox.Show(message, "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+        // If the user confirms, add the student to their class
+        if (reply == MessageBoxResult.Yes)
+        {
+            // Get the ID of the currently logged-on teacher
+            int teacherID = SessionContext.CurrentTeacher.TeacherID;
+
+            // Assign the student to this teacher’s class
+            SessionContext.CurrentTeacher.EnrollInClass(student);
+
+            // Refresh the display – the new assigned student should disappear from     the list of unassigned students
+            Refresh();
+         }
     }
-    ```
-6. En la ventana **Task List**, haga doble clic en la tarea **TODO: Exercise 3: Task 3c: If some other sort of error has occurs, report the error to the user and retain the data so the user can try again - the error may be transitory (see the lab instructions for details)**.
-7. En el editor de códigos, haga clic al final de la línea de comentarios, presione Enter y luego escriba el siguiente código:
-    ```cs
     catch (Exception ex)
     {
-        // If some other exception occurs, report it to the user
-        MessageBox.Show(ex.Message, "Error saving changes");
-        this.schoolContext.Refresh(RefreshMode.ClientWins, schoolContext.Students);
+          MessageBox.Show(ex.Message, "Error enrolling student", MessageBoxButton.OK, MessageBoxImage.Error);
+    }
+    ```
+3. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 4: Task 3b: Refresh the display of unassigned students**.
+4. En el editor de código, debajo del comentario, haga clic en la línea en blanco del método **Refresh** y luego escriba el siguiente código:
+    ```cs
+    // Find all unassigned students - they have a TeacherID of 0
+    var unassignedStudents = from s in DataSource.Students
+                             where s.TeacherID == 0
+                             select s;
+
+    // If there are no unassigned students, then display the "No unassigned students" message
+    // and hide the list of unassigned students
+    if (unassignedStudents.Count() == 0)
+    {
+        txtMessage.Visibility = Visibility.Visible;
+        list.Visibility = Visibility.Collapsed;
+    }
+    else
+    {
+         // If there are unassigned students, hide the "No unassigned students" message
+         // and display the list of unassigned students
+         txtMessage.Visibility = Visibility.Collapsed;
+         list.Visibility = Visibility.Visible;
+
+          // Bind the ItemControl on the dialog to the list of unassigned students
+          // The names of the students will appear in the ItemsControl on the dialog
+          list.ItemsSource = unassignedStudents;
+    }
+    ```
+5. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 4: Task 3c: Enroll a student in the teacher’s class**.
+6. En el editor de código, debajo del comentario, haga clic en la línea en blanco en el método **EnrollStudent_Click** y luego escriba el siguiente código:
+    ```cs
+    // Use the AssignStudentDialog to display unassigned students and add them to the teacher’s class
+    // All of the work is performed in the code behind the dialog
+    AssignStudentDialog asd = new AssignStudentDialog();
+    asd.ShowDialog();
+
+    // Refresh the display to show any newly enrolled students
+    Refresh();
+    ```
+
+## Tarea 4: Agregar código para permitir que un profesor elimine al alumno de la clase asignada
+
+1. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 4: Task 4a: Enable a teacher to remove a student from a class**.
+2. En el editor de código, debajo del comentario, haga clic en la línea en blanco en el método **Remove_Click** y luego escriba el siguiente código:
+    ```cs
+    // If the user is not a teacher, do nothing (the button should not appear anyway)
+    if (SessionContext.UserRole != Role.Teacher)
+    {
+       return;
+    }
+
+    try
+    {
+        // If the user is a teacher, ask the user to confirm that this student should be removed from their class
+        string message = String.Format("Remove {0} {1}", SessionContext.CurrentStudent.FirstName, SessionContext.CurrentStudent.LastName);
+        MessageBoxResult reply = MessageBox.Show(message, "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+        // If the user confirms, then call the RemoveFromClass method of the current teacher to remove this student from their class
+        if (reply == MessageBoxResult.Yes)
+        {
+            SessionContext.CurrentTeacher.RemoveFromClass(SessionContext.CurrentStudent);
+
+            // Go back to the previous page – the student is no longer a member of the class for the current teacher
+            if (Back != null)
+            {
+                 Back(sender, e);
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show(ex.Message, "Error removing student from class", MessageBoxButton.OK, MessageBoxImage.Error);
     }
     ```
 
-### Tarea 4: Ejecutar la aplicación y verificar que los cambios de datos se mantienen en la base de datos
+## Tarea 5: Agregar código para permitir que un maestro agregue una calificación a un estudiante
 
-1. En el menú **Construir**, haga clic en **Construir solución**.
-2. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
-3. Haga clic en la fila que contiene el estudiante **Kevin Liu**.
-4. Presione Enter, en el cuadro de texto **Last Name** borre el contenido existente, escriba **Cook**, y luego haga clic en **OK**.
+1. En la ventana **Lista de tareas**. haga doble clic en la tarea **TODO: Exercise 4: Task 5a: Enable a teacher to add a grade to a student**.
+2. En el editor de código, debajo del comentario, haga clic en la línea en blanco en el método **AddGrade_Click** y luego escriba el siguiente código:
 
-El resultado visual del punto anterior se muestra en la siguiente imagen:
+```cs
+    // If the user is not a teacher, do nothing (the button should not appear anyway)
+    if (SessionContext.UserRole != Role.Teacher)
+    {
+        return;
+    }
 
-  ![alt text](./Images/Fig-18-StudentChanged.jpg  "Salvando los cambios hechos a un estudiante!!")
+    try
+    {
+        // Use the GradeDialog to get the details of the assessment grade
+        GradeDialog gd = new GradeDialog();
 
-5. Verifique que **Liu** ha cambiado a **Cook** en la lista de estudiantes, y que el botón **Guardar cambios** está ahora habilitado.
-6. Haga clic en **Guardar cambios** y verifique que el botón **Guardar cambios** está ahora desactivado.
-7. Haga clic en la fila que contiene el estudiante **George Li** y presione Borrar.
+        // Display the form and get the details of the new grade
+        if (gd.ShowDialog().Value)
+        {
+            // When the user closes the form, retrieve the details of the assessment    grade from the form
+            // and use them to create a new Grade object
+            Grade newGrade = new Grade();
+            newGrade.AssessmentDate = gd.assessmentDate.SelectedDate.Value.ToString ("d");
+            newGrade.SubjectName = gd.subject.SelectedValue.ToString();
+            newGrade.Assessment = gd.assessmentGrade.Text;
+            newGrade.Comments = gd.comments.Text;
 
-El resultado visual del punto anterior se muestra en la siguiente imagen:
+            // Save the grade to the list of grades
+            DataSource.Grades.Add(newGrade);
 
-  ![alt text](./Images/Fig-18-BorrandoStudent.jpg  "Borrando a un estudiante!!")
+            // Add the grade to the current student
+            SessionContext.CurrentStudent.AddGrade(newGrade);
 
-8. Verifique que aparezca el mensaje de confirmación y luego haga clic en **Sí**.
-9. Verifique que el botón **Guardar cambios** esté ahora habilitado.
+            // Refresh the display so that the new grade appears
+            Refresh();
+        }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show(ex.Message, "Error adding assessment grade", MessageBoxButton.OK, MessageBoxImage.Error);
+    }
+```
 
-El resultado visual del punto anterior se muestra en la siguiente imagen:
+## Tarea 6: Ejecuta la aplicación y verifica que los estudiantes se puedan agregar y quitar de las clases, y que las calificaciones se puedan agregar a los estudiantes
 
-  ![alt text](./Images/Fig-19-BorradoStudent.jpg  "Borrando a un estudiante!!")
+1. En el menú **Crear**. haga clic en **Crear solución**.
+2. En el menú **Depurar**. haga clic en **Iniciar sin depurar**.
+3. En el cuadro de texto **Nombre de usuario**. escriba **vallee**.
+4. En el cuadro de texto **Contraseña**. escriba **contraseña** y luego haga clic en **Iniciar sesión**.
+5. Haga clic en **Nuevo estudiante**.
+6. En el cuadro de texto **Nombre**. escriba **Darren**.
+7. En el cuadro de texto **Apellido**. escriba **Parker**.
+8. En el cuadro de texto **Contraseña**. escriba **contraseña** y luego haga clic en **Aceptar**.
+9. Haga clic en **Inscribir estudiante**.
+10. Verifique que aparezca el cuadro de diálogo **Asignar estudiante** y que **Darren Parker **esté en la lista.
+11. Haga clic en **Darren Parker**.
+12. Verifique que aparezca el cuadro de mensaje **Confirmar** y luego haga clic en **Sí**.
+13. En el cuadro de diálogo **Asignar alumno**. verifique que **Darren Parker **desaparezca y que se muestre el texto **No hay alumnos sin asignar**.
+14. Haga clic en **Cerrar**.
+15. Verifique que **Darren Parker **se agregue a la lista de estudiantes.
+16. Haga clic en el estudiante **Kevin Liu**.
+17. Haga clic en **Eliminar alumno**.
+18. Verifique que aparezca el cuadro de mensaje **Confirmar** y luego haga clic en **Sí**.
+19. Verifique que **Kevin Liu **se elimine de la lista de estudiantes.
+20. Haga clic en el estudiante **Darren Parker**.
+21. Haga clic en **Agregar calificación**.
+22. Verifique que aparezca el cuadro de diálogo **Detalles de nueva calificación**.
+23. Verifique que el cuadro de texto **Fecha **contenga la fecha actual.
+24. En la lista **Asunto**. haga clic en **Inglés**.
+25. En el cuadro de texto **Evaluación**. escriba **B**.
+26. En el cuadro de texto **Comentarios**. escriba **Bueno** y luego haga clic en **Aceptar**.
+27. Verifique que la información de las calificaciones aparezca en la boleta de calificaciones.
+28. Haga clic en **Cerrar sesión**.
+29. En el cuadro de texto **Nombre de usuario**. escriba **parkerd**.
+30. Haga clic en **Iniciar sesión**.
+31. Verifique que se muestre la pantalla **Bienvenido Darren Parker**. que muestra el
+    boleta de calificaciones y la calificación agregada anteriormente.
+32. Haga clic en **Cerrar sesión**.
+33. Cierre la aplicación.
+34. En **Visual Studio**. en el menú **Archivo**. haga clic en **Cerrar solución**.
 
-10. Haga clic en **Guardar cambios** y compruebe que el botón está ahora desactivado.
-11. Cierre la aplicación.
-12. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
-13. Verifique que los cambios que hizo a los datos de los estudiantes se han guardado en la base de datos y se reflejan en la lista de estudiantes.
-
-El resultado visual del punto anterior se muestra en la siguiente imagen:
-
-  ![alt text](./Images/Fig-20-BaseDatosModificada.jpg  "Verificación que la base de datos se ha modificado despues de borrar a un estudiante!!")
-
-14. Cierre la aplicación.
-15. En el menú **Archivo**, haga clic en **Cerrar solución**.
-
-   >**Resultados:** Después de completar este ejercicio, los datos modificados del estudiante se guardarán en la base de datos.
+> **Resultados:** Después de completar este ejercicio, la aplicación permitirá a los maestros agregar y quitar estudiantes de sus clases y agregar calificaciones a los estudiantes.
