@@ -11,10 +11,11 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 15 de Octubre 2020.
-3. **Resumen del Modulo 4:** Este módulo consta de tres ejercicios:
+3. **Resumen del Modulo 4:** Este módulo consta de cuatro ejercicios:
     -  En el primer ejercio nos ayuda a completar las estructuras **Teacher**. **Student** y **Grade** se implementarán como clases y estas llamarán al método **VerifyPassword** cuando el usuario inicia sesión.
-    - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
-    - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
+    - En el ejercicio 2 hacemos la validación para que la clase **Grades** contenga la lógica de validación. Para ello creamos un proyecto paralelo que ejecuta pruebas unitarias por los diferentes métodos para estar seguros que todo marcha bien.
+    - En el ejercicio 3 modificamos el código de la aplicación para que muestre a los estudiantes en orden alfabético, según los apellidos y luego los nombres.
+    - En el ejercicio 4 hacemos que la aplicación permita a los maestros agregar y quitar estudiantes de sus clases y agregar calificaciones a los estudiantes.
 
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
@@ -96,7 +97,7 @@ Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segment
         return (String.Compare(pass, _password) == 0);
     }
     ```
-    > **Nota **Una aplicación no debería poder leer contraseñas; solo configúrelos y verifique que la contraseña sea correcta.
+    > **Nota **Una aplicación no debería poder leer passwords; solo configúrelos y verifique que la password sea correcta.
 5. Haga clic al final del código **public string LastName { get; set; }**. presione Entrar dos veces y luego escriba el siguiente código:
     ```cs
     // Constructor to initialize the properties of a new Student
@@ -172,7 +173,7 @@ Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segment
     }
     ```
 
-### Tarea 3: Utilice el método VerifyPassword para verificar la contraseña cuando un usuario inicia sesión
+### Tarea 3: Utilice el método VerifyPassword para verificar la password cuando un usuario inicia sesión
 
 1. En la ventana **Lista de tareas**. haga doble clic en tarea **TODO: Exercise 1: Task 3a: Use the VerifyPassword method of the Teacher class to verify the teacher’s password**.
 2. En el editor de código, debajo del comentario, en el código de la variable del profesor, modifique el código **String.Compare (t.Password, password.Password) == 0** para que se vea como el siguiente código:
@@ -408,7 +409,7 @@ Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segment
 11. Cierre **Explorador de pruebas**.
 12. En el menú **Archivo**. haga clic en **Cerrar solución**.
 
-> **Resultados:** Después de completar este ejercicio, la clase de **Calificación **contendrá la lógica de validación.
+> **Resultados:** Después de completar este ejercicio, la clase de **Grades** contendrá la lógica de validación.
 
 ## Ejercicio 3: Visualización de estudiantes en orden de nombre
 
@@ -420,8 +421,15 @@ Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segment
 3. En el menú **Crear**. haga clic en **Crear solución**.
 4. En el menú **Depurar**. haga clic en **Iniciar sin depurar**.
 5. En el cuadro de texto **Nombre de usuario**. escriba **vallee**.
-6. En el cuadro de texto **Contraseña**. escriba **contraseña** y luego haga clic en **Iniciar sesión**.
+6. En el cuadro de texto **password**. escriba **password** y luego haga clic en **Iniciar sesión**.
 7. Verifique que los estudiantes no se muestren en ningún orden específico.
+
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-4-vallee.jpg "Estudiantes sin Orden !!")
+
+
 8. Cierre la aplicación.
 
 ## Tarea 2: Implementar la interfaz IComparable\<Student \> para permitir la comparación de estudiantes
@@ -474,8 +482,13 @@ Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segment
 1. En el menú **Crear**. haga clic en **Crear solución**.
 2. En el menú **Depurar**. haga clic en **Iniciar sin depurar**.
 3. En el cuadro de texto **Nombre de usuario**. escriba **vallee**.
-4. En el cuadro de texto **Contraseña**. escriba **contraseña** y luego haga clic en **Iniciar sesión**.
+4. En el cuadro de texto **password**. escriba **password** y luego haga clic en **Iniciar sesión**.
 5. Verifique que los estudiantes se muestren en orden alfabético, según sus apellidos.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-5-StudentOrdered.jpg "Estudiantes ordenados por su apellidos !!")
+
 6. Cierre la sesión y luego cierre la aplicación.
 7. En el menú **Archivo**. haga clic en **Cerrar solución**.
 
@@ -730,35 +743,91 @@ Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segment
 1. En el menú **Crear**. haga clic en **Crear solución**.
 2. En el menú **Depurar**. haga clic en **Iniciar sin depurar**.
 3. En el cuadro de texto **Nombre de usuario**. escriba **vallee**.
-4. En el cuadro de texto **Contraseña**. escriba **contraseña** y luego haga clic en **Iniciar sesión**.
-5. Haga clic en **Nuevo estudiante**.
+4. En el cuadro de texto **password**. escriba **password** y luego haga clic en **Iniciar sesión**.
+5. Haga clic en **New Student**.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-6-AddStudent.jpg "Agregando a un nuevo estudiante !!")
+
 6. En el cuadro de texto **Nombre**. escriba **Darren**.
 7. En el cuadro de texto **Apellido**. escriba **Parker**.
-8. En el cuadro de texto **Contraseña**. escriba **contraseña** y luego haga clic en **Aceptar**.
-9. Haga clic en **Inscribir estudiante**.
-10. Verifique que aparezca el cuadro de diálogo **Asignar estudiante** y que **Darren Parker **esté en la lista.
+8. En el cuadro de texto **Password**. escriba **password** y luego haga clic en **Aceptar**.
+9. Haga clic en **Enroll Student**.
+10. Verifique que aparezca el cuadro de diálogo **Asignar estudiante** y que **Darren Parker** esté en la lista.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-7-Darren.jpg "Agregando a un nuevo estudiante !!")
+
 11. Haga clic en **Darren Parker**.
+
 12. Verifique que aparezca el cuadro de mensaje **Confirmar** y luego haga clic en **Sí**.
-13. En el cuadro de diálogo **Asignar alumno**. verifique que **Darren Parker **desaparezca y que se muestre el texto **No hay alumnos sin asignar**.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-8-Confirmation.jpg "Caja de dialogo de confirmación !!")
+
+13. En el cuadro de diálogo **Asignar alumno**. verifique que **Darren Parker** desaparezca y que se muestre el texto **No hay alumnos sin asignar**.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-9-Unassigned.jpg "Caja de dialogo de no hay alumnos para assignar !!")
+
 14. Haga clic en **Cerrar**.
-15. Verifique que **Darren Parker **se agregue a la lista de estudiantes.
+15. Verifique que **Darren Parker** se agregue a la lista de estudiantes.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-10-DarrenAgregado.jpg "Nuevo estudiante agregado !!")
+
 16. Haga clic en el estudiante **Kevin Liu**.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-11-Kevin.jpg "Mostrando el estudiante Kevin !!")
+
 17. Haga clic en **Eliminar alumno**.
 18. Verifique que aparezca el cuadro de mensaje **Confirmar** y luego haga clic en **Sí**.
-19. Verifique que **Kevin Liu **se elimine de la lista de estudiantes.
+19. Verifique que **Kevin Liu** se elimine de la lista de estudiantes.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-12-KevinBorrado.jpg "Estudiante borrado !!")
+
 20. Haga clic en el estudiante **Darren Parker**.
 21. Haga clic en **Agregar calificación**.
+
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-13-AddGrade.jpg "Agregar calificación a un estudiante !!")
+
+
 22. Verifique que aparezca el cuadro de diálogo **Detalles de nueva calificación**.
-23. Verifique que el cuadro de texto **Fecha **contenga la fecha actual.
+23. Verifique que el cuadro de texto **Fecha** contenga la fecha actual.
 24. En la lista **Asunto**. haga clic en **Inglés**.
 25. En el cuadro de texto **Evaluación**. escriba **B**.
 26. En el cuadro de texto **Comentarios**. escriba **Bueno** y luego haga clic en **Aceptar**.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-14-NewGrade.jpg "Nueva calificación a un estudiante !!")
+
 27. Verifique que la información de las calificaciones aparezca en la boleta de calificaciones.
+
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-15-ReportCard.jpg "Nueva calificación a un estudiante !!")
+
 28. Haga clic en **Cerrar sesión**.
 29. En el cuadro de texto **Nombre de usuario**. escriba **parkerd**.
 30. Haga clic en **Iniciar sesión**.
-31. Verifique que se muestre la pantalla **Bienvenido Darren Parker**. que muestra el
-    boleta de calificaciones y la calificación agregada anteriormente.
+31. Verifique que se muestre la pantalla **Bienvenido Darren Parker** que muestra el boleta de calificaciones y la calificación agregada anteriormente.
+- El resultado visual del ejercicio anterior se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-16-DarrenReportCard.jpg "Verificación de calificación para un estudiante !!")
+
 32. Haga clic en **Cerrar sesión**.
 33. Cierre la aplicación.
 34. En **Visual Studio**. en el menú **Archivo**. haga clic en **Cerrar solución**.
