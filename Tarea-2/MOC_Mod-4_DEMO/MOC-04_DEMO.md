@@ -34,7 +34,7 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 2. En Visual Studio, en el menú **Archivo**, apunta a **Nuevo**, y luego haz clic en **Proyecto**.
 3. En el cuadro de diálogo **Nuevo Proyecto**, en la lista de **Plantillas**, haga clic en **Código Visual**, y luego en la lista de **Tipo de Proyecto**, haga clic en **Aplicación de la Consola (.NET Framework)**.
 4. En el cuadro de texto de **Nombre**, escriba **Valores y referencias**
-5. En el cuadro de texto **Localización**, establece la ubicación en **[Raíz del Repositorio]\N-Todos los archivos {Mod04\Democode**, y luego haz clic en **OK**.
+5. En el cuadro de texto **Localización**, establece la ubicación en **[Raíz del Repositorio]\AllFiles\Mod04\Democode**, y luego haz clic en **OK**.
 6. Dentro del espacio de nombres **Valores y Referencias**, añade el siguiente código:
     ```cs
     struct MyStruct
@@ -69,7 +69,7 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
     ```
 - La representación visual para la respuesta del último ejercicio se muestra en la siguiente imagen a continuación: 
 
- ![alt text](./Images/Fig-2-ValuesAndReferences.jpg "The Students page")
+ ![alt text](./Images/Fig-2-ValuesAndReferences.jpg "Representación de valores y referencias")
 
 10. Para cerrar la ventana de la consola, pulse Intro.
 11. Cierre Visual Studio 2017.
