@@ -16,13 +16,16 @@ namespace GradesPrototype.Data
         public string UserName { get; set; }
 
         // TODO: Exercise 2: Task 2a: Make _password a protected field rather than private
-        private string _password = Guid.NewGuid().ToString(); // Generate a random password by default
+        protected string _password = Guid.NewGuid().ToString(); // Generate a random password by default
         public string Password
         {
             set
             {
                 // TODO: Exercise 2: Task 1b: Use the SetPassword method to set the password
-                _password = value;
+                if (!SetPassword(value))
+                {
+                    throw new ArgumentException("Password not complex enough", "Password");
+                }
             }
         }
 
@@ -32,6 +35,7 @@ namespace GradesPrototype.Data
         }
 
         // TODO: Exercise 2: Task 1a: Define an abstract method for setting the password
+        public abstract bool SetPassword(string pwd);
         // Teachers and Students will have different password complexity policies
     }
 
@@ -202,6 +206,17 @@ namespace GradesPrototype.Data
         }
 
         // TODO: Exercise 2: Task 2b: Implement SetPassword to set the password for the student
+        public override bool SetPassword(string pwd)
+        {
+            // If the password provided as the parameter is at least 6 characters long then save it and return true
+            if (pwd.Length >= 6)
+            {
+                _password = pwd;
+                return true;
+            }
+            // If the password is not long enough, then do not save it and return false
+            return false;
+        }
         // The password policy is very simple - the password must be at least 6 characters long, but there are no other restrictions
     }
 
@@ -266,6 +281,20 @@ namespace GradesPrototype.Data
         }
 
         // TODO: Exercise 2: Task 2c: Implement SetPassword to set the password for the teacher
+        public override bool SetPassword(string pwd)
+        {
+            // Use a regular expression to check that the password contains at least two numeric characters
+            Match numericMatch = Regex.Match(pwd, @".*[0-9]+.*[0-9]+.*");
+
+            // If the password provided as the parameter is at least 8 characters long and contains at least two numeric characters then save it and return true
+            if (pwd.Length >= 8 && numericMatch.Success)
+            {
+                _password = pwd;
+                return true;
+            }
+            // If the password is not complex enough, then do not save it and return false
+            return false;
+        }
         // The password must be at least 8 characters long, and it must contain at least 2 numeric characters
     }
 }

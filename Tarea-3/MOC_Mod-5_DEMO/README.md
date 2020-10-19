@@ -12,9 +12,8 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 2. **Fecha:** 16 de Octubre 2020.
 3. **Resumen del Modulo 5:** Este módulo consta de tres ejercicios:
     -  En el primer ejercio nos ayuda a eliminar el código duplicado de las clases **Student** y **Teacher**, y movido el código a una clase base abstracta llamada **User**.
-    - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
+    - En el ejercicio 2 implementamos un método polimórfico llamado **SetPassword** que cambia el comportamiento en función de si el usuario es un estudiante o un profesor. También habrá modificado la aplicación para que los usuarios puedan cambiar sus passwords.
     - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
-
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
 
@@ -344,21 +343,56 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 
 1. En el menú **Crear**, haga clic en **Crear solución**.
 2. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
-3. Cuando se inicie la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee**, en el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión **.
+3. Cuando se inicie la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee**, en el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-3-Contraseña.jpg "Pestaña de dialogo para cambiar la contraseña !!!")
+
 4. En la ventana **The School of Fine Arts** haga clic en **Cambiar password**.
 5. En la ventana **Cambiar password**, en el cuadro de texto **password anterior**, escriba **password99**, en el cuadro de texto **New Password**, escriba **pwd101**, en el cuadro de texto **Confirmar**, escriba **pwd101** y luego haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-4-CambioPswd.jpg "Pestaña de dialogo para cambiar la contraseña !!!")
+
 6. Verifique que aparezca el mensaje **La nueva password no es lo suficientemente compleja** y luego haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-5-CambioPswdNoCompleja.jpg "Pestaña de dialogo para cambiar la contraseña !!!")
+
 7. En el cuadro de texto **New Password**, escriba **password101**, en el cuadro de texto **Confirmar**, escriba **password101** y luego haga clic en **Aceptar**.
 8. Verifique que se muestre el mensaje **password cambiada** y luego haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-6-PswdCambiada.jpg "Pestaña de dialogo que la contraseña se ha cambiado!!!")
+
 9. Haga clic en **Cerrar sesión**.
 10. En el cuadro de texto **Nombre de usuario**, escriba **vallee**, en el cuadro de texto **Password**, escriba **password101** y luego haga clic en **Iniciar sesión**.
 11. Haga clic en **Nuevo estudiante**.
 12. En la ventana **Detalles del estudiante nuevo**, en el cuadro de texto **Nombre**, escriba **Luka**, en el cuadro de texto **Apellido**, escriba **Abrus**, en el cuadro de texto **Password**, escriba **1234** y luego haga clic en **Aceptar**.
 13. Verifique que el mensaje **password debe tener al menos 6 caracteres. Aparece el alumno no creado **y, a continuación, haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-7-PswdMin6Chars.jpg "Pestaña de dialogo que la contraseña se ha cambiado!!!")
+
 14. Haga clic en **Nuevo estudiante**.
 15. En la ventana **Detalles del estudiante nuevo**, en el cuadro de texto **Nombre**, escriba **Luka**, en el cuadro de texto **Apellido**, escriba **Abrus**, en en el cuadro de texto **Password**, escriba **abcdef** y luego haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-8-Luka.jpg "Pestaña de dialogo que la contraseña se ha cambiado!!!")
+
 16. Haga clic en **Inscribir estudiante**.
 17. En la ventana **Asignar estudiante**, verifique que aparezca el estudiante **Luka Abrus**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-10-AddedLuka.jpg "Pestaña de dialogo agregando a Luka Abrus !!!")
+
 18. Haga clic en **Cerrar**.
 19. Haga clic en **Cerrar sesión**.
 20. Cierre la aplicación.
