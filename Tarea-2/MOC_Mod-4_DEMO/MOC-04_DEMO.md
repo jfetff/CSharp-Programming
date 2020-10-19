@@ -8,9 +8,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 15 de Octubre 2020.
 3. **Resumen del Modulo 4:** En este MOC_DEMO haremos una lección:
-    -  En el primer ejercio nos ayuda a actualizar la aplicación para refactorizar el código duplicado en métodos reutilizables.
-    - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
-    - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
+    -  En la única lección de este MOC haremos comparación de tipos de referencia y tipos de valores.
 
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
