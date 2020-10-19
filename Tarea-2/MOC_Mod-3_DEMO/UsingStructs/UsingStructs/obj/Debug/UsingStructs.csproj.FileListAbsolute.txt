@@ -1,0 +1,7 @@
+C:\20483C\CSharp-Programming\Tarea-2\MOC_Mod-3_DEMO\UsingStructs\UsingStructs\bin\Debug\UsingStructs.exe.config
+C:\20483C\CSharp-Programming\Tarea-2\MOC_Mod-3_DEMO\UsingStructs\UsingStructs\bin\Debug\UsingStructs.exe
+C:\20483C\CSharp-Programming\Tarea-2\MOC_Mod-3_DEMO\UsingStructs\UsingStructs\bin\Debug\UsingStructs.pdb
+C:\20483C\CSharp-Programming\Tarea-2\MOC_Mod-3_DEMO\UsingStructs\UsingStructs\obj\Debug\UsingStructs.csprojAssemblyReference.cache
+C:\20483C\CSharp-Programming\Tarea-2\MOC_Mod-3_DEMO\UsingStructs\UsingStructs\obj\Debug\UsingStructs.csproj.CoreCompileInputs.cache
+C:\20483C\CSharp-Programming\Tarea-2\MOC_Mod-3_DEMO\UsingStructs\UsingStructs\obj\Debug\UsingStructs.exe
+C:\20483C\CSharp-Programming\Tarea-2\MOC_Mod-3_DEMO\UsingStructs\UsingStructs\obj\Debug\UsingStructs.pdb
