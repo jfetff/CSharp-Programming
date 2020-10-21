@@ -13,7 +13,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 3. **Resumen del Modulo 5:** Este módulo consta de tres ejercicios:
     -  En el primer ejercio nos ayuda a eliminar el código duplicado de las clases **Student** y **Teacher**, y movido el código a una clase base abstracta llamada **User**.
     - En el ejercicio 2 implementamos un método polimórfico llamado **SetPassword** que cambia el comportamiento en función de si el usuario es un estudiante o un profesor. También habrá modificado la aplicación para que los usuarios puedan cambiar sus passwords.
-    - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
+    - En el ejercicio 3 creamos una nueva clase de excepción personalizada para usarla e informar cuando hay demasiados estudiantes inscritos en una clase.
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
 
@@ -483,6 +483,12 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 1. En el menú **Crear**, haga clic en **Crear solución**.
 2. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
 3. Cuando se inicie la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee**, en el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión **.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-1-Valle.jpg "Registro como la profesora Esther Valle !!!")
+
+
 4. En la ventana **The School of Fine Arts**, haga clic en **Nuevo estudiante**.
 5. En la ventana **Detalles del estudiante nuevo**, ingrese los siguientes detalles y luego haga clic en **Aceptar**.
     
@@ -491,6 +497,10 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
     | First Name   | **Walter** |
     | Last Name    |  **Harp**  |
     | Password     | **abcdef** |
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-11-NewStudent.jpg "Agregando a un nuevo estudiante - Walter Harp !!!")
 
     > **Nota:** Los nuevos estudiantes no aparecerán en la ventana principal de la aplicación porque esto muestra a los estudiantes en la clase **Usuarios** y los nuevos estudiantes aún no se han asignado a una clase.
 6. En la ventana **The School of Fine Arts** haga clic en **Nuevo estudiante**.
@@ -502,6 +512,10 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
     | First Name   | **Andrew** |
     | Last Name    | **Harris** |
     | Password     | **abcdef** |
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-14-AddAndrew.jpg "Agregar a Andrew a la clase de Esther Valle !!!")
 
 8. En la ventana **The School of Fine Arts** haga clic en **Nuevo estudiante**.
 9. En la ventana **Detalles del estudiante nuevo**, ingrese los siguientes detalles y luego haga clic en **Aceptar**.
@@ -523,14 +537,30 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 	
 12. En la ventana **The School of Fine Arts** haga clic en **Inscribir estudiante**.
 13. En la ventana **Asignar estudiante**, haga clic en **Walter Harp**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-15-AssignAndrew.jpg "Asignación de Andrew a la clase de Esther Valle !!!")
+
 14. En el cuadro de mensaje **Confirmar**, haga clic en **Sí**.
 15. En la ventana **Asignar estudiante**, haga clic en **Andrew Harris**.
 16. En el cuadro de mensaje **Confirmar**, haga clic en **Sí**.
 17. En la ventana **Asignar estudiante**, haga clic en **Toni Poe**.
 18. En el cuadro de mensaje **Confirmar**, haga clic en **Sí**.
 19. En la ventana **Asignar estudiante**, haga clic en **Ben Andrews**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-16-AssignBen.jpg "Asignación de Ben a la clase de Esther Valle !!!")
+
 20. En el cuadro de mensaje **Confirmar**, haga clic en **Sí**.
 21. Verifique que aparezca el mensaje **Clase llena: No se puede inscribir al alumno: Clase: 3C** y luego haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-17-ErrorEnrollBen.jpg "Error en la Asignación de Ben a la clase de Esther Valle !!!")
+
+
 22. En la ventana **Asignar estudiante**, haga clic en **Cerrar**.
 23. Haga clic en **Cerrar sesión**.
 24. Cierre la aplicación.
