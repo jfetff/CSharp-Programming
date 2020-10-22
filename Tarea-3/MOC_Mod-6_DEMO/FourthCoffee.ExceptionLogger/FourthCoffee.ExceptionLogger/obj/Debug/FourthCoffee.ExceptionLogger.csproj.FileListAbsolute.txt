@@ -1,0 +1,17 @@
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\bin\Debug\FourthCoffee.ExceptionLogger.exe.config
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\bin\Debug\FourthCoffee.ExceptionLogger.exe
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\bin\Debug\FourthCoffee.ExceptionLogger.pdb
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\bin\Debug\Newtonsoft.Json.dll
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\bin\Debug\Newtonsoft.Json.xml
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.csprojAssemblyReference.cache
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\MainWindow.baml
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\MainWindow.g.cs
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\App.g.cs
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger_MarkupCompile.cache
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.g.resources
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.Properties.Resources.resources
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.csproj.GenerateResource.cache
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.csproj.CoreCompileInputs.cache
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.csproj.CopyComplete
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.exe
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.ExceptionLogger\FourthCoffee.ExceptionLogger\obj\Debug\FourthCoffee.ExceptionLogger.pdb

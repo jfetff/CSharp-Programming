@@ -7,11 +7,10 @@ _DEMO.md
 Entregar el url de GitHub con la solución y un readme con las siguiente información:
 
 1. **Nombres y apellidos:** José René Fuentes Cortez
-2. **Fecha:** 14 de Octubre 2020.
-3. **Resumen del Modulo 2:** Este módulo consta de tres ejercicios:
-    -  En el primer ejercio nos ayuda a actualizar la aplicación para refactorizar el código duplicado en métodos reutilizables.
-    - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
-    - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
+2. **Fecha:** 16 de Octubre 2020.
+3. **Resumen del Modulo 6:** Este módulo consta de tres leccions de la cuales solo haremos dos:
+    -  En la primera lección cargamos y manipulamos archivos desde nuestra aplicación.
+    - En la lección 2 hacemos serialziación y deserialización de objetos JSON, así como manipulación de archivos para mostrar archivos con objetos JSON y logs.
 
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
@@ -30,55 +29,71 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 
 #### Pasos de demostración
 
-1. Abrir **Estudio Visual 2017**.
-2. Navega a **[Raíz del Repositorio]\Ntodos los archivos\NMod06\N-Democodificar el Arrancador\N-CuartaCafé.LogProcessor**, y luego abre el archivo **CuartaCafé.LogProcessor.sln**.
+1. Abrir **Visual Studio 2019**.
+2. Navega a **[Repository Root]\Allfiles\Mod06\Democode\Starter\FourthCoffee.LogProcessor** y luego abre el archivo **FourthCoffee.LogProcessor.sln**.
      >**Nota :** Si aparece cualquier cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Pregúntame por cada proyecto de esta solución** y luego haga clic en **OK**.
-3. En **Estudio Visual**, en el menú **Ver**, haga clic en **Lista de tareas**.
+3. En **Visual Studio**, en el menú **Ver**, haga clic en **Lista de tareas**.
 4. En la ventana **Task List**, haga doble clic en el **TODO: 01: Asegure que el directorio de archivos de registro existe.** tarea.
 5. En el editor de códigos, haga clic en la línea en blanco debajo del comentario, y luego escriba el siguiente código:
-     "C
-     si (!Directorio.Existe(logDirectoryRoot))
-         lanzar el nuevo DirectoryNotFoundException();
-     ```
+    ```cs
+    if (!Directory.Exists(logDirectoryRoot))
+        throw new DirectoryNotFoundException();
+    ```
 6. En la ventana **Task List**, haga doble clic en el **TODO: 02: Get all log file paths.** task.
 7. En el editor de códigos, haga clic en la línea en blanco debajo del comentario, y luego escriba el siguiente código:
-     "C
-     devuelve Directory.GetFiles(this._logDirectoryPath, "*.txt");
-     ```
+    ```cs
+    return Directory.GetFiles(this._logDirectoryPath, "*.txt");
+    ```
 8. En la ventana **Task List**, haga doble clic en el **TODO: 03: Check for existing combined log file and delete if it already exists.** task.
 9. En el editor de códigos, haga clic en la línea en blanco debajo del comentario, y luego escriba el siguiente código:
-     "C
-     si (File.Exists(combinedLogPath))
-         File.Delete(combinedLogPath);
-     ```
-10. En la ventana **Task List**, haga doble clic en el **TODO: 04: Escriba el encabezamiento del archivo de registro combinado.** tarea.
+    ```cs
+    if (File.Exists(combinedLogPath))
+        File.Delete(combinedLogPath);
+    ```
+10. En la ventana **Task List**, haga doble clic en la tarea **TODO: 04: Write the heading to the combined log file.**.
 11. En el editor de códigos, haga clic en la línea en blanco debajo del comentario, y luego escriba el siguiente código:
-     "C
-     File.AppendAllLines(combinedLogPath, heading);
-     ```
-12. En la ventana **Task List**, haga doble clic en el **TODO: 05: Obtener el nombre del archivo de registro sin la extensión del archivo.** tarea.
+    ```cs
+    File.AppendAllLines(combinedLogPath, heading);
+    ```
+12. En la ventana **Task List**, haga doble clic en la tarea **TODO: 05: Get the log file name without the file extension.**.
 13. En el editor de códigos, haga clic en la línea en blanco debajo del comentario, y luego escriba el siguiente código:
-     "C
-     var logName = Path.GetFileNameWithoutExtension(logPath);
-     ```
-14. En la ventana **Task List**, haga doble clic en la tarea **TODO: Task 06: Read the contents of the existing log file.** task.
+    ```cs
+    var logName = Path.GetFileNameWithoutExtension(logPath);
+    ```
+14. En la ventana **Task List**, haga doble clic en la tarea **TODO: Task 06: Read the contents of the existing log file.**.
 15. En el editor de códigos, haga clic en la línea en blanco debajo del comentario, y luego escriba el siguiente código:
-     "C
-     var logText = File.ReadAllText(logPath);
-     ```
-16. En la ventana **Task List**, haga doble clic en la tarea **TODO: Tarea 07: Escriba el contenido del archivo de registro en el archivo de registro combinado.** tarea.
+    ```cs
+    var logText = File.ReadAllText(logPath);
+    ```
+16. En la ventana **Task List**, haga doble clic en la tarea **TODO: Task 07: Write the log file contents to the combined log file.**.
 17. En el editor de códigos, haga clic en la línea en blanco debajo del comentario, y luego escriba el siguiente código:
-     "C
-     File.AppendAllLines(combinedLogPath, logContent);
-     ```
-18. En la ventana **Lista de tareas**, haga doble clic en el **//TODO 09: Reemplace [Raíz del repositorio] por su ruta de acceso a la carpeta.** tarea.
+    ```cs
+    File.AppendAllLines(combinedLogPath, logContent);
+    ```
+18. En la ventana **Lista de tareas**, haga doble clic en la tarea **//TODO 09: Replace [Repository Root] with your folder path.**.
 19. Reemplaza **[Raíz del repositorio]** con la ruta de tu carpeta.
 20. En el menú **Construir**, haga clic en **Construir solución**.
 21. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
 22. En la ventana **Command Prompt**, cuando se le pida que pulse cualquier tecla para continuar, pulse Intro.
-23. Abre el **Explorador de Archivos** y navega a la carpeta **[Raíz del Repositorio]\N-Todos los Archivos {Mod06}Democode\N-Data/Logs**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-1-EjecutandoProgramCS.jpg "Ejecutando el programa sin depuración !!!")
+
+23. Abre el **Explorador de Archivos** y navega a la carpeta **[Repository Root]\Allfiles\Mod06\Democode\Data\Logs**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-2-CombinedLog.jpg "Ubicando el CombinedLog.txt !!!")
+
 24. Haga doble clic en **CombinedLog.txt**, verifique que el archivo contiene un encabezamiento, y luego verifique el contenido de cada archivo de registro.
-25. Cerrar **Notepad**, cerrar **Explorador de archivos**, y luego cerrar **Estudio visual**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-3-CombinedLogResults.jpg "Encabezado del CombinedLog text !!!")
+
+
+25. Cerrar **Notepad**, cerrar **Explorador de archivos**, y luego cerrar **Visual Studio**.
 
 ## Lección 2: Serializar y deserializar los datos
 
@@ -90,30 +105,30 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 
 #### Pasos de demostración
 
-1. Navega a **[Raíz del Repositorio]\Ntodos los archivos {Mod06\\N-Democodificar el Iniciador\Nde FourthCoffee.ExceptionLogger**, y luego abre el archivo **FourthCoffee.ExceptionLogger.sln**.
+1. Navega a **[Repository Root]\Allfiles\Mod06\Democode\Starter\FourthCoffee.ExceptionLogger**, y luego abre el archivo **FourthCoffee.ExceptionLogger.sln**.
      >**Nota :** Si aparece cualquier cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Pregúntame por cada proyecto de esta solución** y luego haga clic en **OK**.
 2. Haga clic con el botón derecho del ratón en el proyecto **FourthCoffee.ExceptionLogger**, y luego seleccione **Manage NuGet Packages**.
 3. En **NuGet: Cuarto Café. Registro de Excepciones, haga clic en "Examinar".
 4. Haga clic en el cuadro de texto **Búsqueda** y escriba **Newtonsoft.Json**
 5. Selecciona el resultado de **Newtonsoft.Json** y pulsa en el lado izquierdo de la ventana de **Instalación**.
 6. Cierra la ventana de **Instalación**.
-7. En **Estudio Visual**, en el menú **Ver**, haga clic en **Lista de tareas**.
+7. En **Visual Studio**, en el menú **Ver**, haga clic en **Lista de tareas**.
 8. En la ventana **Task List**, haga doble clic en la tarea **TODO: 01: Add Using for Newtonsoft.Json.**.
 9. En el editor de códigos, haga clic en la línea en blanco debajo del comentario, y luego escriba el siguiente código:
-     "C
-     usando Newtonsoft.Json;
-     ```
+    ```cs
+    using Newtonsoft.Json;
+    ```
 10. En la ventana **Task List**, haga doble clic en la tarea **TODO: 02: Convertir objeto en cadena JSON.**
 11. En el editor de códigos, al final del comentario presione **Enter**, y luego escriba el siguiente código:
-     "C
-     var jsonAsString = JsonConvert.SerializeObject(entry);
-     Archivo. Escribir todo el texto (path, jsonAsString);
-     ```
+    ```cs
+    var jsonAsString = JsonConvert.SerializeObject(entry);
+    File.WriteAllText(path,jsonAsString);
+    ```
 12. En la ventana **Task List**, haga doble clic en el **TODO: 03: Convertir cadena JSON en un objeto.** tarea.
 13. En el editor de códigos, haga clic en la línea en blanco debajo del comentario, y luego escriba el siguiente código:
-     "C
-     entry = JsonConvert.DeserializeObject<ExceptionEntry>(jsonAsStriong);
-     ```
+    ```cs
+    entry = JsonConvert.DeserializeObject<ExceptionEntry>(jsonAsStriong);
+    ```
 14. Expande el proyecto **FourthCoffee.ExceptionLogger** y haz doble clic en el archivo **App.config**.
 15. Reemplaza **[Raíz del repositorio]** con la ruta de tu carpeta.
 16. En el menú **Construir**, haga clic en **Construir solución**.
@@ -122,12 +137,38 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
      - Título: **Error crítico de la base de datos**
      - Detalles: **No pude encontrar el servidor de la base de datos**
 19. En el cuadro de mensajes **Save Successful**, haga clic en **OK**. La entrada de excepción ha sido ahora serializada.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-4-ExceptionLogger.jpg "Creando el Exception Logger !!!")
+
 20. Cierra la aplicación **Exception Logger**.
-21. Abre el **Explorador de Archivos** y navega a la carpeta **[Raíz del Repositorio]}Todos los Archivos {Mod06}Democodificar los datos**.
-22. En la carpeta **[Raíz del Repositorio]\N-Todos los archivos\NMod06\Democode\N-Datos\N-Excepciones**, haga doble clic en el archivo **Excepciones_\N- fecha y hora\N-.json**, Si el archivo JSON no se estaba abriendo, entonces haga clic con el botón derecho en el archivo y luego abra con el Bloc de notas.
+21. Abre el **Explorador de Archivos** y navega a la carpeta **[Repository Root]\Allfiles\Mod06\Democode\Data\Exceptions**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-5-ExceptionJSON.jpg "Ubicando el JSON Exception file !!!")
+
+22. En la carpeta **[Repository Root]\Allfiles\Mod06\Democode\Data\Exceptions**, haga doble clic en el archivo **Excepciones_\N- fecha y hora\N-.json**, Si el archivo JSON no se estaba abriendo, entonces haga clic con el botón derecho en el archivo y luego abra con el Bloc de notas.
 23. En **Notepad**, encuentra los elementos **Título** y **Detalles** de JSON.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-6-ExceptionJSONFile.jpg "Contenido del JSON Exception file !!!")
+
 24. Cambia a **Visual Studio**, y en el menú **Debug**, pulsa **Iniciar sin depuración**.
-25. En la ventana **Exception Logger**, en la lista de **Archivos**, pulsa **[Raíz del repositorio]\N-Todos los archivos {Mod06\N-Democode\N-Datos_Excepciones_Excepciones_<fecha y hora\N-.json**, y luego pulsa **Cargar**. El objeto **ExceptionEntry** ha sido ahora deserializado.
+25. En la ventana **Exception Logger**, en la lista de **Archivos**, pulsa **[Repository Root]\Allfiles\Mod06\Democode\Data\Exceptions\Exception_\<date and time\>.json**, y luego pulsa **Cargar**. 
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-7-CargarExceptionJSONFile.jpg "Deserializando el Contenido del JSON Exception file !!!")
+
+El objeto **ExceptionEntry** ha sido ahora deserializado.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-8-ExceptionJSONFileCargado.jpg " Contenido cargado del JSON Exception file !!!")
+
 26. Cierra la aplicación, cierra **Visual Studio**, y luego cierra **File Explorer**.
 
 ## Lección 3: Realizar E/S usando corrientes
@@ -140,7 +181,7 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 
 #### Pasos de demostración
 
-1. Abre la solución **GradesPrototype.sln** de la carpeta **[Raíz del Repositorio]\N-Todos los archivos {Mod06\\N-Labfiles\N-Solución\N-Ejercicio 2**.
+1. Abre la solución **GradesPrototype.sln** de la carpeta **[Repository Root]\Allfiles\Mod06\Labfiles\Solution\Exercise 2**.
      >**Nota :** Si aparece cualquier cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Pregúntame por cada proyecto de esta solución** y luego haga clic en **OK**.
 2. En la carpeta **Views**, abra **StudentProfile.xaml** y verifique que la interfaz de usuario ha sido actualizada para incluir el botón **Save Report** y el botón **Load Report**.
 3. En la carpeta **Vistas**, abre **Perfil del Estudiante.xaml.cs**, y localiza el método **SalvarInforme_Click**.

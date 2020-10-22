@@ -1,0 +1,6 @@
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.LogProcessor\FourthCoffee.LogProcessor\bin\Debug\FourthCoffee.LogProcessor.exe.config
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.LogProcessor\FourthCoffee.LogProcessor\bin\Debug\FourthCoffee.LogProcessor.exe
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.LogProcessor\FourthCoffee.LogProcessor\bin\Debug\FourthCoffee.LogProcessor.pdb
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.LogProcessor\FourthCoffee.LogProcessor\obj\Debug\FourthCoffee.LogProcessor.csproj.CoreCompileInputs.cache
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.LogProcessor\FourthCoffee.LogProcessor\obj\Debug\FourthCoffee.LogProcessor.exe
+C:\20483C\CSharp-Programming\Tarea-3\MOC_Mod-6_DEMO\FourthCoffee.LogProcessor\FourthCoffee.LogProcessor\obj\Debug\FourthCoffee.LogProcessor.pdb
