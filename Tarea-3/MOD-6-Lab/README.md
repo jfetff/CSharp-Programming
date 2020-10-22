@@ -2,19 +2,17 @@
 
 # Laboratorio: Generación y carga del informe de calificaciones
 
-Tiempo estimado:** 60 minutos **
+Tiempo estimado:**60 minutos**
 
 Fichero de Instrucciones: Instructions\20483C_MOD06_LAK.md
 
 Entregar el url de GitHub con la solución y un readme con las siguiente información:
 
 1. **Nombres y apellidos:** José René Fuentes Cortez
-2. **Fecha:** 14 de Octubre 2020.
-3. **Resumen del Modulo 2:** Este módulo consta de tres ejercicios:
-    -  En el primer ejercio nos ayuda a actualizar la aplicación para refactorizar el código duplicado en métodos reutilizables.
-    - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
-    - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
-
+2. **Fecha:** 16 de Octubre 2020.
+3. **Resumen del Modulo 6:** Este módulo consta de dos ejercicios:
+    -  En el primer ejercio hacemos que los usuarios podrán guardar los informes de los estudiantes en el disco duro local en formato JSON.
+    - En el ejercicio 2 agregamos código para que los usuarios puedan cargar los informes de los estudiantes desde el disco duro local.
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
 
@@ -118,18 +116,43 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 2. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
 3. En el cuadro de texto **Nombre de usuario**, escriba **vallee**.
 4. En el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-1-Valle.jpg "Lista de alumnos de Esther Valle !!!")
+
 5. En la ventana principal de la aplicación, haga clic en **Kevin Liu**.
 6. En la vista **Boleta de calificaciones**, haga clic en **Guardar informe**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-2-Kevin.jpg "Reporte academico de Kevin !!!")
+
 7. En el cuadro de diálogo **Guardar como**, haga clic en **Guardar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-3-GradesJSON.jpg "Reporte academico de Kevin !!!")
+
 8. Revise los datos JSON que se muestran en el cuadro de mensaje y luego haga clic en **Sí**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-4-SaveGradesJSON.jpg "Reporte academico de Kevin !!!")
+
 9. Cierre la aplicación.
 10. En **Visual Studio**, en el menú **Archivo**, haga clic en **Cerrar solución**.
 11. Cierre **Visual Studio**.
 12. Busque la carpeta de destino en la que acaba de guardar el archivo y abra el archivo **Grades.Json**.
     > **Nota:** Si el archivo JSON no se abre, haga clic con el botón derecho en el archivo guardado y seleccione abrir con y luego haga clic en **más aplicaciones** y seleccione **Selector de versiones de Microsoft Visual Studio** y haga clic en **Aceptar**.
-13. Busque el elemento **SubjectName **con el valor **Math **dentro de la matriz JSON.
+13. Busque el elemento **SubjectName** con el valor **Math** dentro de la matriz JSON.
 14. Cambie **\'Math\'Assessment** por **A** y **Comments** por **Very Good**.
 15. Guarde y cierre el archivo.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-5-ChangeGradesJSON.jpg "Reporte academico de Kevin !!!")
+
 
 > **Resultado:** Después de completar este ejercicio, los usuarios podrán guardar los informes de los estudiantes en el disco duro local en formato JSON.
 
@@ -186,11 +209,25 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 2. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
 3. En el cuadro de texto **Nombre de usuario**, escriba **vallee**.
 4. En el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión**.
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-1-Valle.jpg "Esther Valle inico de sesión !!!")
 5. En la ventana principal de la aplicación, haga clic en **Kevin Liu**.
 6. En la vista **Boleta de calificaciones**, haga clic en **Cargar informe**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-6-OpenKevinGradeReport.jpg "Abriendo el reporte de calificaciones de Kevin Liu !!!")
+
 7. En el cuadro de diálogo **Abrir**, vaya a la carpeta de destino donde se guardó el informe en la tarea anterior y localice el informe guardado.
+
 8. Seleccione el archivo de informe y luego haga clic en **Abrir**.
 9. Revise los datos que se muestran en la vista **Tarjeta de calificaciones** y verifique que los cambios que se realizaron en el archivo del informe se reflejen ahora.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-7-NuevoKevinGradeReport.jpg "Nuevo Reporte de calificaciones de Kevin Liu !!!")
+
 10. Cierre la aplicación.
 11. En **Visual Studio**, en el menú **Archivo**, haga clic en **Cerrar solución**.
 12. Cierre **Visual Studio**.
