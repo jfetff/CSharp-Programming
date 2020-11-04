@@ -173,7 +173,6 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 
  ![alt text](./Images/Fig-12-KevinGrades.jpg "Mostrando las notas de Kevin Liu !!!")
 
-
 ### Tarea 2: Mostrar el nombre del tema en la interfaz de usuario
 
 1. En **Visual Studio**, en la ventana **Lista de tareas**, haga doble clic en **TODO: Exercise 2: Task 2a: Convert the subject ID provided in the value parameter**.
