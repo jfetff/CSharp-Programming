@@ -26,6 +26,13 @@
           <Property Name="ImageName" Type="nvarchar(max)" Nullable="false" />
           <Property Name="TeacherUserId" Type="uniqueidentifier" />
         </EntityType>
+        <EntityType Name="Subjects">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
         <EntityType Name="Teachers">
           <Key>
             <PropertyRef Name="UserId" />
@@ -70,6 +77,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_SubjectGrade">
+          <End Role="Subjects" Type="Self.Subjects" Multiplicity="1" />
+          <End Role="Grades" Type="Self.Grades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subjects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Grades">
+              <PropertyRef Name="SubjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Teachers_diameterUsers">
           <End Role="Users" Type="Self.Users" Multiplicity="1" />
           <End Role="Teachers" Type="Self.Teachers" Multiplicity="0..1" />
@@ -97,6 +116,7 @@
         <EntityContainer Name="SchoolGradesDBModelStoreContainer">
           <EntitySet Name="Grades" EntityType="Self.Grades" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Students" EntityType="Self.Students" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Subjects" EntityType="Self.Subjects" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Teachers" EntityType="Self.Teachers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_StudentGrade" Association="Self.FK_StudentGrade">
@@ -106,6 +126,10 @@
           <AssociationSet Name="FK_Students_diameterUsers" Association="Self.FK_Students_diameterUsers">
             <End Role="Users" EntitySet="Users" />
             <End Role="Students" EntitySet="Students" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SubjectGrade" Association="Self.FK_SubjectGrade">
+            <End Role="Subjects" EntitySet="Subjects" />
+            <End Role="Grades" EntitySet="Grades" />
           </AssociationSet>
           <AssociationSet Name="FK_Teachers_diameterUsers" Association="Self.FK_Teachers_diameterUsers">
             <End Role="Users" EntitySet="Users" />
@@ -132,6 +156,7 @@
           <Property Name="SubjectId" Type="Int32" Nullable="false" />
           <Property Name="StudentUserId" Type="Guid" Nullable="false" />
           <NavigationProperty Name="Student" Relationship="Self.FK_StudentGrade" FromRole="Grades" ToRole="Students" />
+          <NavigationProperty Name="Subject" Relationship="Self.FK_SubjectGrade" FromRole="Grades" ToRole="Subjects" />
         </EntityType>
         <EntityType Name="Student">
           <Key>
@@ -145,6 +170,14 @@
           <NavigationProperty Name="Grades" Relationship="Self.FK_StudentGrade" FromRole="Students" ToRole="Grades" />
           <NavigationProperty Name="User" Relationship="Self.FK_Students_diameterUsers" FromRole="Students" ToRole="Users" />
           <NavigationProperty Name="Teacher" Relationship="Self.FK_TeacherStudent" FromRole="Students" ToRole="Teachers" />
+        </EntityType>
+        <EntityType Name="Subject">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Grades" Relationship="Self.FK_SubjectGrade" FromRole="Subjects" ToRole="Grades" />
         </EntityType>
         <EntityType Name="Teacher">
           <Key>
@@ -179,6 +212,18 @@
             </Principal>
             <Dependent Role="Grades">
               <PropertyRef Name="StudentUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SubjectGrade">
+          <End Role="Subjects" Type="Self.Subject" Multiplicity="1" />
+          <End Role="Grades" Type="Self.Grade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subjects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Grades">
+              <PropertyRef Name="SubjectId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -221,10 +266,15 @@
         <EntityContainer Name="SchoolGradesDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Grades" EntityType="Self.Grade" />
           <EntitySet Name="Students" EntityType="Self.Student" />
+          <EntitySet Name="Subjects" EntityType="Self.Subject" />
           <EntitySet Name="Teachers" EntityType="Self.Teacher" />
           <EntitySet Name="Users" EntityType="Self.User" />
           <AssociationSet Name="FK_StudentGrade" Association="Self.FK_StudentGrade">
             <End Role="Students" EntitySet="Students" />
+            <End Role="Grades" EntitySet="Grades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SubjectGrade" Association="Self.FK_SubjectGrade">
+            <End Role="Subjects" EntitySet="Subjects" />
             <End Role="Grades" EntitySet="Grades" />
           </AssociationSet>
           <AssociationSet Name="FK_Students_diameterUsers" Association="Self.FK_Students_diameterUsers">
@@ -266,6 +316,14 @@
                 <ScalarProperty Name="LastName" ColumnName="LastName" />
                 <ScalarProperty Name="ImageName" ColumnName="ImageName" />
                 <ScalarProperty Name="TeacherUserId" ColumnName="TeacherUserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subjects">
+            <EntityTypeMapping TypeName="SchoolGradesDBModel.Subject">
+              <MappingFragment StoreEntitySet="Subjects">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

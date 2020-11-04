@@ -47,20 +47,45 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 8. En el cuadro de texto **Nombre**, escriba **Grades.DataModel** y luego haga clic en **Aceptar**.
 9. Haga clic con el botón derecho en el proyecto **Grades.DataModel**, seleccione **Agregar** y luego haga clic en **Nuevo elemento **
 10. En el cuadro de diálogo **Agregar nuevo elemento - Grades.DataModel**, en la lista de modelos, haga clic en **ADO.NET Entity Data Model**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-1-EDM.jpg "Agregando un elemento ADO !!!")
+
 11. En el cuadro de texto **Nombre**, escriba **GradesModel** y luego haga clic en **Agregar**.
 12. En el **Entity Data Model Wizard**, en la página **Choose Model Contents**, haga clic en **EF Designer from database**, luego haga clic en **Next **ץ
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-2-EFDesigner.jpg "Escogiendo un EFDesigner !!!")
+
 13. En la página **Elija su conexión de datos**, haga clic en **Nueva conexión**.
 14. Si aparece el cuadro de diálogo **Elegir fuente de datos**, en la lista **Fuente de datos**, haga clic en **Microsoft SQL Server** y luego haga clic en **Continuar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-3-SchoolGradesDB.jpg "Escogiendo un EFDesigner !!!")
+
 15. En el cuadro de diálogo **Propiedades de conexión**, en el cuadro de texto **Nombre del servidor**, escriba **(localdb)\MSSQLLocalDB**.
 16. En la lista **Seleccione o ingrese un nombre de base de datos**, haga clic en **SchoolGradesDB** y luego haga clic en **Aceptar**.
 17. En **Entity Data Model Wizard**, en la página **Elija su conexión de datos**, haga clic en **Siguiente**.
 18. En la página **Elija su versión**, elija **Entity Framework 6.x** y luego haga clic en **Siguiente**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-4-Framework.jpg "Escogiendo el framework !!!")
+
 19. En la página **Elija los objetos y parámetros de su base de datos**, expanda **Tables**, expanda **dbo**, seleccione las siguientes tablas y luego haga clic en **Finalizar **:
     - **Grades**
     - **Students**
     - **Subjects**
     - **Teachers**
     - **Users**
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-5-EDM_esquema.jpg "Esquema visual de la clases del proyecto !!!")
+
 20. Si aparece el cuadro de diálogo **Advertencia de seguridad**, haga clic en **No volver a mostrar este mensaje** y luego haga clic en **Aceptar**.
 21. En el menú **Crear**, haga clic en **Crear solución**.
 
@@ -68,12 +93,31 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 
 1. En la ventana **Diseñador**, examine las entidades que se han generado.
 2. Revise las propiedades y las propiedades de navegación de la entidad **Grade**.
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-6-MapeoDeClases.jpg "Esquema visual de la clases del proyecto !!!")
+
 3. Haga clic con el botón derecho en el encabezado de la entidad **Calificaciones** y luego haga clic en **Asignación de tablas**.
 4. En el panel **Detalles de asignación - Notas**, examine las asignaciones entre las columnas de la tabla de la base de datos y las propiedades de la entidad.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-7-RelacionColumnaEntidad.jpg "Relación entre las columnas y la entidad !!!")
+
 5. En **Explorador de soluciones**, expanda **GradesModel.edmx**, expanda **GradesModel.Context.tt** y luego haga doble clic en **GradesModel.Context.cs**.
 6. En la ventana **Código**, observe que el asistente ha creado un objeto **DbContext **llamado **SchoolGradesDBEntities**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-9-DBEntity.jpg "Creación de la School Grade entidad !!!")
+
 7. En **Explorador de soluciones**, expanda **GradesModel.tt** y luego haga doble clic en **Grades.cs**.
 8. Tenga en cuenta que el asistente ha creado una propiedad para cada columna de la tabla de base de datos **Calificaciones**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-10-PropiedadesAgregadas.jpg "Creación de propiedades para la clase Grade !!!")
+
 9. En el menú **Archivo**, haga clic en **Guardar todo**.
 10. En el menú **Archivo**, haga clic en **Cerrar solución**.
 

@@ -27,6 +27,7 @@ namespace Grades.DataModel
     
         public virtual DbSet<Grade> Grades { get; set; }
         public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<Subject> Subjects { get; set; }
         public virtual DbSet<Teacher> Teachers { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }

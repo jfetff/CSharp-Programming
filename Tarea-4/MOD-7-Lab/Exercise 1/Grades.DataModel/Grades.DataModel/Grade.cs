@@ -22,5 +22,6 @@ namespace Grades.DataModel
         public System.Guid StudentUserId { get; set; }
     
         public virtual Student Student { get; set; }
+        public virtual Subject Subject { get; set; }
     }
 }

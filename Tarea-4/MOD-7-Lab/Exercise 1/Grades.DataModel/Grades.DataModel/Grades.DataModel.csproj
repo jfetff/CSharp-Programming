@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6BE69AD0-82DD-4BED-819F-42E3439A705F}</ProjectGuid>
+    <ProjectGuid>{F841B75E-ECCA-4AB5-BB62-9619C6702BED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Grades.DataModel</RootNamespace>
@@ -71,6 +71,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs">
+      <DependentUpon>GradesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Subject.cs">
       <DependentUpon>GradesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Teacher.cs">
