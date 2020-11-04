@@ -155,9 +155,24 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 11. En el menú **Crear**, haga clic en **Crear solución**.
 12. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
 13. Cuando se cargue la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee** y en el cuadro de texto **Password**, escriba **password99 **, luego haga clic en **Iniciar sesión * *.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-11-Login.jpg "Login de Esther Valle !!!")
+
 14. En la vista **Class 3C**, haga clic en **Kevin Liu**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-12-LoginEsther.jpg "Mostrando la clase 3C!!!")
+
 15. Verifique que aparezcan las notas de Kevin Liu.
 16. Tenga en cuenta que la columna **asunto** utiliza el ID del asunto en lugar del nombre del asunto, luego cierre la aplicación.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-12-KevinGrades.jpg "Mostrando las notas de Kevin Liu !!!")
+
 
 ### Tarea 2: Mostrar el nombre del tema en la interfaz de usuario
 

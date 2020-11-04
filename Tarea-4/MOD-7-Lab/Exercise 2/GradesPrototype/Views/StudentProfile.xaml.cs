@@ -278,10 +278,19 @@ namespace GradesPrototype.Views
             }
 
             // TODO: Exercise 2: Task 1a: Find all the grades for the student.
-            
+            List<Grades.DataModel.Grade> grades = new List<Grades.DataModel.Grade>();
+
+            foreach (Grades.DataModel.Grade grade in SessionContext.DBContext.Grades)
+            {
+                if (grade.StudentUserId == SessionContext.CurrentStudent.UserId)
+                {
+                    grades.Add(grade);
+                }
+            }
+
 
             // TODO: Exercise 2: Task 1b: Display the grades in the studentGrades ItemsControl by using databinding
-            
+            studentGrades.ItemsSource = grades;
         }
     }
 
