@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f8c879a45c5143c1b21241ca91b36cfa" Name="Diagram1">
+        <EntityTypeShape EntityType="SchoolGradesDBModel.Grade" Width="1.5" PointX="7.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolGradesDBModel.Student" Width="1.5" PointX="5.625" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolGradesDBModel.Teacher" Width="1.5" PointX="3.875" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolGradesDBModel.User" Width="1.5" PointX="2.25" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="SchoolGradesDBModel.FK_StudentGrade" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolGradesDBModel.FK_Students_diameterUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolGradesDBModel.FK_TeacherStudent" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolGradesDBModel.FK_Teachers_diameterUsers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
