@@ -44,7 +44,7 @@ namespace FourthCoffee.MetaDataExtractor
             {
                 // TODO: 02: Invoke the MemberInfo.GetCustomAttribute method.
                 
-
+                var memberAttribute = member
                 results.Items.Add(this.FormatComment(memberAttribute, member.Name, member.MemberType.ToString()));
             }
         }
