@@ -1,0 +1,12 @@
+C:\20483C\CSharp-Programming\Tarea-4\MOC_Mod-7_DEMO\Demo1\FourthCoffee.Employees\bin\Debug\FourthCoffee.Employees.exe.config
+C:\20483C\CSharp-Programming\Tarea-4\MOC_Mod-7_DEMO\Demo1\FourthCoffee.Employees\bin\Debug\FourthCoffee.Employees.exe
+C:\20483C\CSharp-Programming\Tarea-4\MOC_Mod-7_DEMO\Demo1\FourthCoffee.Employees\bin\Debug\FourthCoffee.Employees.pdb
+C:\20483C\CSharp-Programming\Tarea-4\MOC_Mod-7_DEMO\Demo1\FourthCoffee.Employees\bin\Debug\EntityFramework.dll
+C:\20483C\CSharp-Programming\Tarea-4\MOC_Mod-7_DEMO\Demo1\FourthCoffee.Employees\bin\Debug\EntityFramework.SqlServer.dll
+C:\20483C\CSharp-Programming\Tarea-4\MOC_Mod-7_DEMO\Demo1\FourthCoffee.Employees\bin\Debug\EntityFramework.xml
+C:\20483C\CSharp-Programming\Tarea-4\MOC_Mod-7_DEMO\Demo1\FourthCoffee.Employees\bin\Debug\EntityFramework.SqlServer.xml
+C:\20483C\CSharp-Programming\Tarea-4\MOC_Mod-7_DEMO\Demo1\FourthCoffee.Employees\obj\Debug\FourthCoffee.Employees.csprojAssemblyReference.cache
+C:\20483C\CSharp-Programming\Tarea-4\MOC_Mod-7_DEMO\Demo1\FourthCoffee.Employees\obj\Debug\FourthCoffee.Employees.csproj.CoreCompileInputs.cache
+C:\20483C\CSharp-Programming\Tarea-4\MOC_Mod-7_DEMO\Demo1\FourthCoffee.Employees\obj\Debug\FourthCoffee.Employees.csproj.CopyComplete
+C:\20483C\CSharp-Programming\Tarea-4\MOC_Mod-7_DEMO\Demo1\FourthCoffee.Employees\obj\Debug\FourthCoffee.Employees.exe
+C:\20483C\CSharp-Programming\Tarea-4\MOC_Mod-7_DEMO\Demo1\FourthCoffee.Employees\obj\Debug\FourthCoffee.Employees.pdb

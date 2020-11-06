@@ -12,9 +12,9 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 14 de Octubre 2020.
 3. **Resumen del Modulo 2:** Este módulo consta de tres ejercicios:
-    -  En el primer ejercio nos ayuda a actualizar la aplicación para incluir un Manejador de Manejador de Datos (EDM) para acceder a la base de datos de La Escuela de Finos Artes.
-    - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
-    - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
+    -  En el primer ejercio nos ayuda a actualizar la aplicación para incluir un Manejador de Manejador de Datos (EDM) para acceder a la base de datos de La Escuela de Finos Artes. 
+    - En el ejercicio 2 creamos en la aplicación un prototipo para incluir un Entity Data Manager (EDM) que se puede usar para acceder a la base de datos de **The School of Fine Arts**..
+    - En el ejercicio 3 hacemos que la aplicación genere y maneje excepciones cuando se ingresen datos no válidos.
 
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
