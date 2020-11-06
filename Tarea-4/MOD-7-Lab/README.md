@@ -236,11 +236,31 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 1. En el menú **Crear**, haga clic en **Crear solución**.
 2. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
 3. Cuando se cargue la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee** y en el cuadro de texto **Password**, escriba **password99**, luego haga clic en **Iniciar sesión * *.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-11-Login.jpg "Login de Esther Valle !!!")
+
 4. En la vista **Class 3C**, haga clic en **Kevin Liu**.
 5. Verifique que la lista de Notas ahora muestre el nombre del tema, no el ID del tema.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-13-SubjectName.jpg "Mostrando los nombres de la asignaturas !!!")
+
 6. En la vista **Boleta de calificaciones**, haga clic en **Agregar nota**.
 7. En el cuadro de diálogo **Detalles de calificación nueva**, en la lista **Asignatura**, haga clic en **Geografía**, en el cuadro de texto **Evaluación**, escriba **A+**, en el cuadro de texto **Comentarios**, escriba **¡Bien hecho!**, luego haz clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-14-AddGrade.jpg "Agregando una nota !!!")
+
 8. Verifique que la nueva nota esté agregada a la lista y luego cierre la aplicación.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-15-AddedGrade.jpg "Verificando que la nota ha sido agregada !!!")
+
 9. En **Visual Studio**, en el menú **Archivo**, haga clic en **Cerrar solución**.
 
 > **Resultado:** Después de completar este ejercicio, los usuarios verán las calificaciones del estudiante actual y agregarán nuevas calificaciones.
@@ -373,16 +393,63 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 1. En el menú **Crear**, haga clic en **Crear solución**.
 2. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
 3. Cuando se cargue la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee** y en el cuadro de texto **Password**, escriba **password99**, luego haga clic en **Iniciar sesión * *.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-11-Login.jpg "Login de Esther Valle !!!")
+
 4. Cuando se cargue la aplicación, haga clic en **Inscribir estudiante**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-16-EnrollStudent.jpg "Enroling un estudiante - Eric Gruber !!!")
+
 5. En el cuadro de diálogo **Asignar un alumno**, haga clic en **Eric Gruber**, en el cuadro de mensaje **Confirmar**, haga clic en **Sí** y luego en el **mensaje de error al registrar al estudiante**, haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-18-ErrorEnroll.jpg "Verificar la inscripción de un estudiante - Eric Gruber !!!")
+
 6. En el cuadro de diálogo **Anular asignación de alumno**, haga clic en **Cerrar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-17-VerificarEnroll.jpg "Verificar la inscripción de un estudiante - Eric Gruber !!!")
+
 7. En la vista **Class 3C**, haga clic en **Kevin Liu**, luego haga clic en **Agregar nota**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-14-AddGrade.jpg "Agregando una nota a Kevin Liu !!!")
+
 8. En el cuadro de diálogo **Detalles de nota nueva**, en el cuadro de texto **Fecha**, escriba la fecha de mañana y luego haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-19-AddDateGrade.jpg "Agregando la fecha a una nota !!!")
+
 9. En el cuadro de mensaje **Error al crear la evaluación**, haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-20-ErrorAddDateGrade.jpg "Mostrando el error al agregar fecha !!!")
+
 10. En el cuadro de diálogo **Detalles de nueva calificación**, en el cuadro de texto **Fecha**, escriba **19/8/2012**, en el cuadro de texto **Evaluación**, escriba * * F + * *, luego haga clic en **Aceptar**.
+
 11. En el cuadro de mensaje **Error al crear la evaluación**, haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-21-ErrorAddGrade.jpg "Error al agregar fecha después de la fecha actual !!!")
+
 12. En el cuadro de diálogo **Detalles de nueva calificación**, en el cuadro de texto **Calificación**, escriba **A+**, en el cuadro de texto **Comentarios**, escriba **¡Bien jugado!**, luego haz clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-22-NewAddedGrade.jpg "Verificando que la nueva nota ha sido agregada !!!")
+
 13. Verifique que la nueva nota esté agregada a la lista, luego cierre la aplicación.
+
 14. En **Visual Studio**, en el menú **Archivo**, haga clic en **Cerrar solución**.
 
 > **Resultado:** Después de completar este ejercicio, la aplicación generará y manejará excepciones cuando se ingresen datos no válidos.

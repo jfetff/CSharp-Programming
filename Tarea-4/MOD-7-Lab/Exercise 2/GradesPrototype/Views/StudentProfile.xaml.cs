@@ -104,7 +104,6 @@ namespace GradesPrototype.Views
                 // TODO: Exercise 2: Task 3b: Display the form and get the details of the new grade.
                 if (gd.ShowDialog().Value)
                 {
-
                     // TODO: Exercise 2: Task 3c: When the user closes the form, retrieve the details of the assessment grade from the form
                     // and use them to create a new Grade object.
                     Grades.DataModel.Grade newGrade = new Grades.DataModel.Grade();
