@@ -32,7 +32,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 1. Navega a la carpeta **[Raíz del Repositorio]\N-Todos los Archivos {Mod07\Democode\N-Bases de Datos**, y luego haz doble clic en **SetupFourthCoffeeDB.cmd**.
      >**Nota:** Si aparece un diálogo de Windows protegido de su PC, haga clic en **Más información** y luego en **Ejecutar de todos modos**.
-2. Localiza la carpeta **[Raíz del Repositorio]\N-Todos los archivos\N-Mod07\N-Democode\N-Bases de Datos** de nuevo, haz clic con el botón derecho en **FourthCoffee.sql**, apunta a **Abrir con**, haz clic en **Selector de Versión de Microsoft Visual Studio**, luego haz clic en **Abrir**.
+2. Localiza la carpeta **[Repository Root]\Allfiles\Mod07\Democode\Databases** de nuevo, haz clic con el botón derecho en **FourthCoffee.sql**, apunta a **Abrir con**, haz clic en **Selector de Versión de Microsoft Visual Studio**, luego haz clic en **Abrir**.
 
 - La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
 
@@ -153,9 +153,9 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 
 #### Pasos de demostración
 
-1. Abrir **Estudio Visual 2017**.
+1. Abrir **Estudio Visual 2019**.
 2. En Visual Studio, en el menú **Archivo**, apunta a **Abrir**, y luego haz clic en **Proyecto/Solución**.
-3. En el cuadro de diálogo **Proyecto Abierto**, busque la carpeta **[RepositoryRoot]\Allfiles\Mod07\Democode\Demo2\FourthCoffee.Employees**, haga clic en **FourthCoffee.Employees.sln**, y luego haga clic en **Abrir**.
+3. En el cuadro de diálogo **Proyecto Abierto**, busque la carpeta **[RepositoryRoot]\Allfiles\Mod07\Democode\Demo3\FourthCoffee.Employees**, haga clic en **FourthCoffee.Employees.sln**, y luego haga clic en **Abrir**.
      >**Nota :** Si aparece cualquier cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Pregúntame por cada proyecto de esta solución** y luego haga clic en **OK**.
 4. En **Solution Explorer**, expande **FourthCoffee.Employees**, y luego haz doble clic en **Program.cs**.
 5. Revise el código LINQ en cada uno de los métodos.
@@ -204,6 +204,24 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
     - **GroupingData**
     - **Agregando datos**
     - **NavigatingData**
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-16-UsandoTiposAnonimos.jpg "Consultando la base de datos usando datos anónimos !!!")
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-17-TiposAnonimosPorGrupo.jpg "Consultando la base de datos usando datos anónimos y agrupando los datos !!!")
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-18-TiposAnonimosAddData.jpg "Consultando la base de datos usando datos anónimos y agregando datos !!!")
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-19-TiposAnonimosNavegandoData.jpg "Consultando la base de datos usando datos anónimos y navegando por los datos !!!")
+
+
 10. Para cerrar la aplicación, pulse Intro.
 11. En Visual Studio, en el menú **Archivo**, haga clic en **Cerrar solución**.
 
@@ -214,15 +232,15 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 1. Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segmentos de código para los laboratorios y demostraciones de este curso. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
 2. Iniciar la base de datos:
      - En la lista de **Aplicaciones**, haz clic en **Explorador de archivos**.
-     - En **Explorador de Archivos**, navega a la carpeta **[Raíz del Repositorio]\N-Todos los Archivos {Mod07\\N-Labfiles\N-Bases de Datos**, y luego haz doble clic en **SetupSchoolGradesDB.cmd**.
+     - En **Explorador de Archivos**, navega a la carpeta **[Repository Root]\Allfiles\Mod07\Labfiles\Databases**, y luego haz doble clic en **SetupSchoolGradesDB.cmd**.
          >**Nota:** Si aparece un diálogo de Windows protegido de su PC, haga clic en **Más información** y luego en **Ejecutar de todos modos**.
      - Cerrar **File Explorer**.
 
 #### Pasos de demostración
 
-1. Abrir **Estudio Visual 2017**.
+1. Abrir **Estudio Visual 2019**.
 2. En Visual Studio, en el menú **Archivo**, apunta a **Abrir**, y luego haz clic en **Proyecto/Solución**.
-3. En el cuadro de diálogo **Abrir Proyecto**, navega a la carpeta **[Raíz del Repositorio]}Todos los Archivos {Mod07}Labfiles\Solución\Ejercicio 3**, haz clic en **GradesPrototype.sln**, y luego haz clic en **Abrir**.
+3. En el cuadro de diálogo **Abrir Proyecto**, navega a la carpeta **[Repository Root]\Allfiles\Mod07\Labfiles\Solution\Exercise 3**, haz clic en **GradesPrototype.sln**, y luego haz clic en **Abrir**.
      >**Nota :** Si aparece cualquier cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Pregúntame por cada proyecto de esta solución** y luego haga clic en **OK**.
 4. En **Server Explorer**, expandir **Conexión de datos**, gastar **{SuNombre} {Sqlexpress.SchoolGradesDB.dbo** conexión de datos y luego expandir **Tablas**.
      >**Nota :** Si **SchoolGradesDB** no aparecía en el Explorador del Servidor, puedes añadirlo manualmente haciendo clic en el botón **Add New Database**.
