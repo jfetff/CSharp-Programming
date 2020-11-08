@@ -191,9 +191,9 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 
 #### Pasos de demostración
 
-1. Abrir **Estudio Visual 2017**.
+1. Abrir **Estudio Visual 2019**.
 2. En Visual Studio, en el menú **Archivo**, apunta a **Abrir**, y luego haz clic en **Proyecto/Solución**.
-3. En el cuadro de diálogo **Proyecto Abierto**, vaya a la carpeta **[Raíz del Repositorio]}Todos los Archivos {Mod07}Democode\N-Demo4\FourthCoffee.Employees**, haga clic en **FourthCoffee.Employees.sln**, y luego haga clic en **Abrir**.
+3. En el cuadro de diálogo **Proyecto Abierto**, vaya a la carpeta **[RepositoryRoot]\Allfiles\Mod07\Democode\Demo4\FourthCoffee.Employees****, haga clic en **FourthCoffee.Employees.sln**, y luego haga clic en **Abrir**.
      >**Nota :** Si aparece cualquier cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Pregúntame por cada proyecto de esta solución** y luego haga clic en **OK**.
 4. En **Solution Explorer**, expande **FourthCoffee.Employees**, y luego haz doble clic en **Program.cs**.
 5. Revise el código LINQ en cada uno de los métodos.
