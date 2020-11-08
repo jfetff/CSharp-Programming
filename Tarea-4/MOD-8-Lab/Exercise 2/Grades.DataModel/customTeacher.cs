@@ -14,7 +14,6 @@ namespace Grades.DataModel
         {
             // Verify that this teacher's class is not already full.
             // Determine how many students are currently in the class.
-            // TODO: Exercise 2: Task 2e: Refer to the Students collection in the SessionContext.DBContext object
             int numStudents = (from s in Students
                                where s.TeacherUserId == UserId
                                select s).Count();

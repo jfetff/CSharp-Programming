@@ -12,7 +12,6 @@ namespace GradesPrototype.Services
     // Global context for operations performed by MainWindow
     public class SessionContext
     {
-        // TODO: Exercise 2: Task 2a: Specify the URL of the GradesWebDataService
         public static Grades.DataModel.SchoolGradesDBEntities DBContext = new SchoolGradesDBEntities();
 
         public static Guid UserID;
