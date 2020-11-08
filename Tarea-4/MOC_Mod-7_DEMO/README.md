@@ -125,12 +125,23 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 4. En **Solution Explorer**, expande **FourthCoffee.Employees**, y luego haz doble clic en **Program.cs**.
 5. Revisar la definición de la variable **DBContext**.
 6. Revise el código en el método **PrintEmployeesList** que utiliza la variable **DBContext** para acceder a los datos en el EDM.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-11-DBContext.jpg "Verificando que el código generado contiene la variable DBContext !!!")
+
+Fig-11-DBContext
 7. Revise el código en el método **Main** que utiliza el método de extensión **First** para recuperar a un empleado y luego modifica la propiedad **Apellido** de ese empleado.
 8. En el menú **Construir**, haga clic en **Construir solución**.
 9. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
 10. Verifique que se muestre la lista de Employees y luego pulse Intro.
 11. Verifique que la empleada llamada **Diane Prescott** se llama ahora **Diane Forsyth** y luego presione Enter.
 12. Para cerrar la aplicación, pulse Intro.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-12-LastName.jpg "Verificando que el apellido del Diane ha sido cambiado !!!")
+
 
 ## Lección 2: Consulta de datos mediante el uso de LINQ
 
@@ -144,16 +155,31 @@ Asegúrate de que has clonado el directorio 20483C de GitHub. Contiene los segme
 
 1. Abrir **Estudio Visual 2017**.
 2. En Visual Studio, en el menú **Archivo**, apunta a **Abrir**, y luego haz clic en **Proyecto/Solución**.
-3. En el cuadro de diálogo **Proyecto Abierto**, busque la carpeta **[Raíz del Repositorio]}Todos los archivos {Mod07}Democode3{\i}FourthCoffee.Employees**, haga clic en **FourthCoffee.Employees.sln**, y luego haga clic en **Abrir**.
+3. En el cuadro de diálogo **Proyecto Abierto**, busque la carpeta **[RepositoryRoot]\Allfiles\Mod07\Democode\Demo2\FourthCoffee.Employees**, haga clic en **FourthCoffee.Employees.sln**, y luego haga clic en **Abrir**.
      >**Nota :** Si aparece cualquier cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Pregúntame por cada proyecto de esta solución** y luego haga clic en **OK**.
 4. En **Solution Explorer**, expande **FourthCoffee.Employees**, y luego haz doble clic en **Program.cs**.
 5. Revise el código LINQ en cada uno de los métodos.
 6. En el menú **Construir**, haga clic en **Construir solución**.
 7. En el menú **Debug**, haga clic en **Iniciar sin depuración**.
 8. En la ventana de la consola, revise la salida del método **QueryingData**, y luego presione Enter.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-13-LINQ.jpg "Consultando los datos en la base de datos !!!")
+
+
 9. Repita el paso 8 para cada uno de los siguientes métodos:
     - **Filtrando datos por fila**
     - **Filtrando los datos por columna**
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-14-FilterLastName.jpg "Consultando los datos en la base de datos por apellido !!!")
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-15-FilterCol.jpg "Consultando los datos en la base de datos por columna !!!")
+
 10. Para cerrar la aplicación, pulse Intro.
 11. En Visual Studio, en el menú **Archivo**, haga clic en **Cerrar solución**.
 
