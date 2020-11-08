@@ -1,0 +1,28 @@
+{
+   "@base": "http://localhost:1655/Services/GradesWebDataService.svc/",
+   "workspace": {
+      "title": "Default",
+      "collection": [
+         {
+            "@href": "Grades",
+            "title": "Grades"
+         },
+         {
+            "@href": "Students",
+            "title": "Students"
+         },
+         {
+            "@href": "Subjects",
+            "title": "Subjects"
+         },
+         {
+            "@href": "Teachers",
+            "title": "Teachers"
+         },
+         {
+            "@href": "Users",
+            "title": "Users"
+         }
+      ]
+   }
+}

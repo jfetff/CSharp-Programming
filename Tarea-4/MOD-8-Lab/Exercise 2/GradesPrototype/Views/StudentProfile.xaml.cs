@@ -73,6 +73,9 @@ namespace GradesPrototype.Views
                 if (reply == MessageBoxResult.Yes)
                 {
                     SessionContext.CurrentTeacher.RemoveFromClass(SessionContext.CurrentStudent);
+
+                    // TODO: Exercise 2: Task 3b: Specify that the current student has been changed
+
                     SessionContext.Save();
 
                     // Go back to the previous page - the student is no longer a member of the class for the current teacher
@@ -117,6 +120,7 @@ namespace GradesPrototype.Views
                     newGrade.StudentUserId = SessionContext.CurrentStudent.UserId;
                     
                     // Save the grade.
+                    // TODO: Exercise 2: Task 2g: Use the AddToGrades method to add a new grade
                     SessionContext.DBContext.Grades.Add(newGrade);
                     SessionContext.Save();
 
@@ -150,6 +154,7 @@ namespace GradesPrototype.Views
                 if (result.HasValue && result.Value)
                 {
                     // Get the grades for the currently selected student
+                    // TODO: Exercise 2: Task 2h: Load Subject data with Grades
                     IEnumerable<Grades.DataModel.Grade> grades = (from g in SessionContext.DBContext.Grades
                                                                   where g.StudentUserId == SessionContext.CurrentStudent.UserId
                                                                   select g);
@@ -312,7 +317,7 @@ namespace GradesPrototype.Views
         {
             // Convert the subject ID provided in the value parameter.
             int subjectId = (int)value;
-            var subject = SessionContext.DBContext.Subjects.FirstOrDefault(s => s.Id == subjectId);
+            var subject = SessionContext.DBContext.Subjects.Where(s => s.Id == subjectId).FirstOrDefault();
 
 
             // Return the subject name or the string "N/A".
