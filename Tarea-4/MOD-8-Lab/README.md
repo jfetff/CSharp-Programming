@@ -12,7 +12,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 19 de Octubre 2020.
 3. **Resumen del Modulo 8:** Este módulo consta de tres ejercicios:
-    -  En el primer ejercio nos ayuda a actualizar la aplicación para refactorizar el código duplicado en métodos reutilizables.
+    -  En el primer ejercio nos ayuda a actualizar la aplicación para configurar un servicio de datos WCF en la aplicación para proporcionar acceso remoto a la base de datos **SchoolGrades**..
     - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
     - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
 
@@ -103,7 +103,6 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
         var students = from Student s in this.CurrentDataSource.Students
             where String.Equals(s.Teacher.Class, className)
                        select s;
-
         return students;
     }
     ```
@@ -120,11 +119,12 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 2. En **Explorar soluciones**, en el proyecto **Grades.Web**, en la carpeta **Servicios**, haga clic con el botón derecho en **GradesWebDataService.svc** y luego haga clic en **Ver en el navegador (Microsoft Edge)**.
 3. En Microsoft Edge, si aparece el mensaje **La configuración de la intranet está desactivada de forma predeterminada**, haga clic en **No volver a mostrar este mensaje**.
 
+4. Verifique que Microsoft Edge muestre una descripción XML de las entidades que expone el Servicio de datos.
+
 - La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
 
- ![alt text](./Images/Fig-1-AgregadoEntityFramework.jpg "Agregando el Entity Framework !!!")
+ ![alt text](./Images/Fig-2-VisualizandoXML.jpg "Visualizando el archivo XML de servicio !!!")
 
-4. Verifique que Microsoft Edge muestre una descripción XML de las entidades que expone el Servicio de datos.
 5. Cierre el navegador.
 6. En Visual Studio, en el menú **Archivo**, haga clic en **Cerrar solución**.
 
@@ -138,14 +138,41 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 2. En el cuadro de diálogo **Abrir proyecto**, busque **[Raíz del repositorio]\Allfiles\Mod08\Labfiles\Starter\Ejercicio 2**, haga clic en **GradesPrototype.sln** y luego haga clic en **Abrir**.
     > **Nota:** Si aparece algún cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Preguntarme por cada proyecto en esta solución** y luego haga clic en **Aceptar**.
 3. En **Solution Explorer**, haga clic con el botón derecho en la solución **GradesPrototype** y luego haga clic en **Set StartUp Projects**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-3-Inicio.jpg "Estableciendo GradePrototype como proyecto de inicio !!!")
+
 4. En el cuadro de diálogo **Páginas de propiedades de la solución 'GradesPrototype'**, haga clic en **Varios proyectos de inicio**.
 5. En la columna **Acción** para **Grades.Web** y **GradesPrototype**, haga clic en **Inicio** y luego en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-4-InicioMultiple.jpg "Estableciendo Multiples proyectos que inicien al comienzo !!!")
+
+
 6. En el menú **Generar**, haga clic en **Reconstruir solución**.
 7. En el Explorador de soluciones, en el proyecto **Grades.Web**, en la carpeta **Servicios**, haga clic con el botón derecho en **GradesWebDataService.svc** y luego haga clic en **Ver en el navegador (Microsoft Edge) * *.
 8. En **Solution Explorer**, expanda **GradesPrototype**, expanda **References**, haga clic con el botón derecho en **Grades.DataModel** y luego haga clic en **Remove**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-5-QuitandoGradeDataModel.jpg "Quitando el GradeDataModel !!!")
+
 9. Haga clic con el botón derecho en **Referencias** y luego haga clic en **Agregar servicio conectado**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-6-AgregandoServicioConectado.jpg "Quitando el GradeDataModel !!!")
+
 10. En la ventana **Servicios conectados**, elija **Servicio conectado de OData**.
 11. En el cuadro de diálogo **Configurar punto final**, en el cuadro de texto **Nombre del servicio**, escriba **Grades.DataModel**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-5-QuitandoGradeDataModel.jpg "Configurando el nuevo servicio conectado !!!")
+
+
 12. En el cuadro de texto **Dirección**, escriba **http://localhost:1655/Services/GradesWebDataService.svc/$metadata** y luego haga clic en **Siguiente**.
 13. Haga clic en **Finalizar** y espere hasta que se complete el proceso.
 14. En **Solution Explorer**, en el proyecto **GradesPrototype**, expanda **Connected Services**, expanda la carpeta **Grades.DataModel** y luego haga doble clic en **Reference.cs **.
@@ -155,7 +182,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
     ```'
 16. En **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **GradesPrototype**, seleccione **Agregar** y luego haga clic en **Nueva carpeta**.
 17. Elimine el nombre existente, escriba **DataModel** y luego presione Entrar.
-18. En **Explorador de soluciones**, expanda el proyecto **Grades.DataModel**, haga clic con el botón derecho en **Classes.cs **y, a continuación, haga clic en **Copiar**.
+18. En **Explorador de soluciones**, expanda el proyecto **Grades.DataModel**, haga clic con el botón derecho en **Classes.cs**, y a continuación, haga clic en **Copiar**.
 19. En **GradesPrototype**, haga clic con el botón derecho en **DataModel** y luego haga clic en **Pegar**.
 20. En **Grades.DataModel**, haga clic con el botón derecho en **customGrade.cs** y luego haga clic en **Copiar**.
 21. En **GradesPrototype**, haga clic con el botón derecho en **DataModel** y luego haga clic en **Pegar**.
@@ -259,6 +286,11 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 2. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
 3. En el cuadro de texto **Nombre de usuario**, escriba **vallee**.
 4. En el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-2-VisualizandoXML.jpg "Visualizando el archivo XML de servicio !!!")
+
 5. En la lista de alumnos, haga clic en **Eric Gruber** y luego haga clic en **Eliminar alumno**.
 6. En el cuadro de diálogo **Confirmar**, haga clic en **Sí**.
 7. Verifique que **Eric Gruber **se elimine de la lista de estudiantes.
