@@ -10,8 +10,8 @@ Fichero de Instrucciones: Instructions\20483C_MOD08_LAK.md
 Entregar el url de GitHub con la solución y un readme con las siguiente información:
 
 1. **Nombres y apellidos:** José René Fuentes Cortez
-2. **Fecha:** 14 de Octubre 2020.
-3. **Resumen del Modulo 2:** Este módulo consta de tres ejercicios:
+2. **Fecha:** 19 de Octubre 2020.
+3. **Resumen del Modulo 8:** Este módulo consta de tres ejercicios:
     -  En el primer ejercio nos ayuda a actualizar la aplicación para refactorizar el código duplicado en métodos reutilizables.
     - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
     - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
@@ -53,6 +53,11 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
    - Haga clic en **Examinar**.
    - En el cuadro de diálogo **Seleccione los archivos para hacer referencia**, busque la carpeta **[Repository Root]\Allfiles\Mod08\Labfiles\Starter\Exercise 1\packages\EntityFramework.5.0.0\lib\net45**, haga clic en **EntityFramework.dll** y haga clic en **Agregar**.
    - Haga clic en Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-1-AgregandoEntityFramework.jpg "Agregando el Entity Framework !!!")
+
 7. En el Explorador de soluciones, expanda el proyecto **GradesPrototype** y luego haga doble clic en **App.config**.
 8. En el editor de código, copie el siguiente XML en el portapapeles:
     ```xml
@@ -96,7 +101,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
     public IEnumerable<Student> StudentsInClass(string className)
     {
         var students = from Student s in this.CurrentDataSource.Students
-                       where String.Equals(s.Teacher.Class, className)
+            where String.Equals(s.Teacher.Class, className)
                        select s;
 
         return students;
@@ -112,8 +117,13 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 ### Tarea 4: Crear y probar el servicio de datos
 
 1. En el menú **Crear**, haga clic en **Crear solución**.
-2. En **Explorar soluciones **r, en el proyecto **Grades.Web**, en la carpeta **Servicios**, haga clic con el botón derecho en **GradesWebDataService.svc** y luego haga clic en **Ver en el navegador (Microsoft Edge)**.
+2. En **Explorar soluciones**, en el proyecto **Grades.Web**, en la carpeta **Servicios**, haga clic con el botón derecho en **GradesWebDataService.svc** y luego haga clic en **Ver en el navegador (Microsoft Edge)**.
 3. En Microsoft Edge, si aparece el mensaje **La configuración de la intranet está desactivada de forma predeterminada**, haga clic en **No volver a mostrar este mensaje**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-1-AgregadoEntityFramework.jpg "Agregando el Entity Framework !!!")
+
 4. Verifique que Microsoft Edge muestre una descripción XML de las entidades que expone el Servicio de datos.
 5. Cierre el navegador.
 6. En Visual Studio, en el menú **Archivo**, haga clic en **Cerrar solución**.
