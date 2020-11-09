@@ -11,7 +11,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 14 de Octubre 2020.
-3. **Resumen del Modulo 11:** Este módulo consta de tres ejercicios:
+3. **Resumen del Modulo 11:** Este módulo consta de dos ejercicios:
     -  En el primer ejercio nos ayuda a actualizar la aplicación para generar informes de calificaciones en formato **docx**.
     - En el ejercicio 2 no ayuda para que la aplicación guarde un archivo de notas en **Word** correctamente después de haber generado un informe de calificaciones.
 
@@ -128,11 +128,11 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 ### Tarea 1: Ejecute la aplicación para generar un informe de calificaciones y ver la tarea de Word en el Administrador de tareas
 
-1. En **Visual Studio**, en el menú **Archivo**, seleccione **Abrir** y luego haga clic en **Proyecto/Solución**.
+1. En **Visual Studio 2019**, en el menú **Archivo**, seleccione **Abrir** y luego haga clic en **Proyecto/Solución**.
 2. En el cuadro de diálogo **Abrir proyecto**, busque **[Repository Root]\Allfiles\Mod11\Labfiles\Starter\Exercise 2**, haga clic en **Grades.sln** y luego haga clic en **Abrir**.
     > **Nota:** Si aparece algún cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Preguntarme por cada proyecto en esta solución** y luego haga clic en **Aceptar**.
-3. En **Explorador de soluciones**, haga clic con el botón derecho en **Solución "Calificaciones" **y, a continuación, haga clic en **Propiedades**.
-4. En el cuadro de diálogo **Páginas de propiedades de Soluciones 'Calificaciones'**, haga clic en **Varios proyectos de inicio**, establezca **Grades.Web** y **Grades.WPF **en **Inicio** y luego haga clic en **Aceptar**.
+3. En **Explorador de soluciones**, haga clic con el botón derecho en **Solución "Calificaciones"**, y a continuación, haga clic en **Propiedades**.
+4. En el cuadro de diálogo **Páginas de propiedades de Soluciones 'Calificaciones'**, haga clic en **Varios proyectos de inicio**, establezca **Grades.Web** y **Grades.WPF** en **Inicio** y luego haga clic en **Aceptar**.
 
 - La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
 
@@ -160,7 +160,6 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 - La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
 
  ![alt text](./Images/Fig-6-VerificandoReport.jpg "Verficando que se ha creado el reporte en formato docx !!!")
-
 
 ### Tarea 2: Actualiza la clase WordWrapper para terminar Word correctamente
 
@@ -283,4 +282,4 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 9. Cierre **Administrador de tareas** y luego cierre la aplicación.
 10. En **Visual Studio**, en el menú **Archivo**, haga clic en **Cerrar solución**.
 
-> **Resultado:** Después de completar este ejercicio, la aplicación terminará **Word **correctamente después de haber generado un informe de calificaciones.
+> **Resultado:** Después de completar este ejercicio, la aplicación terminará **Word** correctamente después de haber generado un informe de calificaciones.
