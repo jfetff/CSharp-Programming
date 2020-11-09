@@ -292,8 +292,8 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. En **Visual Studio**, en el menú **Archivo**, seleccione **Abrir** y luego haga clic en **Proyecto/Solución**.
 2. En el cuadro de diálogo **Abrir proyecto**, vaya a **[Repository Root]\Allfiles\Mod09\Labfiles\Starter\Exercise 3**, haga clic en **Grades.sln** y luego haga clic en **Abrir**.
     > **Nota:** Si aparece algún cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Preguntarme por cada proyecto en esta solución** y luego haga clic en **Aceptar**.
-3. En **Explorador de soluciones**, haga clic con el botón derecho en **Solución "Calificaciones" **y, a continuación, haga clic en **Propiedades**.
-4. En la página **Proyecto de inicio**, haga clic en **Varios proyectos de inicio**. Establezca **Grades.Web** y **Grades.WPF **en **Inicio** y luego haga clic en **Aceptar**.
+3. En **Explorador de soluciones**, haga clic con el botón derecho en **Solución "Calificaciones"**, y a continuación, haga clic en **Propiedades**.
+4. En la página **Proyecto de inicio**, haga clic en **Varios proyectos de inicio**. Establezca **Grades.Web** y **Grades.WPF** en **Inicio** y luego haga clic en **Aceptar**.
 5. En **Explorador de soluciones**, en el proyecto **Grades.WPF**, expanda **Controles** y luego haga doble clic en **StudentPhoto.xaml**.
 6. En el editor XAML, busque el comentario **\<!-- TODO: Exercise 3: Task 1a: Define a ScaleTransform called "scale" --\>**.
 7. Haga clic en la línea en blanco debajo del comentario, luego escriba el siguiente marcado:
@@ -380,6 +380,11 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 2. En el menú **Depurar**, haz clic en **Iniciar sin depurar**.
 3. Cuando se inicie la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee**, y en el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión * *.
 4. Coloque el mouse sobre uno de los estudiantes en la lista de estudiantes y verifique que la fotografía se anima; debe expandirse y contraerse cuando el mouse pasa sobre ella.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-9-ExpandingPhoto.jpg "Verificando la expansión de la imagen de los alumnos !!!")
+
 5. Cierre la aplicación.
 6. En el menú **Archivo**, haga clic en **Cerrar solución**.
 
