@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0a103913-29ea-4dcb-92bd-7cda38e17e42" xmlns="urn:schemas-microsoft-com:xml-dataservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9931ce4b-179d-4d85-8563-c35fca98ab96" xmlns="urn:schemas-microsoft-com:xml-dataservicemap">
   <MetadataSources>
     <MetadataSource Address="http://localhost:1103/Services/GradesWebDataService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.edmx" MetadataType="Edmx" ID="8ece7a3b-35c4-495e-a99d-7eb08c750d8e" SourceId="1" SourceUrl="http://localhost:1103/Services/GradesWebDataService.svc" />
+    <MetadataFile FileName="service.edmx" MetadataType="Edmx" ID="9101cd0c-5e12-4223-b1d9-541a10abb36f" SourceId="1" SourceUrl="http://localhost:1103/Services/GradesWebDataService.svc" />
   </Metadata>
   <Extensions />
   <Parameters>

@@ -33,29 +33,32 @@ namespace Grades.WPF.Services
         #endregion
 
         #region Teacher
-        public Teacher GetTeacher(string userName)
+        public async Task<Teacher> GetTeacher(string userName)
         {
             if (!IsConnected())
                 return null;
-            
-            var teacher = (from t in DBContext.Teachers
-                           where t.User.UserName == userName
-                           select t).FirstOrDefault();
+
+            var teacher = await Task.Run(() =>
+                            (from t in DBContext.Teachers
+                             where t.User.UserName == userName
+                             select t).FirstOrDefault());
 
             return teacher;
         }
 
-        public List<Student> GetStudentsByTeacher(string teacherName)
+        public async Task GetStudentsByTeacher(string teacherName, Action<IEnumerable<Student>> callback)
         {
             if (!IsConnected())
-                return null;
+                return;
 
             // Fetch students by using the GradesService service
-            var students = (from s in DBContext.Students
-                            where s.Teacher.User.UserName == teacherName
-                            select s).OrderBy(s => s.LastName).ToList();
+            var students = await Task.Run(() =>
+                                        (from s in DBContext.Students
+                                         where s.Teacher.User.UserName == teacherName
+                                         select s).OrderBy(s => s.LastName).ToList());
 
-            return students;
+            // Invoke the callback that displays the result asynchronously
+            await Task.Run(() => callback(students));
         }
 
         public void AddStudent(Teacher teacher, Student student)

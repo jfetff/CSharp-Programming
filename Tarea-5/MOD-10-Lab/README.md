@@ -11,9 +11,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 24 de Octubre 2020.
 3. **Resumen del Modulo 2:** Este módulo consta de tres ejercicios:
-    -  En el primer ejercio nos ayuda a actualizar la aplicación para actualizar las **Calificaciones** y así poder recuperar los datos de forma asincrónica.
-    - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
-    - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
+    -  En el primer ejercio nos ayuda a actualizar la aplicación para actualizar las **Calificaciones** para mostrar un indicador de progreso mientras la aplicación está recuperando datos.
 
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
@@ -184,11 +182,26 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
     > **Nota:** Si aparece algún cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Preguntarme por cada proyecto en esta solución** y luego haga clic en **Aceptar**.
 3. En **Explorador de soluciones**, haga clic con el botón derecho en **Solución "Calificaciones"**, y a continuación, haga clic en **Propiedades**.
 4. En la página **Proyecto de inicio**, haga clic en **Varios proyectos de inicio**, configure **Grades.Web** y **Grades.WPF** en **Inicio** y luego haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-1-InicioMultiples.jpg "Iniciando múltiples proyectos !!!")<>
+
 5. En el menú **Crear**, haga clic en **Crear solución**.
 6. En **Explorador de soluciones**, haga clic con el botón derecho en **Grades.WPF**, seleccione **Agregar**, y a continuación, haga clic en **Control de usuario**.
 7. En el cuadro de texto **Nombre**, escriba **BusyIndicator.xaml** y luego haga clic en **Agregar**.
-8. En **Explorador de soluciones**, expanda **Grades.WPF** y luego arrastre **BusyIndicator.xaml **a la carpeta **Controles**.
-   > **Nota:** Es mejor crear el control de usuario a nivel de proyecto y luego moverlo a la carpeta **Controles **cuando se crea. Esto asegura que el control de usuario se cree en el mismo espacio de nombres que otros recursos del proyecto.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-3-AgregarControl.jpg "Creando el control de usuario !!!")
+
+8. En **Explorador de soluciones**, expanda **Grades.WPF** y luego arrastre **BusyIndicator.xaml** a la carpeta **Controles**.
+   > **Nota:** Es mejor crear el control de usuario a nivel de proyecto y luego moverlo a la carpeta **Controles** cuando se crea. Esto asegura que el control de usuario se cree en el mismo espacio de nombres que otros recursos del proyecto.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-4-MoverControl.jpg "Moviendo el control de usuario a la carpeta Controles !!!")
+
 9. En el archivo **BusyIndicator.xaml**, en el elemento **UserControl**, elimine los siguientes atributos:
     ```xml
     d:DesignWidth="450" d:DesignHeight="800"

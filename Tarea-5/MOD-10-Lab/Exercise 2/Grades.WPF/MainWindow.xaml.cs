@@ -21,6 +21,17 @@ namespace Grades.WPF
         #endregion
 
         #region Events
+
+        // TODO: Exercise 2: Task 2a: Implement the StartBusy event handler
+        private void StartBusy(object sender, EventArgs e)
+        {
+            busyIndicator.Visibility = Visibility.Visible;
+        }
+        // TODO: Exercise 2: Task 2b: Implement the EndBusy event handler
+        private void EndBusy(object sender, EventArgs e)
+        {
+            busyIndicator.Visibility = Visibility.Hidden;
+        }
         private void logonPage_LogonSuccess(object sender, EventArgs e)
         {
             Refresh();
@@ -90,8 +101,7 @@ namespace Grades.WPF
         #endregion
 
         #region Refresh
-
-        public void Refresh()
+        public async void Refresh()
         {
             if (SessionContext.Role == "")
             {
@@ -169,7 +179,7 @@ namespace Grades.WPF
 
                     case "Teacher":
                         // Get the details of the current user (which must be a teacher)
-                        var teacher = utils.GetTeacher(SessionContext.UserName);
+                        var teacher = await utils.GetTeacher(SessionContext.UserName);
 
                         // Display the details for the teacher
                         try

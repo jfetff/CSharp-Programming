@@ -251,7 +251,7 @@ namespace Grades.WPF
         private void dialog_Closed(object sender, EventArgs e)
         {
             // Find the new set of grades for the currently displayed student (including any new and updated grades resulting from the dialog)
-            var grades = _context.GetGradesByStudent(SessionContext.CurrentStudent.ID);
+            var grades = _context.GetGradesByStudent((studentPhoto.DataContext as LocalStudent).Record.UserId);
 
             // Display the new set of grades
             DisplayGrades(grades);
