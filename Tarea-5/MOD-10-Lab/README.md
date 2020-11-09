@@ -10,8 +10,9 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 24 de Octubre 2020.
-3. **Resumen del Modulo 2:** Este módulo consta de tres ejercicios:
-    -  En el primer ejercio nos ayuda a actualizar la aplicación para actualizar las **Calificaciones** para mostrar un indicador de progreso mientras la aplicación está recuperando datos.
+3. **Resumen del Modulo 10:** Este módulo consta de dos ejercicios:
+    -  En el primer ejercio nos ayuda a modificar la aplicación para actualizarla y poder ver las **Calificaciones** y recuperar datos de forma asincrónica.
+    - En el segundo ejercicio ayuda a actualizar la aplicación para actualizar las **Calificaciones** para mostrar un indicador de progreso mientras la aplicación está recuperando datos.
 
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
