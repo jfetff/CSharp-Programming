@@ -7,14 +7,14 @@ namespace Grades.Utilities
     public class WordWrapper
     {
         // TODO: Exercise 1: Task 1a: Create a dynamic variable called _word for activating Word
-
+        dynamic _word = null;
         /// <summary>
         /// Creates an instance of the WordWrapper class.
         /// </summary>
         public WordWrapper()
         {
             // TODO: Exercise 1: Task 1b: Instantiate _word as a new Word Application object
-
+            this._word = new Application { Visible = false };
         }
 
         /// <summary>
@@ -23,7 +23,8 @@ namespace Grades.Utilities
         public void CreateBlankDocument()
         {
             // TODO: Exercise 1: Task 1c: Create a new Word document
-
+            var doc = this._word.Documents.Add();
+            doc.Activate();
         }
 
         /// <summary>
@@ -79,9 +80,10 @@ namespace Grades.Utilities
         public void SaveAs(string filePath)
         {
             // TODO: Exercise 1: Task 1d: Save the document using the specified filename.
-
+            var currentDocument = this._word.ActiveDocument;
+            currentDocument.SaveAs(filePath);
             // TODO: Exercise 1: Task 1e: Close the document
-
+            currentDocument.Close();
         }
 
         private Range GetEndOfDocument()
