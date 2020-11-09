@@ -13,8 +13,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 2. **Fecha:** 14 de Octubre 2020.
 3. **Resumen del Modulo 11:** Este módulo consta de tres ejercicios:
     -  En el primer ejercio nos ayuda a actualizar la aplicación para generar informes de calificaciones en formato **docx**.
-    - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
-    - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
+    - En el ejercicio 2 no ayuda para que la aplicación guarde un archivo de notas en **Word** correctamente después de haber generado un informe de calificaciones.
 
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
@@ -134,14 +133,33 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
     > **Nota:** Si aparece algún cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Preguntarme por cada proyecto en esta solución** y luego haga clic en **Aceptar**.
 3. En **Explorador de soluciones**, haga clic con el botón derecho en **Solución "Calificaciones" **y, a continuación, haga clic en **Propiedades**.
 4. En el cuadro de diálogo **Páginas de propiedades de Soluciones 'Calificaciones'**, haga clic en **Varios proyectos de inicio**, establezca **Grades.Web** y **Grades.WPF **en **Inicio** y luego haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-1-InicioMultiple.jpg "Estableciendo el inicio de multiples proyectos !!!")
+
 5. En el menú **Crear**, haga clic en **Crear solución**.
 6. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
-7. Cuando se cargue la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee**, y en el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión * *.
+7. Cuando se cargue la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee**, y en el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-2-LoginEsther.jpg "Estableciendo el inicio de multiples proyectos !!!")
+
 8. Haga clic en **Kevin Liu** y luego en **guardar informe**.
 9. En el cuadro de diálogo **Guardar como**, vaya a **[Raíz del repositorio]\Allfiles\Mod11\Labfiles\Starter\Exercise 2**.
 10. En el cuadro de texto **Nombre de archivo**, elimine el contenido existente, escriba **Informe de calificaciones de Kevin Liu** y luego haga clic en **Guardar**.
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-7-SalvandoReport.jpg "Salvando el reporte de Kevin Liu !!!")
+
 11. Cierre la aplicación.
 12. Abra **Explorador de archivos**, busque la carpeta **[Raíz del repositorio]\Allfiles\Mod11\Labfiles\Starter\Ejercicio 2** y luego verifique que se haya generado el informe.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-6-VerificandoReport.jpg "Verficando que se ha creado el reporte en formato docx !!!")
+
 
 ### Tarea 2: Actualiza la clase WordWrapper para terminar Word correctamente
 
