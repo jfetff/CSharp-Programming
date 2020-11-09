@@ -12,8 +12,8 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** Martes 20 de Octubre de 2020.
 3. **Resumen del Modulo 9:** Este módulo consta de tres ejercicios:
-    -  En el primer ejercio nos ayuda a actualizar la aplicación para refactorizar el código duplicado en métodos reutilizables.
-    - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
+    -  En el primer ejercio nos ayuda a actualizar la aplicación para mostrar las fotografías de cada estudiante en la página **Lista de estudiantes**.
+    - En el ejercicio 2 modificamos la aplicación para que la la vista de inicio de sesión tendrá un estilo con una apariencia uniforme.
     - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
 
 
@@ -161,28 +161,33 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 - La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
 
- ![alt text](./Images/Fig-3-LoginEsther.jpg "Login de Esther Valle !!!")
+ ![alt text](./Images/Fig-4-LoginEsther.jpg "Login de Esther Valle !!!")
 
 4. Verifique que la lista de estudiantes aparezca con fotografías.
 
 - La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
 
- ![alt text](./Images/Fig-3-LogiEsther.jpg "Verificando la lista de estudiantes con fotografías !!!")
+ ![alt text](./Images/Fig-5-StuListConFotos.jpg "Verificando la lista de estudiantes con fotografías !!!")
 
-5. En la lista de estudiantes, coloque el mouse sobre la **x **roja para el estudiante **Weber**.
-6. Verifique que la fotografía del estudiante se vuelva transparente y que la **x **roja se vuelva opaca.
+5. En la lista de estudiantes, coloque el mouse sobre la **x** roja para el estudiante **Weber**.
+6. Verifique que la fotografía del estudiante se vuelva transparente y que la **x** roja se vuelva opaca.
 7. Aleje el cursor de la x roja y verifique que la fotografía del estudiante se vuelva opaca y que la x roja se vuelva transparente.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen, comparela con la imagen anterior para una mejor visualización:
+
+ ![alt text](./Images/Fig-6-XOpaca.jpg "Verificando que la fotografía se vuelve opaca y la x se vuelve transparente !!!")
+
+8. Haga clic en la **x** roja para **Weber**, verifique que aparezca el cuadro de mensaje **Estudiante** y luego haga clic en **Sí**.
 
 - La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
 
- ![alt text](./Images/Fig-3-LogiEsther.jpg "Verificando que la fotografía se vuelve opaca y la x se vuelve transparente !!!")
+ ![alt text](./Images/Fig-7-RemoveStu.jpg "Verificando que Weber se elimina de la lista de estudiantes !!!")
 
-8. Haga clic en la **x **roja para **Weber**, verifique que aparezca el cuadro de mensaje **Estudiante** y luego haga clic en **Sí**.
 9. Verifique que **Weber** se elimine de la lista de estudiantes.
 
 - La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
 
- ![alt text](./Images/Fig-3-LogiEsther.jpg "Verificando que Weber se elimina de la lista de estudiantes !!!")
+ ![alt text](./Images/Fig-8-StuDeleted.jpg "Verificando que Weber se eliminó de la lista de estudiantes !!!")
 
 10. Cierre la aplicación y luego cierre **Visual Studio**.
 
@@ -197,7 +202,17 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
     > **Nota:** Si aparece algún cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Preguntarme por cada proyecto en esta solución** y luego haga clic en **Aceptar**.
 3. En **Explorador de soluciones**, haga clic con el botón derecho en **Solución "Calificaciones" **y, a continuación, haga clic en **Propiedades**.
 4. En la página **Proyecto de inicio**, haga clic en **Varios proyectos de inicio**, configure **Grades.Web** y **Grades.WPF **en **Inicio** y luego haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-1-InicioMultiples.jpg "Inicio de Múltiples Proyectos !!!")
+
 5. En **Explorador de soluciones**, expanda **Grades.WPF**, expanda **Vistas** y luego haga doble clic en **LogonPage.xaml**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-1-InicioMultiples.jpg "Inicio de Múltiples Proyectos !!!")
+
 6. En el editor XAML, busque el comentario **\<!-- TODO: Exercise 2: Task 1a: Define the LoginTextBoxStyle --\>**.
 7. Haga clic en al final del comentario, presione Entrar y luego escriba el siguiente marcado:
     ```xml
@@ -253,9 +268,18 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 1. En el menú **Crear**, haga clic en **Crear solución**.
 2. En el menú **Depurar**, haz clic en **Iniciar sin depurar**.
-3. Cuando se inicie la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee**, y en el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión * *.
+3. Cuando se inicie la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee**, y en el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-4-LoginEsther.jpg "Inicio de sesiçon de Esther Valle antiguo !!!")
+
 4. En la ventana **The School of Fine Arts**, verifique que el estilo de los elementos de texto de la aplicación haya cambiado.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
     ![alt text](./Images/20483C_09_LogonView.png "Upper: Old style Logon view. Lower: New style Logon view")
+
 5. Cierre la aplicación.
 6. En el menú **Archivo**, haga clic en **Cerrar solución**.
 
