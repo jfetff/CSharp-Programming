@@ -8,7 +8,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 24 de Octubre 2020.
 3. **Resumen del Modulo 9:** Em este módulo haremos solo una lección:
-    -  En el primer ejercio nos ayuda a actualizar la aplicación para refactorizar el código duplicado en métodos reutilizables.
+    -  Esta lección nos ayuda a poner en práctica los conocimientos de XAML para diseñar una interfaz de usuario.
 
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
