@@ -144,11 +144,12 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 - La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
 
- ![alt text](./Images/Fig-2-LoginEsther.jpg "Estableciendo el inicio de multiples proyectos !!!")
+ ![alt text](./Images/Fig-2-LoginEsther.jpg "Estableciendo el inicio de sesion de Esther Valle !!!")
 
 8. Haga clic en **Kevin Liu** y luego en **guardar informe**.
 9. En el cuadro de diálogo **Guardar como**, vaya a **[Raíz del repositorio]\Allfiles\Mod11\Labfiles\Starter\Exercise 2**.
 10. En el cuadro de texto **Nombre de archivo**, elimine el contenido existente, escriba **Informe de calificaciones de Kevin Liu** y luego haga clic en **Guardar**.
+
 - La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
 
  ![alt text](./Images/Fig-7-SalvandoReport.jpg "Salvando el reporte de Kevin Liu !!!")
@@ -259,11 +260,26 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. En el menú **Crear**, haga clic en **Crear solución**.
 2. Haga clic con el botón derecho en la **barra de tareas** y luego haga clic en **Administrador de tareas**.
 3. En **Visual Studio**, en el menú **Depurar**, haga clic en **Iniciar sin depurar**.
-4. Cuando se cargue la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee**, y en el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión * *.
+4. Cuando se cargue la aplicación, en el cuadro de texto **Nombre de usuario**, escriba **vallee**, y en el cuadro de texto **Password**, escriba **password99** y luego haga clic en **Iniciar sesión**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-2-LoginEsther.jpg "Estableciendo el inicio de sesion de Esther Valle !!!")
+
 5. Haga clic en **Kevin Liu** y luego en **guardar informe**.
 6. En el cuadro de diálogo **Guardar como**, busque **[Raíz del repositorio]\Mod11\Labfiles\Starter\Ejercicio 2**.
 7. En el cuadro de texto **Nombre de archivo**, elimine el contenido existente y luego escriba **Informe de calificaciones de Kevin Liu**.
-8. Al hacer clic en **Guardar**, en la ventana **Administrador de tareas**, observe los **Procesos** y verifique que **Microsoft Word **aparece y luego desaparece de la lista.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-7-SalvandoReport.jpg "Salvando el reporte de Kevin Liu !!!")
+
+8. Al hacer clic en **Guardar**, en la ventana **Administrador de tareas**, observe los **Procesos** y verifique que **Microsoft Word** aparece y luego desaparece de la lista.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-9-VerficandoElReport.jpg "Salvando el reporte de Kevin Liu !!!")
+
 9. Cierre **Administrador de tareas** y luego cierre la aplicación.
 10. En **Visual Studio**, en el menú **Archivo**, haga clic en **Cerrar solución**.
 
