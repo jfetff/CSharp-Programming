@@ -1275,8 +1275,7 @@ namespace Grades.Web.Models
         /// <param name="userName">Initial value of the UserName property.</param>
         /// <param name="isAnonymous">Initial value of the IsAnonymous property.</param>
         /// <param name="lastActivityDate">Initial value of the LastActivityDate property.</param>
-        /// <param name="userPassword">Initial value of the UserPassword property.</param>
-        public static User CreateUser(global::System.Guid applicationId, global::System.Guid userId, global::System.String userName, global::System.Boolean isAnonymous, global::System.DateTime lastActivityDate, global::System.String userPassword)
+        public static User CreateUser(global::System.Guid applicationId, global::System.Guid userId, global::System.String userName, global::System.Boolean isAnonymous, global::System.DateTime lastActivityDate)
         {
             User user = new User();
             user.ApplicationId = applicationId;
@@ -1284,7 +1283,6 @@ namespace Grades.Web.Models
             user.UserName = userName;
             user.IsAnonymous = isAnonymous;
             user.LastActivityDate = lastActivityDate;
-            user.UserPassword = userPassword;
             return user;
         }
 
@@ -1414,30 +1412,6 @@ namespace Grades.Web.Models
         private global::System.DateTime _LastActivityDate;
         partial void OnLastActivityDateChanging(global::System.DateTime value);
         partial void OnLastActivityDateChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String UserPassword
-        {
-            get
-            {
-                return _UserPassword;
-            }
-            set
-            {
-                OnUserPasswordChanging(value);
-                ReportPropertyChanging("UserPassword");
-                _UserPassword = StructuralObject.SetValidValue(value, false, "UserPassword");
-                ReportPropertyChanged("UserPassword");
-                OnUserPasswordChanged();
-            }
-        }
-        private global::System.String _UserPassword;
-        partial void OnUserPasswordChanging(global::System.String value);
-        partial void OnUserPasswordChanged();
 
         #endregion
 
