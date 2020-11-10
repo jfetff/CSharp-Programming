@@ -8,10 +8,9 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 24 de Octubre 2020.
 3. **Resumen del Modulo 12:** Este módulo consta de cuatro lecciones de la cuales haremos tres la 1, 2 y 4:
-    -  En el primer ejercio nos ayuda a actualizar la aplicación para refactorizar el código duplicado en métodos reutilizables.
-    - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
-    - En el ejercicio 4 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
-
+    - La primera lección nos ayuda a examinar los metadatos de los objetos y a inspeccionar ensamblados.
+    - En la segunda lección creamos y usamos atributos personalizados, usando Reflection para el consumo de los mismos.
+    - En el ejercicio 4 hacemos que la aplicación pueda hacer Versioning, Signing y implementar Assemblies en el GAC.
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
 
@@ -118,7 +117,18 @@ Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segment
     ```
 9. En el menú **Crear**, haga clic en **Crear solución**.
 10. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
-11. En la aplicación **Fourth Coffee Metadata Extractor**, haga clic en **Load**. El cuadro de lista ahora contiene una lista de todos los miembros en el tipo **Encryptor** y los detalles de cualquier atributo **DeveloperInfo **que se encontró.
+11. En la aplicación **Fourth Coffee Metadata Extractor**, haga clic en **Load**. 
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-5-FourthCoffee-MetaExtractor.jpg "Mostrando la ventana de FourthCoffee Metadata Extractor !!!")
+
+El cuadro de lista ahora contiene una lista de todos los miembros en el tipo **Encryptor** y los detalles de cualquier atributo **DeveloperInfo **que se encontró.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-6-FourthCoffee-DeveloperAttribute.jpg "Mostrando los miembros en Encryptor type encontrados !!!")
+
 12. Cerrar **Cuarto Extractor de Metadatos de Café**.
 13. En Visual Studio, cierre la solución.
 
@@ -128,7 +138,7 @@ Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segment
 
 #### Pasos de preparación
 
-Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segmentos de código para los laboratorios y demostraciones de este curso. (** https: //github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
+Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segmentos de código para los laboratorios y demostraciones de este curso. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
 
 #### Pasos de demostración
 
@@ -138,6 +148,11 @@ Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segment
     > **Nota:** Si aparece algún cuadro de diálogo de advertencia de seguridad, desactive la casilla de verificación **Preguntarme por cada proyecto en esta solución** y luego haga clic en **aceptar**.
 4. Abra **Menú de Windows** y escriba **Símbolo del sistema para desarrolladores para VS 2017**, haga clic derecho en la aplicación
     luego seleccione **Ejecutar como administrador**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-7-Developer_CMD-VS2019.jpg "Mostrando el CMD para desarrolladores de VS-2019 !!!")
+    
 5. Pegue el siguiente comando y luego presione **Enter**:
     ```cs
     cd [Repository Root]\AllFiles\Mod12\Democode\Starter\FourthCoffee.Core\FourthCoffee.Core
@@ -146,19 +161,43 @@ Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segment
     ```cs
     generateKeyFile.cmd
     ```
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-8-CreaciónKeys.jpg "Mostrando el CMD con las llaves creadas !!!")
+
 7. Cambie a Visual Studio 2019.
 8. En **Explorador de soluciones**, haga clic con el botón derecho en **FourthCoffee.Core** y, a continuación, haga clic en **Propiedades**.
 9. En la pestaña **Firma**, seleccione **Firmar el ensamblaje**.
 10. En la lista **Elija un archivo de clave de nombre seguro**, haga clic en **Examinar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-9-SeleccionFileSnk.jpg "Mostrando la selección del archivo snk !!!")
+
 11. En el cuadro de diálogo **Seleccionar archivo**, haga clic en **FourthCoffeeKeyFile.snk** y luego haga clic en **abrir**.
 12. En el menú **Crear**, haga clic en **Crear solución**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-9-SeleccionFileSnk.jpg "Abriendo el archivo snk !!!")
+
 13. Cambie al Explorador de archivos.
-14. En la carpeta **[Repository Root]\AllFiles\Mod12\Democode\Starter\FourthCoffee.Core\FourthCoffee.Core**, haga clic con el botón derecho en el archivo **installAssemblyInGac.cmd** y luego haga clic en **Editar * *.
+14. En la carpeta **[Repository Root]\AllFiles\Mod12\Democode\Starter\FourthCoffee.Core\FourthCoffee.Core**, haga clic con el botón derecho en el archivo **installAssemblyInGac.cmd** y luego haga clic en **Editar**.
     > **Nota:** Si aparece un cuadro de diálogo de Windows protegió su PC, haga clic en **Más información** y luego haga clic en **Ejecutar de todos modos**.
 15. En el Bloc de notas, vea el comando **Gacutil**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-10-GAC-Command.jpg "Verificando el GACutil Command !!!")
+
 16. Cierre el Bloc de notas y luego cierre el Explorador de archivos.
 17. Vuelva a **Símbolo del sistema para desarrolladores para VS 2017** y luego ejecute el comando **installAssemblyInGac**. Verifique que el comando se complete correctamente.
 18. Ejecute el comando **verifyGacInstall** y luego asegúrese de que el número de elementos encontrados sea igual a uno.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-11-Ejecución_GAC-Command.jpg "Verificando el GACutil Command !!!")
+
 19. Cierre la ventana **administrador: Símbolo del sistema para desarrolladores para VS 2017**.
 20. En Visual Studio, cierre la solución.
 
