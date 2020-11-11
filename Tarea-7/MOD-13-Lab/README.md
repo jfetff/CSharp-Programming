@@ -12,8 +12,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 2. **Fecha:** 24 de Octubre 2020.
 3. **Resumen del Modulo 13:** Este módulo consta de dos ejercicios:
     -  En el primer ejercio nos ayuda a actualizar la aplicación para actualizar las **Calificaciones** y cifrar los informes generados.
-    - En el ejercicio 2 los datos del estudiante serán validados antes de ser guardados por la aplicación.
-    - En el ejercicio 3 hacemos que la aplicación pueda manipular los datos modificados del estudiante para que se  guarden en la base de datos.
+    - En el ejercicio 2 los datos cifrados del ejercicio anterior se decriptan para obtener los informenes en texto plano.
 
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
@@ -334,11 +333,30 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 2. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
 3. Cuando se cargue la aplicación, haga clic en **Examinar**.
 4. En el cuadro de diálogo **Buscar carpeta**, busque la carpeta **[Repository Root]\AllFiles\Mod13\Labfiles\Reports** y luego haga clic en **Aceptar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-10-CargandFilesEncrypted.jpg "Cargando los archivos cifrados !!!")
+
 5. Haga clic en **Imprimir**.
 6. En el cuadro de diálogo **Guardar salida de impresión como**, busque la carpeta **[Repository Root]\AllFiles\Mod13\Labfiles\Reports\ClassReport**, en el cuadro de texto **Nombre de archivo**, escriba **3CReport**, y luego haga clic en **Guardar**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-11-FilesDecrypted.jpg "Visualizando los archivos descifrados en la carpeta ClassReport !!!")
+
 7. En el cuadro de diálogo **The School of Fine Arts**, haga clic en **Aceptar** y luego cierre la aplicación.
 8. Abra **Explorador de archivos** y busque la carpeta **[Repository Root]\AllFiles\Mod13\Labfiles\Reports\ClassReport**.
-9. Haga doble clic en **3CReport**.
+9. Haga doble clic en **ClassReport**.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-11-FilesDecrypted.jpg "Visualizando los archivos descifrados en la carpeta ClassReport !!!")
+
 10. Revise el informe no cifrado y luego cierre el archivo.
+
+- La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
+
+ ![alt text](./Images/Fig-7-KevinLiuReportSaved.jpg "Leyendo los archivos no cifrado de salida en la carpeta ClassReport !!!")
 
 > **Resultado:** Después de completar este ejercicio, debería tener un informe compuesto sin cifrar que se generó a partir de los informes cifrados.
