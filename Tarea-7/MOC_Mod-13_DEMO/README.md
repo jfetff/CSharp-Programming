@@ -46,7 +46,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
     this._algorithm = new AesManaged();
     ```
 4. Haga doble clic en la tarea **TODO: 02: Dispose of the _algorithm object**.
-5. Explique que el siguiente código invoca el método **Dispose **Para liberar cualquier recurso que el algoritmo pueda haber usado después de determinar que el objeto** _ algoritmo ** no es nulo.
+5. Explique que el siguiente código invoca el método **Dispose** Para liberar cualquier recurso que el algoritmo pueda haber usado después de determinar que el objeto **_ algoritmo** no es nulo.
     ```cs
     if (this._algorithm != null)
     {
@@ -92,7 +92,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
     var transformedBytes = bufferStream.ToArray();
     ```
 
-20. Haga doble clic en **TODO: 10: Cerrar los objetos CryptoStream y MemoryStream** Tarea.
+20. Haga doble clic en la Tarea **TODO: 10: Cerrar los objetos CryptoStream y MemoryStream** .
 21. Explique que el siguiente código cierra los objetos **CryptoStream** y **bufferStream**.
     ```cs
     cryptoStream.Close();
@@ -119,14 +119,14 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
     return this.TransformBytes(transformer, bytesToDecypt);
     ```
 30. En el menú **Crear**, haga clic en **Crear solución**.
-31. En el menú ** Depurar**, haga clic en **Iniciar sin depurar**.
+31. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
 32. En la aplicación **Fourth Coffee Message Safe**, en el cuadro de texto **Contraseña**, escriba **Pa$$w0rd**.
 33. En el cuadro de texto **Mensaje**, escriba **Este es mi mensaje seguro** y luego haga clic en **Guardar**.
 34. Cierre la aplicación **Fourth Coffee Message Safe**.
 35. Abra el Explorador de archivos y busque la carpeta **[Repository Root]\Allfiles\Mod13\Democode\Data**.
-36. Haga doble clic en **Protected_message.txt ** y luego vea el texto encriptado en el Bloc de notas.
+36. Haga doble clic en **Protected_message.txt** y luego vea el texto encriptado en el Bloc de notas.
 37. Cierre el Bloc de notas y luego cierre el Explorador de archivos.
-38. En Visual Studio, en el menú ** Depurar**, haga clic en **Iniciar sin depurar**.
+38. En Visual Studio, en el menú **Depurar**, haga clic en **Iniciar sin depurar**.
 39. En la aplicación **Fourth Coffee Message Safe**, en el cuadro de texto **Contraseña**, escriba **Pa$$w0rd** y luego haga clic en **Cargar**.
 40. Verifique que el cuadro de texto **Mensaje** ahora muestre el texto **Este es mi mensaje seguro**.
 41. Cierre la aplicación **Fourth Coffee Message Safe**.
@@ -140,9 +140,9 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 1. Asegúrese de haber clonado el directorio 20483C de GitHub. Contiene los segmentos de código para los laboratorios y demostraciones de este curso. (**https://github.com/MicrosoftLearning/20483-Programming-in-C-Sharp/tree/master/Allfiles**)
 2. Inicialice la base de datos.
-   - En la lista ** Aplicaciones**, haga clic en **Explorador de archivos**.
-   - En el Explorador de archivos, navegue a la carpeta **[Repository Root]\Allfiles\Mod13\Labfiles\Databases ** y luego haga doble clic en ** SetupSchoolGradesDB.cmd**.
-    > ** NOTA: ** Si aparece un cuadro de diálogo de Windows protegió su PC, haga clic en **Más información ** y luego haga clic en **Ejecutar de todos modos**.
+   - En la lista **Aplicaciones**, haga clic en **Explorador de archivos**.
+   - En el Explorador de archivos, navegue a la carpeta **[Repository Root]\Allfiles\Mod13\Labfiles\Databases** y luego haga doble clic en **SetupSchoolGradesDB.cmd**.
+    > **NOTA:** Si aparece un cuadro de diálogo de Windows protegió su PC, haga clic en **Más información** y luego haga clic en **Ejecutar de todos modos**.
    - Cierre el Explorador de archivos.
 
 #### Pasos de demostración
