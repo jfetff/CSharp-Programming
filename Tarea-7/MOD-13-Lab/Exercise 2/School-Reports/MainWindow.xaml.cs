@@ -24,8 +24,8 @@ namespace School
         public MainWindow()
         {
             InitializeComponent();
-            ReportPath = @"C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Reports\";
-            CombinedReportPath = @"ClassReport\ClassReport.xps";
+            ReportPath = @"C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Reports\";  // "C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Reports\" "E:\Mod13\Labfiles\Reports\"
+            CombinedReportPath = @"ClassReport\ClassReport.xps";  // "ClassReport\ClassReport.xps" "C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Reports\ClassReport"
         }
 
         private void browse_Click(object sender, RoutedEventArgs e)
