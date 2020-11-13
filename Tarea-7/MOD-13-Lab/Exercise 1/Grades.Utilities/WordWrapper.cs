@@ -1,7 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Configuration;
 using System.Text;
-using System.IO;
 using Microsoft.Office.Interop.Word;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
@@ -141,7 +141,6 @@ namespace Grades.Utilities
                         outStream.Write(algorithm.IV, 0, algorithm.IV.Length);
 
 
-
                         // TODO: Exercise 1: Task 3g: Create a CryptoStream that will write the encypted data to the underlying buffer.
                         using (var encrypt = new CryptoStream(outStream, encryptor, CryptoStreamMode.Write))
                         {
@@ -237,17 +236,15 @@ namespace Grades.Utilities
                         this._word.Quit();
                     }
                 }
-                try
-                {
+                try{
                     // Release unmanaged resources here
                     if (this._word != null)
                     {
                         System.Runtime.InteropServices.Marshal.ReleaseComObject(this._word);
                     }
-                }
-                catch
+                }catch
                 {
-
+                
                 }
                 this.isDisposed = true;
             }

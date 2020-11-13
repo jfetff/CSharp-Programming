@@ -282,7 +282,6 @@ namespace School
             Print(combinedReportPath);
         }
 
-
         byte[] DecryptWithX509(byte[] bytesToDecrypt)
         {
 

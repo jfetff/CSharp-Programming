@@ -15,7 +15,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
     - En el ejercicio 2 los datos cifrados del ejercicio anterior se decriptan para obtener los informenes en texto plano.
 
 
-4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
+4. **Dificultad o problemas presentados y como se resolvieron:** En el ejericio 2 al iniciar sin depurar no daba ningún resultado. Se iniciaba la aplicación pero al hacer **print** la ventana se cerraba. No aparecía ninguna ventana ni algún error. Tuve que hacer iniciar con depuración y varias veces se paraba en el método donde lee las claves privadas para el descifrado y  decía que no encontraba las claves privadas.
 
 **NOTA**: Si no hay descripcion de problemas o dificultades, y al yo descargar el código para realizar la comprobacion y el código no funcionar, el resultado de la califaciación del laboratorio será afectado.
 

@@ -1,7 +1,6 @@
 C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 2\School-Reports\bin\Debug\School.exe.config
 C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 2\School-Reports\bin\Debug\School.exe
 C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 2\School-Reports\bin\Debug\School.pdb
-C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 2\School-Reports\obj\Debug\School-Reports.csprojAssemblyReference.cache
 C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 2\School-Reports\obj\Debug\School-Reports.csproj.ResolveComReference.cache
 C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 2\School-Reports\obj\Debug\MainWindow.g.cs
 C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 2\School-Reports\obj\Debug\App.g.cs
