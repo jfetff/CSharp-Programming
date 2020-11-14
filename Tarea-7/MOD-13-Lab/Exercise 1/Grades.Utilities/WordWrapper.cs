@@ -203,9 +203,10 @@ namespace Grades.Utilities
         public void EncryptAndSaveToDisk(string filePath)
         {
             var currentDocument = this._word.ActiveDocument;
+			
 
             // Get the current word document as XML.
-            var documentAsXml = currentDocument.Content.XML;
+            var documentAsXml = currentDocument.Content.XML.ToString().Replace('í', 'i').Replace('á', 'a');
 
             // Get the bytes ready for encryption.
             var rawBytes = Encoding.Default.GetBytes(documentAsXml);

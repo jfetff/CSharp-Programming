@@ -7,6 +7,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.IO;
 using System.Configuration;
 using Microsoft.Office.Interop.Word;
+using System.Text;
 
 namespace School
 {
@@ -260,10 +261,13 @@ namespace School
             // Read the report into memory.
             var encryptedReport = File.ReadAllBytes(reportPath);
 
-            // Decrypt the report.
+            // Decrypt the report. UTF8Encoding.GetString(Byte[], Int32, Int32)
             var decryptedReport = Decrypt(encryptedReport);
+            UTF8Encoding utf8 = new UTF8Encoding(true, true);
 
-            // Write the decrypted report to disk.
+            string str = utf8.GetString(decryptedReport, 0, decryptedReport.Length); //Encoding.Default.GetString(decryptedReport);
+            decryptedReport = Encoding.Default.GetBytes(str);
+            // Write the decrypted report to disk. System.Text.Encoding.UTF8.GetString(yourByteArray);
             File.WriteAllBytes(reportPath, decryptedReport);
         }
 

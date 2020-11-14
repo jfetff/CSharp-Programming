@@ -13,3 +13,4 @@ C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 2\School-Reports\obj\De
 C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 2\School-Reports\obj\Debug\School-Reports.csproj.CoreCompileInputs.cache
 C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 2\School-Reports\obj\Debug\School.exe
 C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 2\School-Reports\obj\Debug\School.pdb
+C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 2\School-Reports\obj\Debug\School-Reports.csprojAssemblyReference.cache

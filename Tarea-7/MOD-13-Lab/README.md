@@ -15,7 +15,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
     - En el ejercicio 2 los datos cifrados del ejercicio anterior se decriptan para obtener los informenes en texto plano.
 
 
-4. **Dificultad o problemas presentados y como se resolvieron:** En el ejericio 2 al iniciar sin depurar no daba ningún resultado. Se iniciaba la aplicación pero al hacer **print** la ventana se cerraba. No aparecía ninguna ventana ni algún error. Tuve que hacer iniciar con depuración y varias veces se paraba en el método donde lee las claves privadas para el descifrado y  decía que no encontraba las claves privadas.
+4. **Dificultad o problemas presentados y como se resolvieron:** En el ejericio 2 al iniciar sin depurar no daba ningún resultado. Se iniciaba la aplicación pero al hacer **print** la ventana se cerraba. No aparecía ninguna ventana ni algún error. Tuve que hacer iniciar con depuración y varias veces se paraba en el método donde lee las claves privadas para el descifrado y  decía que no encontraba las claves privadas. Al descifrar los archivos los -XML dan que están mal formados para poder solucionar esto lo único que hice es cambiar manualmente 'í' por 'i' y 'á' por 'a' y con esto se puede leer el archivo en el modo de compatibilidad de Word.
 
 **NOTA**: Si no hay descripcion de problemas o dificultades, y al yo descargar el código para realizar la comprobacion y el código no funcionar, el resultado de la califaciación del laboratorio será afectado.
 
@@ -346,17 +346,17 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
  ![alt text](./Images/Fig-11-FilesDecrypted.jpg "Visualizando los archivos descifrados en la carpeta ClassReport !!!")
 
 7. En el cuadro de diálogo **The School of Fine Arts**, haga clic en **Aceptar** y luego cierre la aplicación.
-8. Abra **Explorador de archivos** y busque la carpeta **[Repository Root]\AllFiles\Mod13\Labfiles\Reports\ClassReport**.
-9. Haga doble clic en **ClassReport**.
+8. Abra **Explorador de archivos** y busque la carpeta **[Repository Root]\AllFiles\Mod13\Labfiles\Reports**.
+9. Haga doble clic en **GeorgeLi** y/o en **KevinLiu**.
 
 - La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
 
- ![alt text](./Images/Fig-11-FilesDecrypted.jpg "Visualizando los archivos descifrados en la carpeta ClassReport !!!")
+ ![alt text](./Images/Fig-12-KevinDecrypted.jpg "Visualizando los archivos descifrados en la carpeta ClassReport - Kevin Liu !!!")
 
 10. Revise el informe no cifrado y luego cierre el archivo.
 
 - La representación visual a la respuesta del último ejercicio se muestra en la siguiente imagen:
 
- ![alt text](./Images/Fig-7-KevinLiuReportSaved.jpg "Leyendo los archivos no cifrado de salida en la carpeta ClassReport !!!")
+ ![alt text](./Images/Fig-13-GeorgeDecrypted.jpg "Leyendo los archivos no cifrado de salida en la carpeta ClassReport - George Li!!!")
 
 > **Resultado:** Después de completar este ejercicio, debería tener un informe compuesto sin cifrar que se generó a partir de los informes cifrados.
