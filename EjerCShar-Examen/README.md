@@ -14,7 +14,9 @@ Las condiciones generales del ejercicio:
 
 [Ejercicio CSharp No. 16 - HTML]: https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html
 
-[Ejercicio CSharp No. 16 - HTML](https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html){:target="_blank"}
+- Archivo con el código CSharp para la solución del ejercicio:
+<a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'>Ejercicio CSharp No. 16 -  C</a>
+
 
 - Archivo con el código CSharp para la solución del ejercicio:
 <a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/CSharp-Codigo/Ejer-16/Ejer-No-16.cs'>Ejercicio CSharp No. 16 -  C\#</a>
