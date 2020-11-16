@@ -7,14 +7,15 @@
 3. **Resumen de la Entrega:** La tarea individual consta de 15 ejercicios individuales a mi han tocados los siguientes:
 
 ##  Ejercicio CSharp No. 16
-La descripción del ejercicio se encuentra en el html que se describe a continuación:
+Las condiciones generales del ejercicio:
 
-- Lea el HTML del ejercicio [Ejer-CSharp-No-16.html](https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html) 
+### Archivos:
+- Archivo con el planteamiento del ejercicio en formato html: [Ejer-CSharp-No-16.html](https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html) 
 
-- Si desea ver el encabezado y todo el planteamiento del ejercicio, haga clic en:
+- Archivo con el código CSharp para la solución del ejercicio:
 <a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' target='_blank'>CSharp No. 16</a>
 
-### Código:
+### Imagen con el Código del proyecto:
 Para visualizar el archivo que contiene el programa main del código de CSharp pincha a continuación:
 <a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/CSharp-Codigo/Ejer-16/Ejer-No-16.cs'>CSharp No. 16</a>
 
@@ -22,10 +23,7 @@ Para visualizar el archivo que contiene el programa main del código de CSharp p
 
 ![alt text](./md_img/ejerNo-16.jpg "Visual Studio Código del programa!!!")
 
-
-
-
-### Resultado:
+### Imagen con el resultado después de la ejecución del proyecto:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
