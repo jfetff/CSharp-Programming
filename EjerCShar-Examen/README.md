@@ -16,11 +16,11 @@ Las condiciones generales del ejercicio:
 
 [link text](http://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html)
 
-[link text](Ejer-CSharp-No-16.html)
+[link text](./Ejer-CSharp-No-16.html)
 
-[Ejercicio CSharp No. 16 - HTML](./<a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'></a>)
+[Ejercicio CSharp No. 16 - HTML](<a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'></a>)
 
-[Ejercicio CSharp No. 16 - HTML](./<a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' target='_blank'></a>)
+[Ejercicio CSharp No. 16 - HTML](<a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' target='_blank'></a>)
 
 <a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'[Ejercicio CSharp No. 16 - HTML](./Ejer-CSharp-No-16.html) target='_blank'></a>
 
