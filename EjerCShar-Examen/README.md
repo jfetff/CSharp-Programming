@@ -16,6 +16,9 @@ Las condiciones generales del ejercicio:
 - Archivo con el código CSharp para la solución del ejercicio:
 <a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-16/Ejer-No-16.cs'>Ejercicio CSharp No. 16 -  C\#</a>
 
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 16 -  C\#](./CSharp-Codigo/Ejer-CSharp-No-16.html)
+
 ### Imagen con el Código del proyecto:
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
