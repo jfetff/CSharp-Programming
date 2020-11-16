@@ -10,10 +10,11 @@
 Las condiciones generales del ejercicio:
 
 ### Archivos:
-- Archivo con el planteamiento del ejercicio en formato html: [./Ejer-CSharp-No-16.html](https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html) 
+- Archivo con el planteamiento del ejercicio en formato html: <a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' target='_blank'>Ejercicio CSharp No. 16</a>
+
 
 - Archivo con el código CSharp para la solución del ejercicio:
-<a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/CSharp-Codigo/Ejer-16/Ejer-No-16.cs'>Ejercicio del Examen CSharp No. 16</a>
+<a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/CSharp-Codigo/Ejer-16/Ejer-No-16.cs'>Ejercicio CSharp No. 16</a>
 
 ### Imagen con el Código del proyecto:
 
