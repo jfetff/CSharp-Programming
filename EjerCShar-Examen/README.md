@@ -12,7 +12,7 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 ### Código:
 
-<a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/CSharp-Codigo/Ejer-16.cs'>CSharp No. 16</a>
+<a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/CSharp-Codigo/Ejer-16/Ejer-16.cs'>CSharp No. 16</a>
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
