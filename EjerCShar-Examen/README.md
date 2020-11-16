@@ -12,7 +12,11 @@ Las condiciones generales del ejercicio:
 ### Archivos:
 - Archivo con el planteamiento del ejercicio en formato html:
 
-[GitHub](http://github.com)
+[GitHub](http://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html)
+
+[link text](http://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html)
+
+[link text](Ejer-CSharp-No-16.html)
 
 [Ejercicio CSharp No. 16 - HTML](./<a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'></a>)
 
