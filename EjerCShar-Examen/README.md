@@ -8,7 +8,7 @@
 
 ##  Ejercicio CSharp No. 16
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='http://Ejer-CSharp_No-16.html'>CSharp No. 16</a>
+<a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp_No-16.html'>CSharp No. 16</a>
 
 ### Código:
 
