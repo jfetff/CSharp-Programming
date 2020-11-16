@@ -16,14 +16,14 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo_16.jpg "Visual Studio Código del programa!!!")
 
 
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo_16.jpg "Resultado parte izquierda del resultado al ejecutar el código !!!")
 
 
 ---
