@@ -14,7 +14,7 @@ Las condiciones generales del ejercicio:
 [Ejercicio CSharp No. 16 - HTML](Ejer-CSharp-No-16.html)
 
 - Archivo con el código CSharp para la solución del ejercicio:
-[Ejercicio CSharp No. 16 -  C\#](./CSharp-Codigo/Ejer-CSharp-No-16.html)
+[Ejercicio CSharp No. 16 -  C\#](./CSharp-Codigo/Ejer-16/Ejer-No-16.cs)
 
 ### Imagen con el Código del proyecto:
 
