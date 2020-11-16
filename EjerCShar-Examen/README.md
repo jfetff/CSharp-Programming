@@ -6,11 +6,9 @@
 2. **Fecha:** 30 de Octubre 2020.
 3. **Resumen de la Entrega:** La tarea individual consta de 15 ejercicios individuales a mi han tocados los siguientes:
 
----
-
 ##  Ejercicio CSharp No. 16
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-16.html'>CSharp No. 16</a>
+<a href='http://Ejer-CSharp_No-16.html'>CSharp No. 16</a>
 
 ### Código:
 
