@@ -1,0 +1,16 @@
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\obj\Debug\net5.0\Csharp-Code.csprojAssemblyReference.cache
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\obj\Debug\net5.0\Csharp-Code.GeneratedMSBuildEditorConfig.editorconfig
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\obj\Debug\net5.0\Csharp-Code.AssemblyInfoInputs.cache
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\obj\Debug\net5.0\Csharp-Code.AssemblyInfo.cs
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\obj\Debug\net5.0\Csharp-Code.csproj.CoreCompileInputs.cache
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\bin\Debug\net5.0\Csharp-Code.exe
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\bin\Debug\net5.0\Csharp-Code.deps.json
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\bin\Debug\net5.0\Csharp-Code.runtimeconfig.json
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\bin\Debug\net5.0\Csharp-Code.runtimeconfig.dev.json
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\bin\Debug\net5.0\Csharp-Code.dll
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\bin\Debug\net5.0\ref\Csharp-Code.dll
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\bin\Debug\net5.0\Csharp-Code.pdb
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\obj\Debug\net5.0\Csharp-Code.dll
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\obj\Debug\net5.0\ref\Csharp-Code.dll
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\obj\Debug\net5.0\Csharp-Code.pdb
+C:\20483C\Tareas\EjerExamCSharp\mios\Csharp-Code\obj\Debug\net5.0\Csharp-Code.genruntimeconfig.cache

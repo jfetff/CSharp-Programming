@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejer-34", "Ejer-34.csproj", "{73E94772-D943-4950-9852-42ED645D80BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ADVANCED|Any CPU = ADVANCED|Any CPU
+		BASIC|Any CPU = BASIC|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		TRIAL|Any CPU = TRIAL|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73E94772-D943-4950-9852-42ED645D80BF}.ADVANCED|Any CPU.ActiveCfg = ADVANCED|Any CPU
+		{73E94772-D943-4950-9852-42ED645D80BF}.ADVANCED|Any CPU.Build.0 = ADVANCED|Any CPU
+		{73E94772-D943-4950-9852-42ED645D80BF}.BASIC|Any CPU.ActiveCfg = BASIC|Any CPU
+		{73E94772-D943-4950-9852-42ED645D80BF}.BASIC|Any CPU.Build.0 = BASIC|Any CPU
+		{73E94772-D943-4950-9852-42ED645D80BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E94772-D943-4950-9852-42ED645D80BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E94772-D943-4950-9852-42ED645D80BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E94772-D943-4950-9852-42ED645D80BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E94772-D943-4950-9852-42ED645D80BF}.TRIAL|Any CPU.ActiveCfg = TRIAL|Any CPU
+		{73E94772-D943-4950-9852-42ED645D80BF}.TRIAL|Any CPU.Build.0 = TRIAL|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8855AEAD-CCE8-4607-86AA-B46700560712}
+	EndGlobalSection
+EndGlobal

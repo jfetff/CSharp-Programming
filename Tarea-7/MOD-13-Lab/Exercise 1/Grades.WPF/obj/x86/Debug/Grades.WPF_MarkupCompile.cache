@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 1\Grades.WPF\obj\x86\Debug\
+c:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 1\Grades.WPF\obj\x86\Debug\
 Grades.WPF
 none
 false
 DEBUG;TRACE
-C:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 1\Grades.WPF\App.xaml
-11-1077331355
+c:\20483C\CSharp-Programming\Tarea-7\MOD-13-Lab\Exercise 1\Grades.WPF\App.xaml
+11-670912202
 
-191004791914
-22-1801876074
+20987044938
+221411446235
 Controls\AddGradeDialog.xaml;Controls\AddStudentDialog.xaml;Controls\BusyIndicator.xaml;Controls\GrungeButton.xaml;Controls\StudentPhoto.xaml;Controls\SubjectList.xaml;MainWindow.xaml;Themes\Generic.xaml;Views\LogonPage.xaml;Views\StudentProfile.xaml;Views\StudentsPage.xaml;
 
-False
+True
 
