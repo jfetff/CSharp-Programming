@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\20483C\\Tareas\\EjerExamCSharp\\mios\\Csharp-Code\\Csharp-Code.csproj",
+      "projectUniqueName": "C:\\20483C\\CSharp-Programming\\EjerCShar-Examen\\CSharp-Codigo\\Ejer-16\\Csharp-Code.csproj",
       "projectName": "Csharp-Code",
-      "projectPath": "C:\\20483C\\Tareas\\EjerExamCSharp\\mios\\Csharp-Code\\Csharp-Code.csproj",
+      "projectPath": "C:\\20483C\\CSharp-Programming\\EjerCShar-Examen\\CSharp-Codigo\\Ejer-16\\Csharp-Code.csproj",
       "packagesPath": "C:\\Users\\jfetf\\.nuget\\packages\\",
-      "outputPath": "C:\\20483C\\Tareas\\EjerExamCSharp\\mios\\Csharp-Code\\obj\\",
+      "outputPath": "C:\\20483C\\CSharp-Programming\\EjerCShar-Examen\\CSharp-Codigo\\Ejer-16\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

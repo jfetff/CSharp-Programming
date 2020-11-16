@@ -5,7 +5,7 @@ namespace Csharp_Code
 {
     class Ejer_No_16
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Por favor digite la URL con el formato https://www.dominio.com:");
             string url = Console.ReadLine();
