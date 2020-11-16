@@ -9,9 +9,9 @@
 ##  Ejercicio CSharp No. 16
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
 
-Lea el HTML del ejercicio [Ejer-CSharp-No-16.html](https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html) 
+- Lea el HTML del ejercicio [Ejer-CSharp-No-16.html](https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html) 
 
-
+- Si desea ver el encabezado y todo el planteamiento del ejercicio, haga clic en:
 <a href='https://github.com/jfetff/CSharp-Programming/tree/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' target='_blank'>CSharp No. 16</a>
 
 ### Código:
