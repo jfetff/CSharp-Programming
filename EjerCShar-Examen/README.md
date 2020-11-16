@@ -16,7 +16,7 @@ Las condiciones generales del ejercicio:
 
 [link text](http://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-CSharp-No-16.html)
 
-[link text](.CSharp-Codigo/Ejer-CSharp-No-16.html)
+[link text](./CSharp-Codigo/Ejer-CSharp-No-16.html)
 
 [Ejercicio CSharp No. 16 - HTML](<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'></a>)
 
