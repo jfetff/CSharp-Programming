@@ -12,28 +12,28 @@ Las condiciones generales del ejercicio:
 ### Archivos:
 - Archivo con el planteamiento del ejercicio en formato html:
 
-[GitHub](http://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html)
+[GitHub](http://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-CSharp-No-16.html)
 
-[link text](http://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html)
+[link text](http://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-CSharp-No-16.html)
 
-[link text](./Ejer-CSharp-No-16.html)
+[link text](.CSharp-Codigo/Ejer-CSharp-No-16.html)
 
-[Ejercicio CSharp No. 16 - HTML](<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'></a>)
+[Ejercicio CSharp No. 16 - HTML](<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'></a>)
 
-[Ejercicio CSharp No. 16 - HTML](<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' target='_blank'></a>)
+[Ejercicio CSharp No. 16 - HTML](<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-CSharp-No-16.html' target='_blank'></a>)
 
-<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'>[Ejercicio CSharp No. 16 - HTML](Ejer-CSharp-No-16.html)</a>
+<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'>[Ejercicio CSharp No. 16 - HTML](Ejer-CSharp-No-16.html)</a>
 
-<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' target='_blank'>[Ejercicio CSharp No. 16 - HTML](Ejer-CSharp-No-16.html)</a>
-
-- Archivo con el código CSharp para la solución del ejercicio:
-<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'>Ejercicio CSharp No. 16 -  C0</a>
+<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-CSharp-No-16.html' target='_blank'>[Ejercicio CSharp No. 16 - HTML](Ejer-CSharp-No-16.html)</a>
 
 - Archivo con el código CSharp para la solución del ejercicio:
-<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'>Ejercicio CSharp No. 16 -  C1</a>
+<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'>Ejercicio CSharp No. 16 -  C0</a>
 
 - Archivo con el código CSharp para la solución del ejercicio:
-<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'>Ejercicio CSharp No. 16 -  C2</a>
+<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'>Ejercicio CSharp No. 16 -  C1</a>
+
+- Archivo con el código CSharp para la solución del ejercicio:
+<a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-CSharp-No-16.html' rel='nofollow' target='_blank'>Ejercicio CSharp No. 16 -  C2</a>
 
 - Archivo con el código CSharp para la solución del ejercicio:
 <a href='https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/CSharp-Codigo/Ejer-16/Ejer-No-16.cs'>Ejercicio CSharp No. 16 -  C\#</a>
