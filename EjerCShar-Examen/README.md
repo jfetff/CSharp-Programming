@@ -31,8 +31,15 @@ Las condiciones generales del ejercicio:
 
 ---
 ##  Ejercicio CSharp No. 34
-La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-34.html'>CSharp No. 34</a>
+Las condiciones generales del ejercicio:
+
+### Archivos:
+- Archivo con el planteamiento del ejercicio en formato html:
+[Ejercicio CSharp No. 34 - HTML](https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-34.html)
+
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 34 -  C\#](./CSharp-Codigo/Ejer-34/Program.cs)
+
 
 ### Código:
 
@@ -55,8 +62,14 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 ---
 ##  Ejercicio CSharp No. 35
-La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-35.html'>CSharp No. 35</a>
+Las condiciones generales del ejercicio:
+
+### Archivos:
+- Archivo con el planteamiento del ejercicio en formato html:
+[Ejercicio CSharp No. 35 - HTML](https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-34.html)
+
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 35 -  C\#](./CSharp-Codigo/Ejer-35/Program.cs)
 
 ### Código:
 
