@@ -73,7 +73,6 @@ Las condiciones generales del ejercicio:
 
 - La representación visual de la implementación del método bool del ejercicio en su código C\# del ejercicio se muestra en la siguiente imagen:
 
-
 ![alt text](./md_img/ejerNo_35-0.jpg " !!!")
 
 ### Resultado:
