@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>CSharp Ejercicio - 35</title>
+</head>
+
+<body>
+    <h1 style='text-align: center;'> CSharp Ejercicio Nº 35</h1><br />
+    <table style='width:80%;margin-left:auto;margin-right:auto;'>
+        <tr>
+            <td>
+                You are developing an application that accepts the input of dates from the user.<br /><br />
+
+                Users enter the date in their local format. The date entered by the user is stored in a string variable
+                named inputDate. The valid date value must be placed in a DateTime variable named validatedDate.<br /><br />
+
+                You need to validate the entered date and convert it to Coordinated Universal Time (UTC). The code must
+                not cause an exception to be thrown.<br /><br />
+
+                Which code segment should you use?<br /><br />
+                
+                <img src="./img/image55.jpeg" alt=""><br /><br />
+
+                A. Option A<br />
+                B. Option B<br />
+                C. Option C<br />
+                D. Option D<br /><br />
+
+                Correct Answer: A<br /><br />
+
+                Section: Volume A<br /><br />
+
+                Explanation<br /><br />
+
+                Explanation/Reference:<br />
+
+                Explanation:<br /><br />
+
+                AdjustToUniversal parses s and, if necessary, converts it to UTC.<br /><br />
+
+                Note: The DateTime.TryParse method converts the specified string representation of a date and time to
+                its DateTime equivalent using the specified culture-specific format information and formatting style,
+                and returns a value that indicates whether the conversion succeeded.<br /><br /><br />
+
+
+                <hr><br />
+                <h2 style='color:red'>Explicación</h2><br />
+
+                Definición del método en C#: <em> DateTime TryParse(String, IFormatProvider, DateTimeStyles, DateTime)</em>
+                <br /><br />
+                <h3>Description</h3>
+
+                <em><strong>DateTime TryParse(String, IFormatProvider, DateTimeStyles, DateTime)</strong></em><br /><br />
+                convierte la representación de cadena especificada de una fecha y hora en su equivalente DateTime, 
+                utilizando la información de formato específico de la cultura y el estilo de formato especificado, 
+                devolviendo un valor falso o verdadero que indica si la conversión se realizó correctamente.<br />
+                
+                <br />
+                <h3>Síntaxis</h3>
+
+                <dl>
+                    <dt><em><strong>static bool TryParse (</strong></em>
+                        <br /><em></dt>
+                        <dd><strong>string</strong>  s,  // ' 19/11/2020 10:00 AM '<br /></dd>
+                        <dd><strong>IFormatProvider</strong> provider,<br /></dd>
+                        <dd><strong>DateTimeStyles</strong> styles,<br /></dd>
+                        <dd><strong>out</strong> DateTime result<br /></dd>
+                )</em>
+            </dl>
+                <h3>Parámetros</h3>
+                
+                <em><strong>DateTime.TryParse(String, IFormatProvider, DateTimeStyles, DateTime)</strong></em><br /><br />
+                <dl>
+                    <dt>Definiendo los parámetros descritos en el método:<br /><br /></dt>
+                    <dd><em><strong>s - </strong></em>Una cadena que contiene una fecha y hora para convertir.</dd><br />
+                    <dd><em><strong>provider - </strong></em>Un objeto que proporciona información de formato específica de la cultura sobre <em>'s'</em>.</dd><br />
+                    <dd>
+                        <em><strong>style - </strong></em>
+                        Una combinación bit a bit de valores de enumeración que define cómo interpretar la fecha 
+                        analizada en relación con la zona horaria actual o la fecha actual. Un valor típico para 
+                        especificar es Ninguno.<br /><br />
+                    </dd>
+                    <dd>
+                        <em><strong>result - </strong></em>Cuando este método regresa, contiene el valor DateTime equivalente a la fecha y hora contenidas 
+                        en <em>'s'</em>, si la conversión tuvo éxito, o MinValue si la conversión falló. La conversión falla si el 
+                        parámetro <em>'s'</em> es nulo, es una cadena vacía ("") o no contiene una representación de cadena válida 
+                        de una fecha y hora. Este parametro se pasa sin inicializar.<br /><br />
+                    </dd>
+                </dl> 
+                    
+                    <h3>Regresa</h3>
+
+                    <dl>
+                        <dt><em><strong>DateTime.TryParse(String, IFormatProvider, DateTimeStyles, DateTime)</strong></em> </dt>
+                        <dd>El método devuelve verdadero si el parámetro <em>'s'</em> se convirtió correctamente; de lo contrario, falso.</dd>
+                    </dl>
+                <br />
+                
+                <p></p>
+                <h2 style='color:red'>Respuesta:</h2>
+                <h3>Mostrando de manera visual la respuesta: </h3>
+
+                <h2 style='color:red'>Fuentes:</h2><br /><br />
+
+
+            </td>
+        </tr>
+    </table>
+    <br /><br />
+
+    <script>
+    </script>
+</body>
+
+</html>

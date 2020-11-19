@@ -64,11 +64,15 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 ![alt text](./md_img/ejerNo_.jpg " !!!")
 
+Además el la implementación del método bool se pueder ver en la siguiente imagen:
+
+![alt text](./md_img/ejerNo_35-0.jpg " !!!")
+
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo_35-1.jpg " !!!")
 
 ---
 ##  Ejercicio CSharp No. 38
@@ -83,6 +87,10 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 ### Resultado:
 
+Es necesario introducir la fecha en un formato de los siguientes:
+- 19/11/2020
+- 19/11/2020 06:00 PM
+- Cualquier otro formato de fecha en castellano.
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./md_img/ejerNo_.jpg " !!!")
