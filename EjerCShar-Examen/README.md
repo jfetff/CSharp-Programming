@@ -71,6 +71,10 @@ Las condiciones generales del ejercicio:
 
 ### Código:
 
+- La representación visual de la implementación del método main del programa que llama al método bool que se implementa para la correcta resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo_35-2.jpg " !!!")
+
 - La representación visual de la implementación del método bool del ejercicio en su código C\# del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./md_img/ejerNo_35-0.jpg " !!!")
