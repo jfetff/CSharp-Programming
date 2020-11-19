@@ -57,8 +57,6 @@ Las condiciones generales del ejercicio:
 
 ![alt text](./md_img/ejerNo-34-3.jpg " !!!")
 
-![alt text](./md_img/ejerNo-34-4.jpg " !!!")
-
 
 ---
 ##  Ejercicio CSharp No. 35
@@ -73,11 +71,8 @@ Las condiciones generales del ejercicio:
 
 ### Código:
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual de la implementación del método bool del ejercicio en su código C\# del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
-
-Además el la implementación del método bool se pueder ver en la siguiente imagen:
 
 ![alt text](./md_img/ejerNo_35-0.jpg " !!!")
 
