@@ -92,19 +92,24 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 ### Código:
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
 
 ### Resultado:
 
-Es necesario introducir la fecha en un formato de los siguientes:
-- 19/11/2020
-- 19/11/2020 06:00 PM
-- Cualquier otro formato de fecha en castellano.
+Si la instancia de la clase Inventory es nulo primero se pone en 'lock' si es nulo. Luego si es nulo se instancia. La imagen siguiente muestra que si la instacia del tipo de Inventario no es nulo entonces imprimimos en la pantalla diciendo "E inventario es nulo por eso lo instanciamos".
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-38-2.jpg " !!!")
+
+El ejercicio exige que para que tengamos un objeto de tipo Inventory en 'lock' si es nulo. Luego si es nulo se instancia. La imagen anterior muestra que si la instacia del tipo de Inventario no es nulo este directamente llama al método pintar diciendo "En inventario se ha instanciado desde el constructor".
+
+En la siguiente imagen muestra el compilado del programa donde se muestra el log en la consola acerca del objeto inventario.
+
+
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-38-1.jpg " !!!")
 
 
 ---
