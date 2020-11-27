@@ -18,6 +18,10 @@ Las condiciones generales del ejercicio:
 
 ### Imagen con el Código del proyecto:
 
+
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 16 - C\#](./CSharp-Codigo/Ejer-CSharp-No-16/Ejer-No-16/Program.cs)
+
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./md_img/ejerNo-16.jpg "Visual Studio Código del programa!!!")
@@ -37,11 +41,13 @@ Las condiciones generales del ejercicio:
 - Archivo con el planteamiento del ejercicio en formato html:
 [Ejercicio CSharp No. 34 - HTML](https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-34.html)
 
-- Archivo con el código CSharp para la solución del ejercicio:
-[Ejercicio CSharp No. 34 -  C\#](./CSharp-Codigo/Ejer-34/Program.cs)
+
 
 
 ### Código:
+
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 34 -  C\#](./CSharp-Codigo/Ejer-34/Program.cs)
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
@@ -67,6 +73,9 @@ Las condiciones generales del ejercicio:
 [Ejercicio CSharp No. 35 - HTML](https://github.com/jfetff/CSharp-Programming/blob/master/EjerCShar-Examen/Ejer-CSharp-No-34.html)
 
 - Archivo con el código CSharp para la solución del ejercicio:
+
+- Archivo con el código CSharp para la solución del ejercicio:
+
 [Ejercicio CSharp No. 35 -  C\#](./CSharp-Codigo/Ejer-35/Program.cs)
 
 ### Código:
@@ -92,7 +101,8 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 ### Código:
 
-
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 38 -  C\#](./CSharp-Codigo/Ejer-38/Program.cs)
 
 ### Resultado:
 
@@ -119,16 +129,20 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 ### Código:
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 104 -  C\#](./CSharp-Codigo/Ejer-104/Program.cs)
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-104-2.jpg " !!!")
 
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-104-1.jpg " !!!")
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-104-2.jpg " !!!")
 
 ---
 ##  Ejercicio CSharp No. 105
@@ -136,6 +150,9 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 <a href='Ejer-CSharp_No-105.html'>CSharp No. 105</a>
 
 ### Código:
+
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 105 -  C\#](./CSharp-Codigo/Ejer-105/Program.cs)
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
@@ -155,6 +172,10 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 ### Código:
 
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 157 -  C\#](./CSharp-Codigo/Ejer-157/Program.cs)
+
+
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./md_img/ejerNo_.jpg " !!!")
@@ -172,6 +193,9 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 <a href='Ejer-CSharp_No-158.html'>CSharp No. 158</a>
 
 ### Código:
+
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 158 -  C\#](./CSharp-Codigo/Ejer-158/Program.cs)
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
@@ -191,6 +215,9 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 ### Código:
 
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 182 -  C\#](./CSharp-Codigo/Ejer-182/Program.cs)
+
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./md_img/ejerNo_.jpg " !!!")
@@ -208,6 +235,9 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 <a href='Ejer-CSharp_No-199.html'>CSharp No. 199</a>
 
 ### Código:
+
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 199 -  C\#](./CSharp-Codigo/Ejer-199/Program.cs)
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
@@ -227,6 +257,9 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 ### Código:
 
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 216 -  C\#](./CSharp-Codigo/Ejer-216/Program.cs)
+
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./md_img/ejerNo_.jpg " !!!")
@@ -244,6 +277,9 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 <a href='Ejer-CSharp_No-233.html'>CSharp No. 233</a>
 
 ### Código:
+
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 233 -  C\#](./CSharp-Codigo/Ejer-233/Program.cs)
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
@@ -263,6 +299,9 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 ### Código:
 
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 250 -  C\#](./CSharp-Codigo/Ejer-250/Program.cs)
+
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./md_img/ejerNo_.jpg " !!!")
@@ -281,6 +320,9 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 ### Código:
 
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 251 -  C\#](./CSharp-Codigo/Ejer-251/Program.cs)
+
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./md_img/ejerNo_.jpg " !!!")
@@ -298,6 +340,9 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 <a href='Ejer-CSharp_No-272.html'>CSharp No. 272</a>
 
 ### Código:
+
+- Archivo con el código CSharp para la solución del ejercicio:
+[Ejercicio CSharp No. 272 -  C\#](./CSharp-Codigo/Ejer-272/Program.cs)
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 

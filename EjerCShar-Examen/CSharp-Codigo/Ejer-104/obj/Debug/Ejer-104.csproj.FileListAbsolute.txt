@@ -1,0 +1,7 @@
+C:\Ejer-104\Ejer-104\bin\Debug\Ejer-104.exe.config
+C:\Ejer-104\Ejer-104\bin\Debug\Ejer-104.exe
+C:\Ejer-104\Ejer-104\bin\Debug\Ejer-104.pdb
+C:\Ejer-104\Ejer-104\obj\Debug\Ejer-104.csprojAssemblyReference.cache
+C:\Ejer-104\Ejer-104\obj\Debug\Ejer-104.csproj.CoreCompileInputs.cache
+C:\Ejer-104\Ejer-104\obj\Debug\Ejer-104.exe
+C:\Ejer-104\Ejer-104\obj\Debug\Ejer-104.pdb

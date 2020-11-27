@@ -35,18 +35,52 @@
                 Explanation/Reference:<br /><br />
 
                 <hr><br /><br />
-                <h2 style='color:red'>Explicación</h2><br /><br />
+                <h2 style='color:red'>Explicación</h2>
+                <p style="color: brown; font-style: strong;">Opción A. Insert the following code at line 02: where T : new()</p>
 
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>Para probar la respuesta correcta hemos ejecutado el programa con solo esta opción ya quiere
+                    las otras dan errores y no compilan.
+                </p>
+                <br />
+                <p style="color: brown; font-style: strong;">Opcion B. Replace line 01 with the following code: public void CreateObject<T>()</p>
+                <p>El error que da la compilación es:</p>
+                <p>Ejer-104\Program.cs(35,33): error CS0304: No se puede crear una instancia del tipo de variable 'T' porque no tiene 
+                    la restricción new()</p>
+                <p>Lo que quiere decir es que para poder instanciar un objeto del Tipo T como no lleva la restricción 'new()' no 
+                    se puede instanciar, que es lo que hace la línea 4 del código dado. Ver las fuentes dadas al final.
+                </p>
+                <br />
+
+                <p style="color: brown; font-style: strong;">Opción C. Replace line 01 with the following code: public Object CreateObject<T>()</p>
+                    <p>El error que da la compilación es:</p>
+                    <p>Ejer-104\Program.cs(35,33): error CS0304: No se puede crear una instancia del tipo de variable 'T' porque no tiene 
+                        la restricción new()</p>
+                    <p>Este es el mismo error de la Opción B y la explicación es la misma. NO se puede instanciar el objeto como se hace
+                        en la línea 4 ya que no existe la restricción 'new()' en la línea 1. Ver las fuentes dadas al final.
+                    </p>
+
+               
+                    
+                <br />
+                <p style="color: brown; font-style: strong;">Opción D. Insert the following code at line 02: where T : Object </p>
+                El error que da la compilación es:</p>
+                <p>Ejer-104\Program.cs(46,54): error CS0702: La restricción no puede ser la clase especial 'object' </p>
+                <p>Al declarar una clase y luego escribimos ': where' estamos restringiendo a la clase a cierta forma
+                    de crear instancias de la misma. Las restricciones informan al compilador sobre las capacidades que 
+                    debe tener un argumento de tipo. Sin restricciones, el argumento de tipo puede ser cualquier tipo.
+                    Del tipo de restricciones que aparecen en las fuentes dadas al final, no podemos usar 'Object' ya que  
+                    da error, como se escribe en la descripción del mismo, esta es una clase especial. Ver las fuentes dadas al final.
+                </p>
+                
+
+                <br /><br />
                 <h2 style='color:red'>Respuesta:</h2><br /><br />
                 
                 <h3>Mostrando de manera visual la respuesta: </h3>
 
                 <h2 style='color:red'>Fuentes:</h2>
-                <br />
-                <br />
+                <br />https://docs.microsoft.com/en-Us/dotnet/csharp/language-reference/compiler-messages/cs0304
+                <br />https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters
                 <br />
                 
             </td>
