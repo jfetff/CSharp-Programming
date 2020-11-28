@@ -154,11 +154,16 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 - Archivo con el código CSharp para la solución del ejercicio:
 [Ejercicio CSharp No. 105 -  C\#](./CSharp-Codigo/Ejer-105/Program.cs)
 
+### Resultado:
+
+La opción B da error ya que en el código dado no tiene constructor por eso la opción B 
+no se puede compilar.
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-105-0.jpg " !!!")
 
-### Resultado:
+Tal y como se muestra en el código dado en este ejercicio se han desarrollado cada una de
+las opciones y sus correspondientes resultados.
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
