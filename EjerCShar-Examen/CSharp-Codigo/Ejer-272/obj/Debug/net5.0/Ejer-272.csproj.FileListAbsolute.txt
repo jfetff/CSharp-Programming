@@ -1,0 +1,16 @@
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\obj\Debug\net5.0\Ejer-272.csprojAssemblyReference.cache
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\obj\Debug\net5.0\Ejer-272.GeneratedMSBuildEditorConfig.editorconfig
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\obj\Debug\net5.0\Ejer-272.AssemblyInfoInputs.cache
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\obj\Debug\net5.0\Ejer-272.AssemblyInfo.cs
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\obj\Debug\net5.0\Ejer-272.csproj.CoreCompileInputs.cache
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\bin\Debug\net5.0\Ejer-272.exe
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\bin\Debug\net5.0\Ejer-272.deps.json
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\bin\Debug\net5.0\Ejer-272.runtimeconfig.json
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\bin\Debug\net5.0\Ejer-272.runtimeconfig.dev.json
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\bin\Debug\net5.0\Ejer-272.dll
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\bin\Debug\net5.0\ref\Ejer-272.dll
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\bin\Debug\net5.0\Ejer-272.pdb
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\obj\Debug\net5.0\Ejer-272.dll
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\obj\Debug\net5.0\ref\Ejer-272.dll
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\obj\Debug\net5.0\Ejer-272.pdb
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-272\obj\Debug\net5.0\Ejer-272.genruntimeconfig.cache

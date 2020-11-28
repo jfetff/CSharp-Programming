@@ -47,16 +47,48 @@
 
                 <hr><br /><br />
                 <h2 style='color:red'>Explicación</h2><br /><br />
-
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>Primero hay que mencionar que seguramente en este ejercicio hay una errata. Esta misma es el segundo
+                    argumento a rellenera o Target 2. Claramente se ve que en cuerpo del método dado, este mismo devuelve 
+                    la suma x + y, que es un entero. Por lo escrito anteriormente Target 2 no puede ser void.
+                    Este último tiene que ser int o entero. De lo contrario la declaración del delegate estaría errada. </p>
+                <p>Las opciones dadas son:</p>
+                <p style="color: darkblue; font-weight: bolder;">Target 1:</p>
+                <p>
+                    <ul>
+                        <li>Esta no puede ser 'class' por que no debiera terminar con ';' y tendría que seguir el cuerpo 
+                            de la clase.</li>
+                        <li>La Opción 'delegate' en la correcta por que es una declaración o definición de una función.</li>
+                        <li>Protected: podría ser protected pero el cuerpo de este método no existe.</li>
+                        <li>public: esta opción al igual que la anterior también podría ser protected pero el cuerpo de este método no existe.</li>
+                    </ul> 
+                </p>
+                <p style="color: darkblue; font-weight: bolder;">Target 2:</p>
+                <p>
+                    <ul>
+                        <li>Class: es una opción pero no puede ser, porque no debiera terminar con ';' y tendría que seguir el cuerpo 
+                            de la clase.</li>
+                        <li>El Target 2 no puede ser un modificar de acceso como protected, public, private, no puede ir en una segunda posición 
+                             Los modificadores de accesso usualmente van de primero y no de segundo. En la segunda posisión de la firma del método
+                             es el tipo de valor devuelto. Para nosotros debería ser 'int' y no 'void' como es dado en el respuesta del ejercicio.
+                        </li>
+                    </ul>
+                </p>
+                <p style="color: darkblue; font-weight: bolder;">Target 3:</p>
+                <p>
+                    <ul>
+                        <li>La Opción 'class' no puede ser por la propia ubicación de esta palabra. </li>
+                        <li>La Opción 'delegate' es la respuesta correcta y esta coincide con la definición, instanciación y llamado de un delegate.</li>
+                        <li>Las Opciones 'int' 'interface' y 'void' no pueden ser ya que el Target 3 esta a la derecha de un '=' por lo que Claramente
+                            es una asignación y no pueden situarse en esa posición. 
+                        </li>
+                    </ul>
+                </p>
                 <h2 style='color:red'>Respuesta:</h2><br /><br />
 
                 <h3>Mostrando de manera visual la respuesta: </h3>
 
                 <h2 style='color:red'>Fuentes:</h2>
-                <br />
+                <br />https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
                 <br />
                 <br />
 
