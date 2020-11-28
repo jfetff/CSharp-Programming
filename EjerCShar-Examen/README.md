@@ -167,7 +167,7 @@ las opciones y sus correspondientes resultados.
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-105-1.jpg " !!!")
 
 
 ---
