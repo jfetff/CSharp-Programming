@@ -82,17 +82,17 @@ Las condiciones generales del ejercicio:
 
 - La representación visual de la implementación del método main del programa que llama al método bool que se implementa para la correcta resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_35-2.jpg " !!!")
+![alt text](./md_img/ejerNo-35-2.jpg " !!!")
 
 - La representación visual de la implementación del método bool del ejercicio en su código C\# del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_35-0.jpg " !!!")
+![alt text](./md_img/ejerNo-35-0.jpg " !!!")
 
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_35-1.jpg " !!!")
+![alt text](./md_img/ejerNo-35-1.jpg " !!!")
 
 ---
 ##  Ejercicio CSharp No. 38
@@ -167,7 +167,7 @@ las opciones y sus correspondientes resultados.
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 
 ---
@@ -183,13 +183,13 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 
 ---
@@ -204,13 +204,13 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 
 ---
@@ -225,13 +225,13 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 
 ---
@@ -246,13 +246,13 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 
 ---
@@ -267,13 +267,13 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 
 ---
@@ -288,13 +288,13 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 
 ---
@@ -309,13 +309,13 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 
 ---
@@ -330,13 +330,13 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 
 ---
@@ -351,10 +351,10 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
 
 ### Resultado:
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo_.jpg " !!!")
+![alt text](./md_img/ejerNo-.jpg " !!!")
