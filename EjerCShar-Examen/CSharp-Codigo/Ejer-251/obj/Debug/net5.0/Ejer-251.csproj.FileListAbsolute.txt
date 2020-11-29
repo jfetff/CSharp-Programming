@@ -1,0 +1,5 @@
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-251\obj\Debug\net5.0\Ejer-251.csprojAssemblyReference.cache
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-251\obj\Debug\net5.0\Ejer-251.GeneratedMSBuildEditorConfig.editorconfig
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-251\obj\Debug\net5.0\Ejer-251.AssemblyInfoInputs.cache
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-251\obj\Debug\net5.0\Ejer-251.AssemblyInfo.cs
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-251\obj\Debug\net5.0\Ejer-251.csproj.CoreCompileInputs.cache
