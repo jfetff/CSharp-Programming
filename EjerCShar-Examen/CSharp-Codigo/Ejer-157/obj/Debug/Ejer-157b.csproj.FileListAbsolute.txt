@@ -1,0 +1,6 @@
+C:\Ejer-157\Ejer-157b\Ejer-157b\bin\Debug\Ejer-157b.exe.config
+C:\Ejer-157\Ejer-157b\Ejer-157b\bin\Debug\Ejer-157b.exe
+C:\Ejer-157\Ejer-157b\Ejer-157b\bin\Debug\Ejer-157b.pdb
+C:\Ejer-157\Ejer-157b\Ejer-157b\obj\Debug\Ejer-157b.csproj.CoreCompileInputs.cache
+C:\Ejer-157\Ejer-157b\Ejer-157b\obj\Debug\Ejer-157b.exe
+C:\Ejer-157\Ejer-157b\Ejer-157b\obj\Debug\Ejer-157b.pdb
