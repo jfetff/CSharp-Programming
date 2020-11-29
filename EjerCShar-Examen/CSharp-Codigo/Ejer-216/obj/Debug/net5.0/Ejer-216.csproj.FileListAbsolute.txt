@@ -1,0 +1,16 @@
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\bin\Debug\net5.0\Ejer-216.exe
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\bin\Debug\net5.0\Ejer-216.deps.json
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\bin\Debug\net5.0\Ejer-216.runtimeconfig.json
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\bin\Debug\net5.0\Ejer-216.runtimeconfig.dev.json
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\bin\Debug\net5.0\Ejer-216.dll
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\bin\Debug\net5.0\ref\Ejer-216.dll
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\bin\Debug\net5.0\Ejer-216.pdb
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\obj\Debug\net5.0\Ejer-216.csprojAssemblyReference.cache
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\obj\Debug\net5.0\Ejer-216.GeneratedMSBuildEditorConfig.editorconfig
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\obj\Debug\net5.0\Ejer-216.AssemblyInfoInputs.cache
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\obj\Debug\net5.0\Ejer-216.AssemblyInfo.cs
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\obj\Debug\net5.0\Ejer-216.csproj.CoreCompileInputs.cache
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\obj\Debug\net5.0\Ejer-216.dll
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\obj\Debug\net5.0\ref\Ejer-216.dll
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\obj\Debug\net5.0\Ejer-216.pdb
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-216\obj\Debug\net5.0\Ejer-216.genruntimeconfig.cache

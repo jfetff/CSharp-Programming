@@ -267,13 +267,45 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-216-1.jpg " !!!")
 
 ### Resultado:
 
+1. Si al llamar al Method1 desde una instancia de la Class2 se alza una excepción. **VERDADERO**
+
+Tal y como se muestra en la siguiente imagen al instanciar el método1 con la clase2 se ve que la excepción "Unhandled exception" o excepción no implementada.
+
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-216-2.jpg " !!!")
+
+2. Si hacemos un cast a una instancia de la clase1 con una INewInterface se alzará una excepción. **FALSO**
+
+Lo primero que hacemos es hacer un cast tal y como se muestra en la imagen siguiente.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-216-3.jpg " !!!")
+
+Al ejecutar después de la compilación del programa podemos ver que no se alza ningún error por eso la respuesta es **FALSO**
+
+![alt text](./md_img/ejerNo-216-4.jpg " !!!")
+
+
+3. Si la Clase2 usa una implementación implicita de la Interfase INewInterface. **FALSO**
+
+Con implementaciones de interfaz implícitas, los miembros de la interfaz son públicos en la clase. Con implementaciones explícitas, en la clase, los miembros de la interfaz no se declaran como miembros públicos y no se puede acceder a ellos directamente usando una instancia de la clase, pero una transmisión a la interfaz permite acceder a los miembros. Entremos en los detalles.
+
+Al implementar interfaces explícitamente, la interfaz ya no se declara pública con la implementación, y el miembro de la interfaz tiene como prefijo el nombre de la interfaz:
+
+![alt text](./md_img/ejerNo-216-5.jpg " !!!")
+
+Al ejecutar el código podemos ver que hemos accedido al método que es llamado de forma explícita a la interfase por la 
+clase2. La imagen siguiente se puede ver la ejecución mencionada.
+
+Al ejecutar después de la compilación del programa podemos ver que no se alza ningún error por eso la respuesta es **FALSO**
+
+![alt text](./md_img/ejerNo-216-6.jpg " !!!")
 
 
 ---
@@ -286,15 +318,21 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 - Archivo con el código CSharp para la solución del ejercicio:
 [Ejercicio CSharp No. 233 -  C\#](./CSharp-Codigo/Ejer-233/Program.cs)
 
+De todas las opciones dadas solo la opción B ofrece el par 'Key:Value', tal y como es requerido en los planteamientos del ejercicio. Por eso nos concentramos en solo esta solución. En el código presentados en la imagen se ve los elementos que se han agregados a cada uno de los diccionarios.
+
+Aquí solo presentamos la Respuesta correcta, el código para la representación de ejemplos de diccionarios se muestra en la imagen siguiente.
+
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-233-1.jpg " !!!")
 
 ### Resultado:
 
+Hemos creado dos diccionarios con elementos para cada uno de ellos. En la imagen siguientes mostramos el nombre de cada uno de ellos y el conteo de los elementos que contienen.
+
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-233-2.jpg " !!!")
 
 
 ---
