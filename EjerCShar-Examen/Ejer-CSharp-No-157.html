@@ -36,17 +36,77 @@
 
                 <br />
                 <hr><br /><br />
-                <h2 style='color:red'>Explicación</h2><br /><br />
+                <h2 style='color:red'>Explicación</h2>
+                <ul style="list-style: none;">
+                    <p>
+                        La imagen escogida para bajar es la siguiente, así como el link de donde fue bajada:<br /><br />
+                        <img src="./md_img/ejerNo-157-7.jpg" alt=""><br />
+                    </p>
+                    <br /><br />
+                    <hr>
+                    <li><p style="color: blue; font-weight: bolder;">Opción A.</p>
+                        <p>
+                            WebRequest request = HttpWebRequest.Create("https://le-cdn.website-editor.net/711b5e80ef1349888fc4bab086670e23/dms3rep/multi/opt/F1-960w.jpg");<br />
+                            StreamWriter writer = new StreamWriter(request.GetResponse().GetResponseStream());<br />
+                            writer.WriteLine("C:/20483C/fileOpcionA.jpg");
+                        </p>
+                        <p>
+                            El error mostrado al intentar bajar la foto se muestra en la siguiente imagen:<br /><br />
+                            <img src="./md_img/ejerNo-157-6.jpg" alt=""><br />
+                        </p>
+                    </li>
+                    <br /><br />
+                    <li><p style="color: blue; font-weight: bolder;">Opción B.</p>
+                        <p>
+                            WebClient client = new WebClient();<br />
+                            StreamWriter writer = new StreamWriter("C:/20483C/fileOpcionB.jpg");<br />
+                            writer.Write(client.DownloadData("https://le-cdn.website-editor.net/711b5e80ef1349888fc4bab086670e23/dms3rep/multi/opt/F1-960w.jpg"));<br />
+                            writer.Dispose();<br />
+                            client.Dispose();
+                        </p>
+                        <p>
+                            Tal y como se puede ver la Clase StreamWriter Clase Implementa TextWriter 
+                            para escribir los caracteres de una secuencia en una codificación determinada. 
+                            Esta opción aunque crea un archivo no alza una imagen pero no baja ninguna imagen.
+                        </p>
+                    </li>
+                    <br /><br />
+                    <li><p style="color: blue; font-weight: bolder;">Opción C.</p>
+                        <p>
+                            WebClient client = new WebClient();<br />
+                            client.DownloadFile("http://server1/image1.jpg","C:/20483C/musica.jpg");<br />
+                            client.Dispose();
+                        </p>
+                        <p>
+                            Esta es la opción que da la respuesta correcta.<br /><br /> 
+                            <img src="./md_img/ejerNo-157-2.jpg" alt=""><br /><br />
+                            La ubicación de la imagen bajada se muestra en la siguiente imagen:
+                            <br /><br /> 
+                            <img src="./md_img/ejerNo-157-3.jpg" alt=""><br /><br />
+                        </p>
+                    </li>
+                    <br /><br />
+                    <li><p style="color: blue; font-weight: bolder;">Opción D.</p>
+                        <p>
+                            WebRequest request = HttpWebRequest.Create("https://le-cdn.website-editor.net/711b5e80ef1349888fc4bab086670e23/dms3rep/multi/opt/F1-960w.jpg");<br />
+                            StreamWriter writer = new StreamWriter(request.GetResponse().GetResponseStream());<br />
+                            writer.Write("C:/20483C/fileOpcionD.jpg");<br />
+                            writer.Dispose();
+                        </p>
+                        Esta es la opción produce un error 'System.ArgumentException' y por eso no es la respuesta correcta.<br /><br /> 
+                        <img src="./md_img/ejerNo-157-8.jpg" alt=""><br /><br />
+                    </p>
+                    </li>
+                </ul>
+
 
                 <p></p>
-                <p></p>
-                <p></p>
-                <h2 style='color:red'>Respuesta:</h2><br /><br />
-                
+                <h2 style='color:red'>Respuesta:</h2>
+                <p>Por lo antes mostrado la respuesta correcta es la Opción C</p>
                 <h3>Mostrando de manera visual la respuesta: </h3>
-
+                <img src="./md_img/ejerNo-157-4.jpg" alt=""><br /><br />
                 <h2 style='color:red'>Fuentes:</h2>
-                <br />
+                <br />https://docs.microsoft.com/es-es/dotnet/api/system.io.streamwriter?view=net-5.0
                 <br />
                 <br />
                 

@@ -74,8 +74,6 @@ Las condiciones generales del ejercicio:
 
 - Archivo con el código CSharp para la solución del ejercicio:
 
-- Archivo con el código CSharp para la solución del ejercicio:
-
 [Ejercicio CSharp No. 35 -  C\#](./CSharp-Codigo/Ejer-35/Program.cs)
 
 ### Código:
@@ -97,7 +95,7 @@ Las condiciones generales del ejercicio:
 ---
 ##  Ejercicio CSharp No. 38
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp-No-.38html'>CSharp No. 38</a>
+<a href='Ejer-CSharp-No-38.html'>CSharp No. 38</a>
 
 ### Código:
 
@@ -201,7 +199,7 @@ en la carpeta elegida.
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-157-52.jpg " !!!")
+![alt text](./md_img/ejerNo-157-2.jpg " !!!")
 
 La imagen que se va a bajar le hemos cambiado el nombre a 'musica.jpg'. La página web de 
 donde se baja se muetra en la siguiente imagen.
