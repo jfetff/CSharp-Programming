@@ -97,7 +97,7 @@ Las condiciones generales del ejercicio:
 ---
 ##  Ejercicio CSharp No. 38
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-.38html'>CSharp No. 38</a>
+<a href='Ejer-CSharp-No-.38html'>CSharp No. 38</a>
 
 ### Código:
 
@@ -125,7 +125,7 @@ En la siguiente imagen muestra el compilado del programa donde se muestra el log
 ---
 ##  Ejercicio CSharp No. 104
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-104.html'>CSharp No. 104</a>
+<a href='Ejer-CSharp-No-104.html'>CSharp No. 104</a>
 
 ### Código:
 
@@ -147,7 +147,7 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 ---
 ##  Ejercicio CSharp No. 105
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-105.html'>CSharp No. 105</a>
+<a href='Ejer-CSharp-No-105.html'>CSharp No. 105</a>
 
 ### Código:
 
@@ -173,29 +173,52 @@ las opciones y sus correspondientes resultados.
 ---
 ##  Ejercicio CSharp No. 157
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-157.html'>CSharp No. 157</a>
+<a href='Ejer-CSharp-No-157.html'>CSharp No. 157</a>
 
 ### Código:
 
 - Archivo con el código CSharp para la solución del ejercicio:
 [Ejercicio CSharp No. 157 -  C\#](./CSharp-Codigo/Ejer-157/Program.cs)
 
+Para la resolución del ejercicio hemos escogido una imagen al azar de una página Web. 
+La dirección así como parte del código se muestra en la imagen a continuación.
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-157-1.jpg " !!!")
+
+Para poder bajar la imagen hemos usado el inspector de Google tal y como se muestra en 
+siguiente página. La imagen así como la obtención del link y se muestran en la siguiente imagen
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-157-4.jpg " !!!")
 
 ### Resultado:
 
+En la siguiente imagen se muestra la ejecución del program y el mensaje de la descarga de la imagen
+en la carpeta elegida.
+
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-157-52.jpg " !!!")
 
+La imagen que se va a bajar le hemos cambiado el nombre a 'musica.jpg'. La página web de 
+donde se baja se muetra en la siguiente imagen.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-157-5.jpg " !!!")
+
+La descarga de la imagen, así como el nuevo nombre de la imagen se muestra en la siguiente imagen.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-157-3.jpg " !!!")
 ---
 ##  Ejercicio CSharp No. 158
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-158.html'>CSharp No. 158</a>
+<a href='Ejer-CSharp-No-158.html'>CSharp No. 158</a>
 
 ### Código:
 
@@ -216,7 +239,7 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 ---
 ##  Ejercicio CSharp No. 182
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-182.html'>CSharp No. 182</a>
+<a href='Ejer-CSharp-No-182.html'>CSharp No. 182</a>
 
 ### Código:
 
@@ -237,7 +260,7 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 ---
 ##  Ejercicio CSharp No. 199
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-199.html'>CSharp No. 199</a>
+<a href='Ejer-CSharp-No-199.html'>CSharp No. 199</a>
 
 ### Código:
 
@@ -258,7 +281,7 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 ---
 ##  Ejercicio CSharp No. 216
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-216.html'>CSharp No. 216</a>
+<a href='Ejer-CSharp-No-216.html'>CSharp No. 216</a>
 
 ### Código:
 
@@ -311,7 +334,7 @@ Al ejecutar después de la compilación del programa podemos ver que no se alza 
 ---
 ##  Ejercicio CSharp No. 233
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-233.html'>CSharp No. 233</a>
+<a href='Ejer-CSharp-No-233.html'>CSharp No. 233</a>
 
 ### Código:
 
@@ -338,7 +361,7 @@ Hemos creado dos diccionarios con elementos para cada uno de ellos. En la imagen
 ---
 ##  Ejercicio CSharp No. 250
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-250.html'>CSharp No. 250</a>
+<a href='Ejer-CSharp-No-250.html'>CSharp No. 250</a>
 
 ### Código:
 
@@ -359,7 +382,7 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 ---
 ##  Ejercicio CSharp No. 251
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-251.html'>CSharp No. 251</a>
+<a href='Ejer-CSharp-No-251.html'>CSharp No. 251</a>
 
 ### Código:
 
@@ -380,7 +403,7 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 ---
 ##  Ejercicio CSharp No. 272
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
-<a href='Ejer-CSharp_No-272.html'>CSharp No. 272</a>
+<a href='Ejer-CSharp-No-272.html'>CSharp No. 272</a>
 
 ### Código:
 

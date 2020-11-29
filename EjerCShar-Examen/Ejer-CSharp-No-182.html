@@ -35,7 +35,7 @@
                 A. public static property<br />
                 B. public property<br />
                 C. public static field<br />
-                D .protected field<br /><br />
+                D. protected field<br /><br />
 
                 Correct Answer: B<br /><br />
 
@@ -45,13 +45,45 @@
 
                 Explanation/Reference:<br /><br />
 
-                <br />
-                <hr><br /><br />
-                <h2 style='color:red'>Explicación</h2><br /><br />
+                <hr><br />
+                <h2 style='color:red'>Explicación</h2>
+                <p>Todos los tipos y miembros de tipo tienen un nivel de accesibilidad. El nivel de accesibilidad controla si se pueden 
+                    usar desde otro código del ensamblado u otros ensamblados. </p>
+                    <p>Use los modificadores de acceso siguientes para especificar la accesibilidad de un tipo o miembro cuando lo declare:</p>
+                <ul style="list-style: none;">
+                    <li><p style="color: blue; font-weight: bolder;">public:</p>
+                        <p>
+                            Puede obtener acceso al tipo o miembro cualquier otro código del mismo ensamblado o de otro ensamblado que haga referencia a éste.
+                        </p>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">private: </p>
+                        <p>
+                            solamente el código de la misma class o struct puede acceder al tipo o miembro.
+                        </p>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">protected: </p>
+                        <p>
+                            solamente el código de la misma class, o bien de una class derivada de esa class, puede acceder al tipo o miembro.
+                        </p>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">internal: </p>
+                        <p>
+                            Puede obtener acceso al tipo o miembro cualquier código del mismo ensamblado, pero no de un ensamblado distinto.
+                        </p>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">protected internal: </p>
+                        <p>
+                            cualquier código del ensamblado en el que se ha declarado, o desde una class derivada de otro ensamblado, puede acceder al tipo o miembro.
+                        </p>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">private protected: </p>
+                        <p>
+                            el código de la misma class, o de un tipo derivado de esa class, puede acceder al tipo o miembro solo dentro de su ensamblado de declaración.
+                        </p>
+                    </li>
+                </ul>         
 
-                <p></p>
-                <p></p>
-                <p></p>
+
                 <h2 style='color:red'>Respuesta:</h2><br /><br />
 
                 <h3>Mostrando de manera visual la respuesta: </h3>
