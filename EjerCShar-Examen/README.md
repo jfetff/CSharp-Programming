@@ -457,10 +457,34 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-272-2.jpg " !!!")
+
+
+- La representación visual de la ejecución del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-272-1.jpg " !!!")
 
 ### Resultado:
 
-- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+Primero hay que mencionar que seguramente en este ejercicio hay una errata. Esta misma es el segundo argumento a rellenera o Target 2. Claramente se ve que en cuerpo del método dado, este mismo devuelve la suma x + y, que es un entero. Por lo escrito anteriormente Target 2 no puede ser void. Este último tiene que ser int o entero. De lo contrario la declaración del delegate estaría errada.
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+**Las opciones dadas son:**
+
+- Target 1:
+
+    * Esta no puede ser 'class' por que no debiera terminar con ';' y tendría que seguir el cuerpo de la clase.
+    * La Opción 'delegate' en la correcta por que es una declaración o definición de una función.
+    * Protected: podría ser protected pero el cuerpo de este método no existe.
+    * public: esta opción al igual que la anterior también podría ser protected pero el cuerpo de este método no existe.
+
+- Target 2:
+
+    * Class: es una opción pero no puede ser, porque no debiera terminar con ';' y tendría que seguir el cuerpo de la clase.
+    * El Target 2 no puede ser un modificar de acceso como protected, public, private, no puede ir en una segunda posición Los modificadores de accesso usualmente van de primero y no de segundo. En la segunda posisión de la firma del método es el tipo de valor devuelto. Para nosotros debería ser 'int' y no 'void' como es dado en el respuesta del ejercicio.
+
+- Target 3:
+
+    * La Opción 'class' no puede ser por la propia ubicación de esta palabra.
+    * La Opción 'delegate' es la respuesta correcta y esta coincide con la definición, instanciación y llamado de un delegate.
+    * Las Opciones 'int' 'interface' y 'void' no pueden ser ya que el Target 3 esta a la derecha de un '=' por lo que Claramente es una asignación y no pueden situarse en esa posición.
+

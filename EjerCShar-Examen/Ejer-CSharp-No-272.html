@@ -45,8 +45,43 @@
                 Reference: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-
                 operators/anonymous-methods<br /><br />
 
-                <hr><br /><br />
-                <h2 style='color:red'>Explicación</h2><br /><br />
+                <hr>
+                <h2 style='color:red'>Explicación</h2>
+                <p>
+                    Un delegado es un tipo que encapsula de forma segura un método, similar a un puntero de función en C y C++. 
+                    A diferencia de los punteros de función de C, los delegados están orientados a objetos, proporcionan seguridad 
+                    de tipos y son seguros. El tipo de un delegado se define por el nombre del delegado
+                </p>
+                <p>Para la creación de un delegate se usan los siguientes pasos:</p>
+                <ul style="list-style: none;">
+                    <li><p style="color: blue; font-weight: bolder;">1. Declaración un delegado denominado Del:</p>
+                        <p>
+                            <blockquote style="font-style: italic;">public delegate void Del(string message);</blockquote>
+                        </p>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">2. Creación de un método para el delegate:</p>
+                        <p>
+                            <blockquote style="font-style: italic;">
+                                public static void DelegateMethod(string message)<br />
+                                {
+                                    <blockquote> Console.WriteLine(message);</blockquote>
+                                }
+                            </blockquote>
+                        </p>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">3. Instanciación del delegate:</p>
+                        <p>
+                            <blockquote style="font-style: italic;">Del handler = DelegateMethod; </blockquote>
+                        </p>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">4. Llamada del delegate:</p>
+                        <p>
+                            <blockquote style="font-style: italic;">handler("Hello World");</blockquote>
+                        </p>
+                    </li>
+                </ul>
+
+                <h2 style='color:red'>Respuesta:</h2>
                 <p>Primero hay que mencionar que seguramente en este ejercicio hay una errata. Esta misma es el segundo
                     argumento a rellenera o Target 2. Claramente se ve que en cuerpo del método dado, este mismo devuelve 
                     la suma x + y, que es un entero. Por lo escrito anteriormente Target 2 no puede ser void.
@@ -83,11 +118,10 @@
                         </li>
                     </ul>
                 </p>
-                <h2 style='color:red'>Respuesta:</h2><br /><br />
 
-                <h3>Mostrando de manera visual la respuesta: </h3>
 
                 <h2 style='color:red'>Fuentes:</h2>
+                https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/delegates/using-delegates
                 <br />https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
                 <br />
                 <br />
