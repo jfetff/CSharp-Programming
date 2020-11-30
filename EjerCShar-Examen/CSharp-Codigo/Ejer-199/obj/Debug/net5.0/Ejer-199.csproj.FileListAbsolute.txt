@@ -1,0 +1,16 @@
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\obj\Debug\net5.0\Ejer-199.csprojAssemblyReference.cache
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\obj\Debug\net5.0\Ejer-199.GeneratedMSBuildEditorConfig.editorconfig
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\obj\Debug\net5.0\Ejer-199.AssemblyInfoInputs.cache
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\obj\Debug\net5.0\Ejer-199.AssemblyInfo.cs
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\obj\Debug\net5.0\Ejer-199.csproj.CoreCompileInputs.cache
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\bin\Debug\net5.0\Ejer-199.exe
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\bin\Debug\net5.0\Ejer-199.deps.json
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\bin\Debug\net5.0\Ejer-199.runtimeconfig.json
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\bin\Debug\net5.0\Ejer-199.runtimeconfig.dev.json
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\bin\Debug\net5.0\Ejer-199.dll
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\bin\Debug\net5.0\ref\Ejer-199.dll
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\bin\Debug\net5.0\Ejer-199.pdb
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\obj\Debug\net5.0\Ejer-199.dll
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\obj\Debug\net5.0\ref\Ejer-199.dll
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\obj\Debug\net5.0\Ejer-199.pdb
+C:\20483C\CSharp-Programming\EjerCShar-Examen\CSharp-Codigo\Ejer-199\obj\Debug\net5.0\Ejer-199.genruntimeconfig.cache

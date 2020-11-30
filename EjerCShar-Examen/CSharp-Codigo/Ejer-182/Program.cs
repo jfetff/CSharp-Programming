@@ -20,8 +20,8 @@ namespace Ejer_182
             Console.WriteLine("    Entre el número de años:");
             years = Convert.ToInt32(Console.ReadLine());//accepts console input and assigne to variable
 
-            Loan loan = new Loan(amount, rate, years);//create  new instance, send values to the class
-
+            Loan loan = new Loan(350, 12, years);//create  new instance, send values to the class
+            loan.Modificadores();
             Console.ReadKey();
         }
     }
@@ -51,6 +51,18 @@ namespace Ejer_182
             double TotalInterest = number1+number2;
             return  TotalInterest;
         }
-    }
 
+        public void Modificadores()
+        {
+            System.Console.WriteLine("\n\n     La Respuesta correcta es la Opción B");
+            System.Console.WriteLine("     ");
+            System.Console.WriteLine("     public int DayNumber");
+            System.Console.WriteLine("     {");
+            System.Console.WriteLine("          get");
+            System.Console.WriteLine("          {");
+            System.Console.WriteLine("               return DateTime.Today.Day;");
+            System.Console.WriteLine("          }");
+            System.Console.WriteLine("     }");
+        }
+    }
 }

@@ -26,7 +26,6 @@
                         Restrict the range of values that can be assigned to the rate member.<br />
                     </li>
                 </ul>
-                <br /><br />
 
                 You need to implement the rate member to meet the requirements.<br /><br />
 
@@ -73,25 +72,80 @@
                     </li>
                     <li><p style="color: blue; font-weight: bolder;">protected internal: </p>
                         <p>
-                            cualquier código del ensamblado en el que se ha declarado, o desde una class derivada de otro ensamblado, puede acceder al tipo o miembro.
+                            Cualquier código del ensamblado en el que se ha declarado, o desde una class derivada de otro ensamblado, puede acceder al tipo o miembro.
                         </p>
                     </li>
                     <li><p style="color: blue; font-weight: bolder;">private protected: </p>
                         <p>
-                            el código de la misma class, o de un tipo derivado de esa class, puede acceder al tipo o miembro solo dentro de su ensamblado de declaración.
+                            El código de la misma class, o de un tipo derivado de esa class, puede acceder al tipo o miembro solo dentro de su ensamblado de declaración.
                         </p>
                     </li>
                 </ul>         
+                <p><strong>Nota:</strong> de forma predeterminada, todos los miembros de una clase son privados si no especifica un modificador de acceso.</p>
 
-
-                <h2 style='color:red'>Respuesta:</h2><br /><br />
-
-                <h3>Mostrando de manera visual la respuesta: </h3>
-
+                <h2 style='color:red'>Respuesta:</h2>
+                <ul style="list-style: none;">
+                    <li><p style="color: blue; font-weight: bolder;">Opción A. public static property</p>
+                        <p>
+                            El calificador estático para una variable significa que la variable se define una vez.
+                            La propiedad estática se comparte entre todos los objetos de la clase. Entonces, cada vez que 
+                            realiza una nueva solicitud, se crea una nueva instancia de la clase de controlador. 
+                            Dado que la propiedad es estática, está disponible para que la nueva instancia del controlador 
+                            la obtenga y configure. Sin embargo, en el caso de la variable de instancia, la propiedad también es 
+                            nueva y se inicializa cuando se crea la nueva instancia del controlador.<br /><br />Ejemplo:<br />
+                            <em>
+                            <br />
+                            public static int DayNumber<br />
+                            {<BLOCKQUOTE>
+                                get<br />
+                                {<blockquote>return DateTime.Today.Day;<br /></blockquote>
+                                }<br /></BLOCKQUOTE>
+                            }<br />
+                            </em>
+                        </p>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">Opción B. public property</p>
+                        <p>
+                            Esta es la respuesta correcta.<br />
+                            Para el implementador de una clase, una propiedad es uno o dos bloques de código que 
+                            representa un descriptor de acceso get o un descriptor de acceso set.<br />
+                            Cuando no tiene el calificador estático, la variable se definirá cada vez que cree una instancia de su clase.<br /><br />
+                            <em>
+                                public int DayNumber<br />
+                                {<blockquote>
+                                    get<br />
+                                    {<blockquote>return DateTime.Today.Day;<br /></blockquote>
+                                    }
+                                </blockquote>
+                                }<br />
+                            </em>
+                        </p>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">Opción C. public static field</p>
+                        <p>
+                            El miembro estático es invocable en una clase, incluso si no se ha creado ninguna instancia de la clase. 
+                            Siempre se tiene acceso al miembro estático con el nombre de clase, no con el nombre de instancia. 
+                            Solo existe una copia de un miembro estático, independientemente del número de instancias de la clase que se creen.
+                        </p>
+                        Ejemplo:<br /><br />
+                        <em>
+                            public static int DayNumber<br />
+                        </em>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">Opción D. protected field</p>
+                        <p>protected es útil cuando desea que su clase y todas las clases derivadas (secundarias) puedan acceder 
+                            al método o variable, pero no desea que sea público.<br /><br />
+                            Ejemplo:<br /><br />
+                            <em>
+                                protected String ProtectedString = "This string is protected";<br />
+                            </em>
+                        </p>
+                    </li>
+                </ul>
                 <h2 style='color:red'>Fuentes:</h2>
-                <br />
-                <br />
-                <br />
+                https://www.w3schools.com/cs/cs_access_modifiers.asp
+                <br />https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members
+                <br />https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/using-properties
 
             </td>
         </tr>

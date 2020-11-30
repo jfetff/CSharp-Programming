@@ -244,15 +244,19 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 - Archivo con el código CSharp para la solución del ejercicio:
 [Ejercicio CSharp No. 182 -  C\#](./CSharp-Codigo/Ejer-182/Program.cs)
 
+La respuesta de esta pregunta es más teórica que técnica. La solución o explicación de la
+pregunta se describe en el HTML de la misma pregunta. Ver el HTML de la misma pregunta.
+
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-182-1.jpg " !!!")
 
 ### Resultado:
 
+
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-182-2.jpg " !!!")
 
 
 ---
@@ -265,15 +269,29 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 - Archivo con el código CSharp para la solución del ejercicio:
 [Ejercicio CSharp No. 199 -  C\#](./CSharp-Codigo/Ejer-199/Program.cs)
 
+Este ejercicio requiere que código dado se coloque consecuentemente para que se pueda 
+lograr el objetivo, el cual es usar la clase StreamWriter, crear, escribir en un archivo de 
+texto. El trabajo principal es saber como usar la mencionada clase en el order que se debe usar
+para la creación de un archivo:
+1. Crear una instancia de StreamWriter
+2. Instanciar la cadena del camino donde se va a escribir el archivo.
+3. Tener listo el valor, cadena o texto que se va a escribir el archivo.
+4. Usar la instancia de la clase mencionada con el camino y valor/texto a escribir.
+5. Escribir con la instancia de la clase, el archivo y el texto dado.
+
+
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-199-1.jpg " !!!")
 
 ### Resultado:
 
+Una vez creado el archivo con el texto proporcionado, ubicamos el archivo donde se ha guardado.
+En la misma imagen se muestra el archivo con texto escrito dado.
+
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-199-2.jpg " !!!")
 
 
 ---
@@ -361,20 +379,49 @@ Hemos creado dos diccionarios con elementos para cada uno de ellos. En la imagen
 La descripción del ejercicio se encuentra en el html que se describe a continuación:
 <a href='Ejer-CSharp-No-250.html'>CSharp No. 250</a>
 
-### Código:
+### Código y Resultado:
 
 - Archivo con el código CSharp para la solución del ejercicio:
 [Ejercicio CSharp No. 250 -  C\#](./CSharp-Codigo/Ejer-250/Program.cs)
 
+1. Resolución de la Caja No. 1
+La parte del código así como el resultado de la ejecución del programa para la caja No. 1
+se puede ver en la siguiente imagen:
+
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-250-1.jpg " !!!")
 
-### Resultado:
 
-- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+2. Resolución de la Caja No. 2
+La parte de la ejecución del programa para la caja No. 2
+se puede ver en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-250-2.jpg " !!!")
+
+La parte del código para la solución del programa para la caja No. 2
+se puede ver en la siguiente imagen:
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-250-3.jpg " !!!")
+
+3. Resolución de la Caja No. 3
+La parte de la ejecución del programa para la caja No. 3
+se puede ver en la siguiente imagen:
+
+- La representación visual de la ejección del código del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-250-4.jpg " !!!")
+
+La parte del código para la solución del programa para la caja No. 3
+se puede ver en la siguiente imagen:
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-250-5.jpg " !!!")
 
 
 ---
