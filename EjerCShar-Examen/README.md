@@ -223,15 +223,26 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 - Archivo con el código CSharp para la solución del ejercicio:
 [Ejercicio CSharp No. 158 -  C\#](./CSharp-Codigo/Ejer-158/Program.cs)
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+Para la solución del ejercicio es necesario tener un objeto JSON del tipo Employee, el cual primero es serializado a Byte y luego pasado como una cadena de bytes a la MemoryStream.
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+- La representación visual del codigo muestra el primer paso que es:
+    1. Hard code el objeto JSON del tipo empleado, luego convertir esta cadena JSON a Byte tal y como se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-158-1.jpg " !!!")
+
+- Luego en un try - catch envolvemos el código que es la respuesta correcta del ejercicio al ejecutar exitosamente el proyecto. 
+
+    2. El código que ejecuta de manera exitosa la opción se muestra a continuación en una imagen:
+
+![alt text](./md_img/ejerNo-158-2.jpg " !!!")
 
 ### Resultado:
 
-- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+Una vez ejecutado el código obtenemos la deserialización del objeto Empleado. Para ello hemos creado una Clase de tipo Empleado y método es Print que imprime en la consola los datos correspondiente del Empleado una vez serializado.
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+- La representación visual de la resolución de lo antes explicado se muestra en la siguiente imagen:
+
+![alt text](./md_img/ejerNo-158-3.jpg " !!!")
 
 
 ---

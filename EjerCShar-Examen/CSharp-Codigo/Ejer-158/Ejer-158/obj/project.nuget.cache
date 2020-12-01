@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "KN7aPP+rl0yVYD7bxGst8p9B1zcJ22d4NuRFMMpnefcjbA1yqFgCEo1nyPbeL+QWtth0i05K+IszUiCBPvjZ0Q==",
+  "success": true,
+  "projectFilePath": "C:\\20483C\\CSharp-Programming\\EjerCShar-Examen\\CSharp-Codigo\\Ejer-158\\Ejer-158\\Ejer-158.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jfetf\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jfetf\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\jfetf\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\jfetf\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\jfetf\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
