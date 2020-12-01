@@ -221,7 +221,7 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 ### Código:
 
 - Archivo con el código CSharp para la solución del ejercicio:
-[Ejercicio CSharp No. 158 -  C\#](./CSharp-Codigo/Ejer-158/Program.cs)
+[Ejercicio CSharp No. 158 -  C\#](./CSharp-Codigo/Ejer-158/Ejer-158/Program.cs)
 
 Para la solución del ejercicio es necesario tener un objeto JSON del tipo Employee, el cual primero es serializado a Byte y luego pasado como una cadena de bytes a la MemoryStream.
 
