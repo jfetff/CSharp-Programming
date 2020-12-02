@@ -447,13 +447,14 @@ La descripción del ejercicio se encuentra en el html que se describe a continua
 
 - La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-251-1.jpg " !!!")
 
 ### Resultado:
 
+Según la segunda fuente citada aquí que aparecen el HTML del enunciado del ejercicio una instrucción try puede contener más de un bloque catch. Se ejecuta la primera instrucción catch que pueda controlar la excepción; las instrucciones catch siguientes se omiten, aunque sean compatibles. Por consiguiente, los bloques catch deben ordenarse siempre de más específico (o más derivado) a menos específico. 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./md_img/ejerNo-.jpg " !!!")
+![alt text](./md_img/ejerNo-251-2.jpg " !!!")
 
 
 ---

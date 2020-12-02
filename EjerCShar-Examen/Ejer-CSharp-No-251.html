@@ -71,20 +71,46 @@
                 Catch the most specific exception first.<br /><br />
 
                 <hr><br /><br />
-                <h2 style='color:red'>Explicación</h2><br /><br />
-                <p>Cuando se detectan las excepciones ContosoValidationException, registre la información 
-                    mediante el método estático void Log (ContosoValidationException ex). 
+                <h2 style='color:red'>Explicación</h2>
+                <p>Las excepciones de C# se definen como clases, como cualquier otro objeto de C#. Todas las 
+                    excepciones heredan de un sistema base. Clase de excepción. Hay muchas excepciones comunes que 
+                    puede utilizar dentro de su propio código. Por lo general, los desarrolladores usan el objeto 
+                    ApplicationException o Exception genérico para lanzar excepciones personalizadas.
+                    Cuando se detectan las excepciones ContosoValidationException, registre la información 
+                    mediante el método estático void Log (ContosoValidationException ex). <br />
                 </p>
                 <p>Cuando se detectan ContosoDbException u otras excepciones ContosoException, registre la 
-                    información mediante el método de registro vacío estático (ContosoException ex)
+                    información mediante el método de registro vacío estático (ContosoException ex)<br />
                 </p>
-                <p></p>
-                <h2 style='color:red'>Respuesta:</h2><br /><br />
-
+                <p>
+                    Cuando se inicia una excepción, el entorno runtime comprueba la instrucción actual para ver si se 
+                    encuentra dentro de un bloque try. Si es así, se comprueban los bloques catch asociados al bloque 
+                    try para ver si pueden detectar la excepción. Los bloques Catch suelen especificar tipos de excepción; 
+                    si el tipo del bloque catch es el mismo de la excepción, o una clase base de la excepción, 
+                    el bloque catch puede controlar el método
+                </p>
+                <h2 style='color:red'>Respuesta:</h2>
+                <p>
+                    Según la segunda fuente citada aquí más abajo una instrucción try puede contener más de un bloque catch. 
+                    Se ejecuta la primera instrucción catch que pueda controlar la excepción; las instrucciones catch 
+                    siguientes se omiten, aunque sean compatibles. Por consiguiente, los bloques catch deben ordenarse 
+                    siempre de más específico (o más derivado) a menos específico.
+                </p>
                 <h3>Mostrando de manera visual la respuesta: </h3>
-
+                <ul style="list-style: none;">
+                    <li><p style="color: blue; font-weight: bolder;">Target 1.</p>
+                        <p>ContosoValidationException</p>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">Target 2.</p>
+                        <p>ContosoDbException</p>
+                    </li>
+                    <li><p style="color: blue; font-weight: bolder;">Target 3.</p>
+                        <p>ContosoException</p>
+                    </li>
+                </ul>
                 <h2 style='color:red'>Fuentes:</h2>
-                <br />
+                https://stackify.com/csharp-exception-handling-best-practices/
+                <br />https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/exceptions/using-exceptions
                 <br />
                 <br />
 
